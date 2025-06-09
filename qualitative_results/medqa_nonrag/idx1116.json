@@ -1,0 +1,188 @@
+{
+    "context": "A 46-year-old woman comes to the physician because of severe muscle and joint pain for 5 months. The pain varies in location and intensity. She also has joint stiffness in the morning and reports fatigue throughout the day that she attributes to not sleeping well. She reports a tingling sensation in her lower limbs. Her bowel habits are unchanged but she often feels bloated. She has primary hypertension and occasional migraine headaches. She does not smoke or consume alcohol. Her medications include propranolol and sumatriptan. She appears healthy. Examination shows symmetric muscular tenderness at the base of the neck, over the shoulders, and in the lumbosacral area. Strength and deep tendon reflexes are normal. Laboratory studies show:\nHemoglobin 14.3 g/dL\nLeukocyte count 9300/mm3\nPlatelet count 230,000/mm3\nMean corpuscular volume 85 \u03bcm3\nErythrocyte sedimentation rate 12 mm/h\nSerum\nGlucose 92 mg/dL\nCreatinine 0.6 mg/dL\nTSH 3.1 \u03bcU/mL\nUrinalysis is within normal limits. W",
+    "query": "Which of the following is the most appropriate therapy for this patient?\n\nA. Temazepam\nB. Vitamin B12\nC. Amitriptyline\nD. Methotrexate\n\"",
+    "answer_letter": "C",
+    "question_idx": 1116,
+    "response": "The patient presents with symptoms of muscle and joint pain, joint stiffness, fatigue, tingling sensation in the lower limbs, and a history of primary hypertension and migraine headaches. The examination findings are significant for symmetric muscular tenderness and normal strength and deep tendon reflexes. The laboratory studies show normal hemoglobin, leukocyte count, platelet count, mean corpuscular volume, glucose, creatinine, and TSH levels, with an erythrocyte sedimentation rate (ESR) of 12 mm/h, which is slightly elevated but not significantly so.\n\nGiven the patient's symptoms and the normal laboratory findings, the most likely diagnosis is fibromyalgia. Fibromyalgia is a chronic condition characterized by widespread musculoskeletal pain, fatigue, and tenderness in specific areas of the body. It is often associated with other symptoms such as sleep disturbances, cognitive difficulties, and mood disorders.\n\nThe treatment of fibromyalgia typically involves a combination of pharmacological and non-pharmacological therapies. Non-pharmacological treatments include exercise, cognitive-behavioral therapy, and stress management. Pharmacological treatments may include analgesics, antidepressants, and anticonvulsants.\n\nAmong the options provided:\n\nA. Temazepam is a benzodiazepine used for the short-term relief of insomnia. It is not typically used for the treatment of fibromyalgia.\n\nB. Vitamin B12 is not a treatment for fibromyalgia and is not indicated by the patient's symptoms or laboratory findings.\n\nC. Amitriptyline is an antidepressant that is often used in the treatment of fibromyalgia due to its analgesic and sedative properties. It can help with pain relief and improve sleep quality, which are common issues in fibromyalgia patients.\n\nD. Methotrexate is an immunosuppressive drug used in the treatment of rheumatoid arthritis and other autoimmune conditions. It is not indicated for fibromyalgia.\n\nGiven the patient's symptoms and the need for a medication that can help with pain relief and improve sleep quality, amitriptyline is the most appropriate therapy.\n\nSo, the answer is C.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 46-year-old woman comes to the physician because of severe muscle and joint pain for 5 months.",
+            0.0
+        ],
+        [
+            "The pain varies in location and intensity.",
+            -0.0
+        ],
+        [
+            "She also has joint stiffness in the morning and reports fatigue throughout the day that she attributes to not sleeping well.",
+            5.069592906388567
+        ],
+        [
+            "She reports a tingling sensation in her lower limbs.",
+            10.419551514912532
+        ],
+        [
+            "Her bowel habits are unchanged but she often feels bloated.",
+            0.0
+        ],
+        [
+            "She has primary hypertension and occasional migraine headaches.",
+            10.426471494454374
+        ],
+        [
+            "She does not smoke or consume alcohol.",
+            0.0
+        ],
+        [
+            "Her medications include propranolol and sumatriptan.",
+            0.0
+        ],
+        [
+            "She appears healthy.",
+            -0.0
+        ],
+        [
+            "Examination shows symmetric muscular tenderness at the base of the neck, over the shoulders, and in the lumbosacral area.",
+            16.98918913409848
+        ],
+        [
+            "Strength and deep tendon reflexes are normal.",
+            2.2375245097297536
+        ],
+        [
+            "Laboratory studies show:",
+            0.0
+        ],
+        [
+            "Hemoglobin 14.3 g/dL",
+            0.0
+        ],
+        [
+            "Leukocyte count 9300/mm3",
+            0.0
+        ],
+        [
+            "Platelet count 230,000/mm3",
+            0.0
+        ],
+        [
+            "Mean corpuscular volume 85 \u03bcm3",
+            0.0
+        ],
+        [
+            "Erythrocyte sedimentation rate 12 mm/h",
+            2.5170286621127933
+        ],
+        [
+            "Serum",
+            -0.0
+        ],
+        [
+            "Glucose 92 mg/dL",
+            0.0
+        ],
+        [
+            "Creatinine 0.6 mg/dL",
+            0.0
+        ],
+        [
+            "TSH 3.1 \u03bcU/mL",
+            0.0
+        ],
+        [
+            "Urinalysis is within normal limits.",
+            -0.0
+        ],
+        [
+            "W",
+            0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.1600889168666886
+        },
+        {
+            "id": "MedQA-Evol,1382-synthetic-4",
+            "type": "Exam",
+            "answer": "B",
+            "score": "I would rate this question as a 9. \n\nJustification: This question requires a deep understanding of hematology, coagulation disorders, and the potential complications of anticoagulant therapy. It also involves the ability to apply knowledge to a clinical scenario and make a differential diagnosis based on the given information.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 43-year-old female with a history of pulmonary embolism, now presenting with acute thrombocytopenia characterized by a platelet count plummeting from 182,000/mcL to 63,000/mcL after starting heparin and warfarin therapy, and excluding the presence of any recent surgical procedures, which condition is the most plausible diagnosis?\n\nA. Warfarin-induced skin necrosis, in the early phase\nB. Heparin-induced thrombocytopenia, with thrombosis\nC. Immune thrombocytopenic purpura, chronic with exacerbation\nD. Disseminated intravascular coagulation, with secondary fibrinolysis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient in the scenario has a history of pulmonary embolism and is presenting with acute thrombocytopenia after starting heparin and warfarin therapy. The key point here is the drop in platelet count after the initiation of heparin.\n\nA. Warfarin-induced skin necrosis typically occurs within the first few days of starting warfarin therapy, but it is characterized by skin lesions and necrosis, not by a significant drop in platelet count.\n\nB. Heparin-induced thrombocytopenia (HIT) is a prothrombotic disorder caused by an immune reaction that forms antibodies against platelet factor 4-heparin complexes, leading to platelet activation, thrombocytopenia, and thrombosis. HIT can occur 5-10 days after starting heparin and is associated with a significant drop in platelet count, as seen in this patient.\n\nC. Immune thrombocytopenic purpura (ITP) is an autoimmune disorder that can lead to a low platelet count. However, ITP is usually chronic and does not typically present acutely after the initiation of heparin or warfarin therapy.\n\nD. Disseminated intravascular coagulation (DIC) is a condition that leads to the widespread activation of coagulation, which can result in thrombocytopenia. However, DIC is usually associated with an underlying disorder, such as sepsis or malignancy, and is not typically triggered by heparin or warfarin therapy.\n\nConsidering the timing and the clinical scenario, the most plausible diagnosis is heparin-induced thrombocytopenia with thrombosis.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.1405562603088437
+        },
+        {
+            "id": "MedQA,4455",
+            "type": "Exam",
+            "answer": "A",
+            "score": "This question would be rated as a 7. It requires knowledge of hematology, specifically anemia, and the ability to interpret laboratory values and clinical symptoms to determine the appropriate initial step in management. The question also involves understanding the differential diagnosis for anemia and the significance of the patient's history and physical exam findings.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "A 20-year-old woman comes to the physician for the evaluation of fatigue and low energy levels for 2 months. She has not had fever or weight changes. She has no history of serious illness except for an episode of infectious mononucleosis 4 weeks ago. Menses occur at regular 28-day intervals and last 5 days with moderate flow. Her last menstrual period was 3 weeks ago. Her mother has Hashimoto's thyroiditis. Vital signs are within normal limits. Examination shows pale conjunctivae, inflammation of the corners of the mouth, and brittle nails. The remainder of the examination shows no abnormalities. Laboratory studies show:\nHemoglobin 10.3 g/dL\nMean corpuscular volume 74 \u03bcm3\nPlatelet count 280,000/mm3\nLeukocyte count 6,000/mm3\nWhich of the following is the most appropriate initial step in management?\"\n\nA. Iron studies\nB. Vitamin B12 levels\nC. Hemoglobin electrophoresis\nD. Peripheral blood smear"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient presents with fatigue, low energy levels, pale conjunctivae, inflammation of the corners of the mouth, and brittle nails. These symptoms, along with the laboratory findings of a low hemoglobin level of 10.3 g/dL and a low mean corpuscular volume (MCV) of 74 \u03bcm^3, are suggestive of anemia, particularly microcytic anemia.\n\nThe most common causes of microcytic anemia include iron deficiency anemia, thalassemia, anemia of chronic disease, and sideroblastic anemia. Given the patient's symptoms and the absence of a history of chronic disease or medication use that could cause sideroblastic anemia, iron deficiency anemia is the most likely diagnosis. This is supported by the fact that the patient is a young woman who menstruates regularly, which increases her risk for iron deficiency due to blood loss during menstruation.\n\nIn this case, the most appropriate initial step in management would be to confirm the diagnosis by performing iron studies, which include serum iron, total iron-binding capacity (TIBC), transferrin saturation, and ferritin levels. These tests will help determine if the patient has iron deficiency anemia and guide further management.\n\nVitamin B12 levels are typically assessed in the evaluation of macrocytic anemia, which is not indicated here due to the low MCV. Hemoglobin electrophoresis is used to diagnose hemoglobinopathies such as thalassemia or sickle cell anemia, but there is no indication of a hemoglobinopathy based on the patient's history or laboratory findings. A peripheral blood smear could provide additional information about the shape and size of red blood cells, but it is not the most efficient initial step in this case.\n\nSo, the answer is A."
+                }
+            ],
+            "influence": 0.13140908427668704
+        },
+        {
+            "id": "MedQA-Evol,4974-synthetic-1",
+            "type": "Exam",
+            "answer": "B",
+            "score": "This question would likely be rated as a 7. It requires a deep understanding of endocrinology, specifically related to adrenal enzyme deficiencies, and the ability to recognize the specific symptoms associated with different conditions. Additionally, it involves the application of knowledge to determine the most likely diagnosis based on the presented symptoms.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "For a 17-year-old female patient presenting with hirsutism, acne, and an adrenal enzyme deficiency, which symptom would further support the most likely diagnosis, especially considering no glucocorticoid therapy has been administered?\n\nA. Hypertension and hypokalemia\nB. Severe virilization and absence of menarche\nC. Hyperpigmentation and orthostatic hypotension\nD. Cushingoid features and central obesity"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The symptoms presented in the question - hirsutism, acne, and an adrenal enzyme deficiency - suggest an endocrine disorder affecting adrenal gland function. The absence of glucocorticoid therapy is also a significant clue, as it implies that the symptoms are not due to exogenous steroid use.\n\nA. Hypertension and hypokalemia are symptoms that can be associated with hyperaldosteronism or Cushing's syndrome. However, these conditions are less likely to present with hirsutism and acne as primary symptoms.\n\nB. Severe virilization and absence of menarche suggest a condition that leads to excessive production of androgens. This could be indicative of congenital adrenal hyperplasia (CAH), which is a group of inherited disorders of the adrenal gland. Specifically, 21-hydroxylase deficiency is the most common form of CAH and can lead to virilization and the absence of menarche due to androgen excess.\n\nC. Hyperpigmentation and orthostatic hypotension are symptoms of primary adrenal insufficiency, also known as Addison's disease. This condition is characterized by the adrenal glands' failure to produce sufficient hormones, including glucocorticoids and mineralocorticoids. However, this condition would not typically cause hirsutism and acne.\n\nD. Cushingoid features and central obesity are characteristic of Cushing's syndrome, which is caused by prolonged exposure to high levels of cortisol. While this condition can lead to hirsutism and acne, it would not be associated with an adrenal enzyme deficiency in the absence of glucocorticoid therapy.\n\nConsidering the symptoms presented and the lack of glucocorticoid therapy, the most likely diagnosis would be congenital adrenal hyperplasia, particularly due to 21-hydroxylase deficiency, which can cause androgen excess leading to hirsutism, acne, and the absence of menarche.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.12938247038778453
+        },
+        {
+            "id": "MedQA-Evol,7459-synthetic-5",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of genetics, hematology, and clinical manifestations of various genetic disorders. The question involves multiple concepts, technical terminology, and the need for analytical thinking to make the correct diagnosis.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "Given the patient's clinical presentation of fatigue, dyspnea, cephalalgia, intermittent icterus, antecedent cholelithiasis, familial chronic anemia-related mortality, and the hematological indices revealing elevated reticulocyte turnover, augmented unconjugated bilirubin, reduced serum haptoglobin, with the presence of spherocytes in the peripheral blood smear, which genetic disorder aligns with these manifestations, considering the absence of Heinz bodies upon examination?\n\nA. Iron deficiency anemia\nB. G6PD deficiency\nC. Sickle cell anemia\nD. Hereditary spherocytosis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "First, let's consider the symptoms and laboratory findings presented:\n\n- Fatigue, dyspnea, cephalalgia, and intermittent icterus are general symptoms that can be associated with various types of anemia or hemolytic disorders.\n- Antecedent cholelithiasis (gallstones) can be a complication of chronic hemolysis.\n- Familial chronic anemia-related mortality suggests a hereditary condition.\n- Elevated reticulocyte turnover indicates increased red blood cell production, which is common in hemolytic anemias.\n- Augmented unconjugated bilirubin and reduced serum haptoglobin are also indicative of hemolysis.\n- The presence of spherocytes in the peripheral blood smear is characteristic of certain types of hemolytic anemia.\n- The absence of Heinz bodies suggests that the hemolysis is not related to G6PD deficiency, as Heinz bodies are typically seen in this condition due to the denaturation of hemoglobin caused by oxidative stress.\n\nNow let's analyze the options:\n\nA. Iron deficiency anemia typically presents with microcytic, hypochromic red blood cells and is not usually associated with spherocytes or a high reticulocyte count.\n\nB. G6PD deficiency is a condition that leads to episodic hemolysis in response to oxidative stress, and Heinz bodies would be present upon examination.\n\nC. Sickle cell anemia is a type of hemolytic anemia that results in sickle-shaped red blood cells due to a mutation in the hemoglobin gene. It is not typically associated with spherocytes.\n\nD. Hereditary spherocytosis is a genetic disorder characterized by the presence of spherocytes in the blood due to a defect in the red blood cell membrane. This condition can lead to chronic hemolysis, anemia, jaundice, and gallstones.\n\nConsidering the information given and the absence of Heinz bodies, the most likely diagnosis is hereditary spherocytosis.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.12772005064897485
+        }
+    ]
+}

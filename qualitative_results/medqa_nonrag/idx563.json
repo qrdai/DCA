@@ -1,0 +1,120 @@
+{
+    "context": "A 47-year-old woman seeks evaluation at your office because she has had postcoital vaginal bleeding for the past 8 months with occasional intermenstrual watery, blood-tinged vaginal discharge. Her family history is negative for malignancies and inherited disorders. She is the result of a pregnancy complicated by numerous miscarriages in the 1960s, for which her mother received diethylstilbestrol. During a pelvic examination, you notice a polypoid mass on the anterior wall of the vagina. The bimanual examination is negative for adnexal masses. You suspect the presence of carcinoma and, therefore, send tissue samples to pathology, which confirmed the presence of malignant cells.",
+    "query": "Which of the following is the most likely malignant tumor in this patient?\n\nA. Clear cell adenocarcinoma\nB. Melanoma\nC. Botryoid sarcoma\nD. Verrucous carcinoma",
+    "answer_letter": "A",
+    "question_idx": 563,
+    "response": "The patient's history of exposure to diethylstilbestrol (DES) during her mother's pregnancy is a significant risk factor for clear cell adenocarcinoma of the vagina. DES is a synthetic estrogen that was prescribed to pregnant women in the United States from the 1940s to the early 1970s to prevent miscarriage and premature labor. However, it was later found to increase the risk of clear cell adenocarcinoma in the daughters of women who took DES during pregnancy.\n\nThe other options listed are not typically associated with DES exposure:\n\nB. Melanoma is a type of skin cancer and is not related to DES exposure.\nC. Botryoid sarcoma is a type of sarcoma that can occur in the vagina, but it is not specifically associated with DES exposure.\nD. Verrucous carcinoma is a type of squamous cell carcinoma that can occur in the genital tract, but it is not associated with DES exposure.\n\nGiven the patient's history of DES exposure and the presence of a polypoid mass in the vagina, the most likely malignant tumor in this patient is clear cell adenocarcinoma.\n\nSo, the answer is A.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 47-year-old woman seeks evaluation at your office because she has had postcoital vaginal bleeding for the past 8 months with occasional intermenstrual watery, blood-tinged vaginal discharge.",
+            -0.0
+        ],
+        [
+            "Her family history is negative for malignancies and inherited disorders.",
+            0.0
+        ],
+        [
+            "She is the result of a pregnancy complicated by numerous miscarriages in the 1960s, for which her mother received diethylstilbestrol.",
+            14.285942034140032
+        ],
+        [
+            "During a pelvic examination, you notice a polypoid mass on the anterior wall of the vagina.",
+            13.511532981490783
+        ],
+        [
+            "The bimanual examination is negative for adnexal masses.",
+            0.0
+        ],
+        [
+            "You suspect the presence of carcinoma and, therefore, send tissue samples to pathology, which confirmed the presence of malignant cells.",
+            -0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.1259588996213093
+        },
+        {
+            "id": "TextBookQA,Anatomy_Gray_2781",
+            "type": "Exam",
+            "answer": "C",
+            "score": "I would rate this question as a 9. This question requires a deep understanding of neurology, oncology, and diagnostic reasoning. It involves knowledge of specific types of brain tumors, their typical presentations, and their associations with smoking history. Additionally, it requires the ability to apply clinical reasoning to a complex patient presentation.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 58-year-old male with a 30-pack-year smoking history who presents with new-onset headaches and progressive focal neurological deficits, and after ruling out a primary cerebral vascular event, which diagnosis is most probable given the presence of multiple cerebral lesions and a high index of suspicion for a neoplastic etiology?\n\nA. Meningioma\nB. Glioblastoma multiforme\nC. Cerebral metastases from lung carcinoma\nD. Oligodendroglioma"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient has a significant smoking history (30-pack-year) which is a major risk factor for lung cancer. New-onset headaches and progressive focal neurological deficits can be associated with brain tumors, and in a patient with a heavy smoking history, the likelihood of a primary lung cancer with cerebral metastasis is high.\n\nA. Meningioma - While meningiomas can cause headaches and focal neurological deficits, they are typically benign and slow-growing, and there is no direct link between smoking and meningiomas.\n\nB. Glioblastoma multiforme - This is a primary brain tumor that can cause similar symptoms, but it is not associated with smoking in the same way that lung cancer is.\n\nC. Cerebral metastases from lung carcinoma - Given the smoking history and the presence of multiple cerebral lesions, this is the most probable diagnosis. Lung cancer is the most common source of cerebral metastases.\n\nD. Oligodendroglioma - This is another type of primary brain tumor, but it is less common than glioblastoma and is not directly associated with smoking.\n\nConsidering the patient's heavy smoking history and the presentation of multiple cerebral lesions, the most probable diagnosis is cerebral metastases from lung carcinoma.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.11580345426399934
+        },
+        {
+            "id": "MedQA-Evol,8315-synthetic-7",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 7. It requires a deep understanding of the pathophysiology of chronic atrophic gastritis, intrinsic factor, vitamin B12 absorption, and hematopoiesis. It also involves knowledge of potential complications related to these conditions.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 52-year-old female patient with chronic atrophic gastritis leading to decreased intrinsic factor from parietal cell destruction, which complication is she most at risk for, given the necessity of intrinsic factor for vitamin B12 absorption and subsequent hematopoiesis?\n\nA. Hypokalemia due to altered potassium homeostasis\nB. Iron-deficiency anemia owing to impaired iron uptake\nC. Osteoporosis due to calcium absorption disruption\nD. Megaloblastic anemia as a result of cobalamin (vitamin B12) deficiency"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Intrinsic factor is a glycoprotein secreted by the parietal cells of the stomach that is necessary for the absorption of vitamin B12 (cobalamin) in the small intestine. Chronic atrophic gastritis can lead to the destruction of parietal cells, which in turn can cause a deficiency in intrinsic factor production. Without intrinsic factor, vitamin B12 cannot be effectively absorbed, leading to a deficiency.\n\nVitamin B12 is essential for proper red blood cell formation, neurological function, and DNA synthesis. A deficiency in vitamin B12 can lead to megaloblastic anemia, which is characterized by the production of large, abnormal red blood cells (megaloblasts) due to impaired DNA synthesis.\n\nThe other options listed do not directly relate to the function of intrinsic factor or vitamin B12 absorption:\n\nA. Hypokalemia is related to potassium levels and is not directly linked to intrinsic factor or vitamin B12 deficiency.\nB. Iron-deficiency anemia is due to a lack of iron, not vitamin B12, and is not directly caused by a lack of intrinsic factor.\nC. Osteoporosis is a condition where bones become weak and brittle, typically related to calcium or vitamin D deficiency, not vitamin B12.\n\nTherefore, the most likely complication that the patient with chronic atrophic gastritis and decreased intrinsic factor production is at risk for is megaloblastic anemia due to cobalamin (vitamin B12) deficiency.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.11101688109257349
+        },
+        {
+            "id": "MedQA-Evol,1382-synthetic-4",
+            "type": "Exam",
+            "answer": "B",
+            "score": "I would rate this question as a 9. \n\nJustification: This question requires a deep understanding of hematology, coagulation disorders, and the potential complications of anticoagulant therapy. It also involves the ability to apply knowledge to a clinical scenario and make a differential diagnosis based on the given information.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 43-year-old female with a history of pulmonary embolism, now presenting with acute thrombocytopenia characterized by a platelet count plummeting from 182,000/mcL to 63,000/mcL after starting heparin and warfarin therapy, and excluding the presence of any recent surgical procedures, which condition is the most plausible diagnosis?\n\nA. Warfarin-induced skin necrosis, in the early phase\nB. Heparin-induced thrombocytopenia, with thrombosis\nC. Immune thrombocytopenic purpura, chronic with exacerbation\nD. Disseminated intravascular coagulation, with secondary fibrinolysis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient in the scenario has a history of pulmonary embolism and is presenting with acute thrombocytopenia after starting heparin and warfarin therapy. The key point here is the drop in platelet count after the initiation of heparin.\n\nA. Warfarin-induced skin necrosis typically occurs within the first few days of starting warfarin therapy, but it is characterized by skin lesions and necrosis, not by a significant drop in platelet count.\n\nB. Heparin-induced thrombocytopenia (HIT) is a prothrombotic disorder caused by an immune reaction that forms antibodies against platelet factor 4-heparin complexes, leading to platelet activation, thrombocytopenia, and thrombosis. HIT can occur 5-10 days after starting heparin and is associated with a significant drop in platelet count, as seen in this patient.\n\nC. Immune thrombocytopenic purpura (ITP) is an autoimmune disorder that can lead to a low platelet count. However, ITP is usually chronic and does not typically present acutely after the initiation of heparin or warfarin therapy.\n\nD. Disseminated intravascular coagulation (DIC) is a condition that leads to the widespread activation of coagulation, which can result in thrombocytopenia. However, DIC is usually associated with an underlying disorder, such as sepsis or malignancy, and is not typically triggered by heparin or warfarin therapy.\n\nConsidering the timing and the clinical scenario, the most plausible diagnosis is heparin-induced thrombocytopenia with thrombosis.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.10912508306153512
+        },
+        {
+            "id": "TextBookQA,First_Aid_Step2_283",
+            "type": "Exam",
+            "answer": "D",
+            "score": "I would rate this question as a 8. \n\nJustification: This question requires a deep understanding of gastrointestinal pathology, including knowledge of Zollinger-Ellison syndrome, peptic ulcer disease, and the differential diagnosis of recurrent abdominal pain. It also involves understanding the role of serum gastrin and basal acid output in the diagnosis of Zollinger-Ellison syndrome.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 47-year-old male with a history of peptic ulcer disease post-surgical repair for a perforated anterior gastric ulcer, he presents with recurrent abdominal pain, elevated serum gastrin, and high basal acid output unresponsive to proton pump inhibitors. Which condition is most likely contributing to his persistent symptoms?\n\nA. Gastric adenocarcinoma with linitis plastica\nB. Chronic Helicobacter pylori infection with gastric lymphoid tissue involvement\nC. Gastroesophageal reflux disease (GERD) with Barrett's esophagus\nD. Zollinger-Ellison syndrome"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient has a history of peptic ulcer disease and has undergone surgical repair for a perforated anterior gastric ulcer. He now presents with recurrent abdominal pain, elevated serum gastrin, and high basal acid output that is unresponsive to proton pump inhibitors (PPIs). These symptoms are suggestive of a condition that causes excessive gastric acid production.\n\nA. Gastric adenocarcinoma with linitis plastica can cause abdominal pain and might have a history of ulcers, but it is not typically associated with elevated serum gastrin and high basal acid output.\n\nB. Chronic Helicobacter pylori infection can lead to peptic ulcer disease, but it is not typically associated with markedly elevated serum gastrin levels or high basal acid output that is unresponsive to PPIs.\n\nC. Gastroesophageal reflux disease (GERD) with Barrett's esophagus can be a complication of chronic acid reflux, but it is not associated with elevated serum gastrin levels or high basal acid output.\n\nD. Zollinger-Ellison syndrome (ZES) is a condition caused by a gastrin-secreting tumor (gastrinoma), most often located in the pancreas or duodenum. It leads to excessive gastric acid production, severe peptic ulcers, and is characterized by elevated serum gastrin levels and high basal acid output that is often resistant to standard doses of PPIs.\n\nGiven the patient's elevated serum gastrin and high basal acid output that is unresponsive to PPIs, Zollinger-Ellison syndrome is the most likely condition contributing to his persistent symptoms.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.1043617862213499
+        }
+    ]
+}

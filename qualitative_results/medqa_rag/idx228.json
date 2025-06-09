@@ -1,0 +1,224 @@
+{
+    "context": "A 21-year-old male presents to his primary care provider for fatigue. He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia. For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists. The patient has a past medical history of asthma managed with albuterol as needed. He is sexually active with both men and women, and he uses condoms \u201cmost of the time.\u201d On physical exam, the patient\u2019s temperature is 102.5\u00b0F (39.2\u00b0C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air. He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs. Tourniquet test is negative. Laboratory results are as follows:\n\nHemoglobin: 14 g/dL\nHematocrit: 44%\nLeukocyte count: 3,200/mm^3\nPlatelet count: 112,000/mm^3\n\nSerum:\nNa+: 142 mEq/L\nCl-: 104 mEq/L\nK+: 4.6 mEq/L\nHCO3-: 24 mEq/L\nBUN: 18 mg/dL\nGlucose: 87 mg/dL\nCreatinine: 0.9 mg/dL\nAST: 106 U/L\nALT: 112 U/L\nBilirubin (total): 0.8 mg/dL\nBilirubin (conjugated): 0.3 mg/dL\n\nHere are some knowledge points that might be relevant:\n### Knowledge Point 1: <Chikungunya>.\n- Definition: Chikungunya is a viral disease transmitted to humans by infected mosquitoes, particularly Aedes aegypti and Aedes albopictus. It is characterized by an abrupt onset of fever accompanied by joint pain, which can be severe and debilitating. Other symptoms may include headache, muscle pain, joint swelling, or rash.\n\n### Knowledge Point 2: <Dengue Fever>.\n- Definition: Dengue fever is a mosquito-borne tropical disease caused by the dengue virus. Symptoms typically begin three to fourteen days after infection and may include a high fever, headache, vomiting, muscle and joint pains, and a characteristic skin rash. The tourniquet test, which can indicate capillary fragility, is often used in the diagnosis of dengue to assess the presence of petechiae after applying pressure.\n\n### Knowledge Point 3: <Epstein-Barr Virus (EBV)>.\n- Definition: Epstein-Barr virus, also known as human herpesvirus 4, is one of the most common viruses in humans. It is best known for causing infectious mononucleosis, often called \"mono\" or \"the kissing disease.\" Symptoms of EBV infection can include fever, sore throat, swollen lymph nodes, fatigue, and at times, a widespread rash.\n\n### Knowledge Point 4: <Hepatitis A>.\n- Definition: Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. It is usually transmitted by the fecal-oral route, either through person-to-person contact or consumption of contaminated food or water. Symptoms include fatigue, nausea, abdominal pain, loss of appetite, and jaundice, but not typically joint pain or rash.\n\n### Knowledge Point 5: <Tourniquet Test>.\n- Definition: The tourniquet test is a diagnostic tool used in the evaluation of patients with suspected dengue fever. It involves inflating a blood pressure cuff on the patient's arm to a point between the systolic and diastolic pressures for five minutes, then deflating and counting the number of petechiae that appear. A positive test suggests increased capillary fragility associated with dengue fever.\n\n### Knowledge Point 6: <Maculopapular Rash>.\n- Definition: A maculopapular rash is a skin change that involves both macules and papules. Macules are flat, distinct, discolored areas of skin, and papules are small raised bumps. This type of rash can be seen in various infectious diseases, including viral exanthems and syphilis, as well as in reaction to medications or vaccines.\n\n### Knowledge Point 7: <Arthralgia and Arthritis in Viral Infections>.\n- Definition: Arthralgia refers to joint pain without inflammation, while arthritis is the inflammation of one or more joints, causing pain and stiffness. Both can be symptoms of viral infections. Certain viruses, like chikungunya and dengue fever, are known to cause severe joint pain and are often considered in the differential diagnosis when a patient presents with fever and joint symptoms, especially with a relevant travel history.",
+    "query": "Which of the following is the most likely diagnosis in this patient?\n\nA. Chikungunya\nB. Dengue fever\nC. Epstein-Barr virus\nD. Hepatitis A",
+    "answer_letter": "A",
+    "question_idx": 228,
+    "response": "Given the patient's recent travel to Vietnam and Cambodia, the symptoms of fever, headache, malaise, and joint pain, and the presence of a maculopapular rash, we need to consider the most likely diagnosis among the options provided.\n\nChikungunya is a viral disease transmitted by mosquitoes, and it is known to cause severe joint pain, fever, and a rash. The patient's symptoms align well with this diagnosis, especially considering the recent travel to areas where chikungunya is endemic.\n\nDengue fever is also a mosquito-borne disease that can cause a high fever, severe joint and muscle pain, and a rash. The tourniquet test, which is negative in this case, is not a definitive test for dengue, but it can be used as an indicator of capillary fragility, which is associated with dengue. However, the negative tourniquet test does not rule out dengue, and the patient's symptoms are consistent with this diagnosis.\n\nEpstein-Barr virus (EBV) typically causes infectious mononucleosis, which can include fever, sore throat, and swollen lymph nodes, but it is less likely to cause the severe joint pain and rash described in this case.\n\nHepatitis A is a liver infection that can cause jaundice and abdominal pain but is not typically associated with joint pain or rash.\n\nGiven the patient's travel history and the presentation of symptoms, chikungunya is the most likely diagnosis.\n\nSo, the answer is A.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 21-year-old male presents to his primary care provider for fatigue.",
+            -0.0
+        ],
+        [
+            "He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia.",
+            10.795966746632532
+        ],
+        [
+            "For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists.",
+            1.7409151561189111
+        ],
+        [
+            "The patient has a past medical history of asthma managed with albuterol as needed.",
+            0.0
+        ],
+        [
+            "He is sexually active with both men and women, and he uses condoms \u201cmost of the time.\u201d On physical exam, the patient\u2019s temperature is 102.5\u00b0F (39.2\u00b0C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air.",
+            0.0
+        ],
+        [
+            "He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs.",
+            0.0
+        ],
+        [
+            "Tourniquet test is negative.",
+            0.0
+        ],
+        [
+            "Laboratory results are as follows:",
+            -0.0
+        ],
+        [
+            "Hemoglobin: 14 g/dL",
+            -0.0
+        ],
+        [
+            "Hematocrit: 44%",
+            0.0
+        ],
+        [
+            "Leukocyte count: 3,200/mm^3",
+            -0.0
+        ],
+        [
+            "Platelet count: 112,000/mm^3",
+            -0.0
+        ],
+        [
+            "Serum:",
+            0.0
+        ],
+        [
+            "Na+: 142 mEq/L",
+            0.0
+        ],
+        [
+            "Cl-: 104 mEq/L",
+            -0.0
+        ],
+        [
+            "K+: 4.6 mEq/L",
+            0.0
+        ],
+        [
+            "HCO3-: 24 mEq/L",
+            0.0
+        ],
+        [
+            "BUN: 18 mg/dL",
+            0.0
+        ],
+        [
+            "Glucose: 87 mg/dL",
+            0.0
+        ],
+        [
+            "Creatinine: 0.9 mg/dL",
+            0.0
+        ],
+        [
+            "AST: 106 U/L",
+            -0.0
+        ],
+        [
+            "ALT: 112 U/L",
+            -0.0
+        ],
+        [
+            "Bilirubin (total): 0.8 mg/dL",
+            0.0
+        ],
+        [
+            "Bilirubin (conjugated): 0.3 mg/dL",
+            -0.0
+        ],
+        [
+            "Here are some knowledge points that might be relevant:",
+            -0.0
+        ],
+        [
+            "### Knowledge Point 1: <Chikungunya>.\n- Definition: Chikungunya is a viral disease transmitted to humans by infected mosquitoes, particularly Aedes aegypti and Aedes albopictus. It is characterized by an abrupt onset of fever accompanied by joint pain, which can be severe and debilitating. Other symptoms may include headache, muscle pain, joint swelling, or rash.",
+            0.0
+        ],
+        [
+            "### Knowledge Point 2: <Dengue Fever>.\n- Definition: Dengue fever is a mosquito-borne tropical disease caused by the dengue virus. Symptoms typically begin three to fourteen days after infection and may include a high fever, headache, vomiting, muscle and joint pains, and a characteristic skin rash. The tourniquet test, which can indicate capillary fragility, is often used in the diagnosis of dengue to assess the presence of petechiae after applying pressure.",
+            5.300171411106125
+        ],
+        [
+            "### Knowledge Point 3: <Epstein-Barr Virus (EBV)>.\n- Definition: Epstein-Barr virus, also known as human herpesvirus 4, is one of the most common viruses in humans. It is best known for causing infectious mononucleosis, often called \"mono\" or \"the kissing disease.\" Symptoms of EBV infection can include fever, sore throat, swollen lymph nodes, fatigue, and at times, a widespread rash.",
+            0.0
+        ],
+        [
+            "### Knowledge Point 4: <Hepatitis A>.\n- Definition: Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. It is usually transmitted by the fecal-oral route, either through person-to-person contact or consumption of contaminated food or water. Symptoms include fatigue, nausea, abdominal pain, loss of appetite, and jaundice, but not typically joint pain or rash.",
+            2.5709221557471986
+        ],
+        [
+            "### Knowledge Point 5: <Tourniquet Test>.\n- Definition: The tourniquet test is a diagnostic tool used in the evaluation of patients with suspected dengue fever. It involves inflating a blood pressure cuff on the patient's arm to a point between the systolic and diastolic pressures for five minutes, then deflating and counting the number of petechiae that appear. A positive test suggests increased capillary fragility associated with dengue fever.",
+            3.932472451894803
+        ],
+        [
+            "### Knowledge Point 6: <Maculopapular Rash>.\n- Definition: A maculopapular rash is a skin change that involves both macules and papules. Macules are flat, distinct, discolored areas of skin, and papules are small raised bumps. This type of rash can be seen in various infectious diseases, including viral exanthems and syphilis, as well as in reaction to medications or vaccines.",
+            0.0
+        ],
+        [
+            "### Knowledge Point 7: <Arthralgia and Arthritis in Viral Infections>.\n- Definition: Arthralgia refers to joint pain without inflammation, while arthritis is the inflammation of one or more joints, causing pain and stiffness. Both can be symptoms of viral infections. Certain viruses, like chikungunya and dengue fever, are known to cause severe joint pain and are often considered in the differential diagnosis when a patient presents with fever and joint symptoms, especially with a relevant travel history.",
+            5.0450531596839285
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "MedQA-Evol,1382-synthetic-4",
+            "type": "Exam",
+            "answer": "B",
+            "score": "I would rate this question as a 9. \n\nJustification: This question requires a deep understanding of hematology, coagulation disorders, and the potential complications of anticoagulant therapy. It also involves the ability to apply knowledge to a clinical scenario and make a differential diagnosis based on the given information.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 43-year-old female with a history of pulmonary embolism, now presenting with acute thrombocytopenia characterized by a platelet count plummeting from 182,000/mcL to 63,000/mcL after starting heparin and warfarin therapy, and excluding the presence of any recent surgical procedures, which condition is the most plausible diagnosis?\n\nA. Warfarin-induced skin necrosis, in the early phase\nB. Heparin-induced thrombocytopenia, with thrombosis\nC. Immune thrombocytopenic purpura, chronic with exacerbation\nD. Disseminated intravascular coagulation, with secondary fibrinolysis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient in the scenario has a history of pulmonary embolism and is presenting with acute thrombocytopenia after starting heparin and warfarin therapy. The key point here is the drop in platelet count after the initiation of heparin.\n\nA. Warfarin-induced skin necrosis typically occurs within the first few days of starting warfarin therapy, but it is characterized by skin lesions and necrosis, not by a significant drop in platelet count.\n\nB. Heparin-induced thrombocytopenia (HIT) is a prothrombotic disorder caused by an immune reaction that forms antibodies against platelet factor 4-heparin complexes, leading to platelet activation, thrombocytopenia, and thrombosis. HIT can occur 5-10 days after starting heparin and is associated with a significant drop in platelet count, as seen in this patient.\n\nC. Immune thrombocytopenic purpura (ITP) is an autoimmune disorder that can lead to a low platelet count. However, ITP is usually chronic and does not typically present acutely after the initiation of heparin or warfarin therapy.\n\nD. Disseminated intravascular coagulation (DIC) is a condition that leads to the widespread activation of coagulation, which can result in thrombocytopenia. However, DIC is usually associated with an underlying disorder, such as sepsis or malignancy, and is not typically triggered by heparin or warfarin therapy.\n\nConsidering the timing and the clinical scenario, the most plausible diagnosis is heparin-induced thrombocytopenia with thrombosis.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.1290686111805998
+        },
+        {
+            "id": "MedMCQA,48630",
+            "type": "Exam",
+            "answer": "B",
+            "score": "This question would likely be rated as a 7. It requires a deep understanding of medical terminology and concepts related to pneumonia and its complications, as well as knowledge of the potential complications of pneumococcal pneumonia. Additionally, it involves the interpretation of clinical information and the application of medical knowledge to identify the most likely complication.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "A 78-year-old woman with a prior stroke is not feeling well. Her appetite is poor, and today her family noticed that she is confused so they send her to the emergency room for an assessment. She reports no cough, fever, or sputum production but her CXR reveals a left lower lobe infiltrate. Blood cultures are drawn, and she is started on antibiotics. The next day the cultures are positive for S pneumoniae sensitive to penicillin. Which of the following is the most likely complication of pneumococcal pneumonia?\n\nA. peritonitis\nB. empyema\nC. pericarditis\nD. endocarditis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Pneumococcal pneumonia, caused by the bacterium Streptococcus pneumoniae, can lead to several complications. The options given are peritonitis, empyema, pericarditis, and endocarditis.\n\nPeritonitis is inflammation of the peritoneum, the lining of the abdominal cavity, and is not a common complication of pneumococcal pneumonia.\n\nEmpyema is the collection of pus in the pleural space, which is the area between the lung and the chest wall. It can occur when pneumonia is not properly treated and the infection spreads from the lung to the pleural space.\n\nPericarditis is inflammation of the pericardium, the sac that surrounds the heart. While it can be a complication of pneumonia, it is not as common as empyema.\n\nEndocarditis is an infection of the inner lining of the heart chambers and valves. Like pericarditis, it can occur as a complication of bacteremia from pneumonia, but it is also less common than empyema.\n\nGiven the choices and the most common complication of pneumococcal pneumonia, empyema is the most likely complication from the options provided.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.12250684169120085
+        },
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.11782719979915642
+        },
+        {
+            "id": "MedQA-Evol,2055-synthetic-4",
+            "type": "Exam",
+            "answer": "B",
+            "score": "I would rate this question as a 8. \n\nJustification: This question requires a deep understanding of microbiology, infectious diseases, and pharmacology. It involves multiple concepts such as microbial morphology, antibiotic resistance, and clinical presentation, and also requires knowledge of technical terminology related to microbiology and infectious diseases.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In an octogenarian with a history of chronic ethanol abuse, now exhibiting pyrexia and expectorating cough, sputum analysis reveals gram-negative, polysaccharide capsule-encased bacilli demonstrating a mucoid expression and resistance to multiple antimicrobial agents. Which organism is the most probable etiological agent of his pneumonic condition?\n\nA. Acinetobacter baumannii\nB. Klebsiella pneumoniae\nC. Pseudomonas aeruginosa\nD. Haemophilus influenzae"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The description provided points towards an organism that is gram-negative, encapsulated with a polysaccharide capsule, has a mucoid expression, and is resistant to multiple antimicrobial agents. Let's evaluate the options:\n\nA. Acinetobacter baumannii - While this organism is gram-negative and can be resistant to multiple antimicrobial agents, it is not typically encapsulated and is not known for a mucoid phenotype.\n\nB. Klebsiella pneumoniae - This is a gram-negative, encapsulated bacterium known for its thick polysaccharide capsule and mucoid colonies. It is a common cause of pneumonia, especially in individuals with a history of alcohol abuse, and can be resistant to multiple antibiotics.\n\nC. Pseudomonas aeruginosa - This is a gram-negative bacterium that can produce a mucoid phenotype, especially in the context of cystic fibrosis. It is known for its resistance to multiple antibiotics. However, it is not encapsulated like the organism described.\n\nD. Haemophilus influenzae - Although this is a gram-negative bacterium that can have a polysaccharide capsule, it is not typically associated with a mucoid phenotype and is less likely to be resistant to multiple antimicrobial agents compared to the other options.\n\nConsidering the given information, Klebsiella pneumoniae fits the description best due to its encapsulated nature, mucoid expression, and known resistance to multiple antimicrobial agents.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.1144601080369339
+        },
+        {
+            "id": "MedQA-Evol,960-synthetic-7",
+            "type": "Exam",
+            "answer": "C",
+            "score": "I would rate this question as a 7. It requires a deep understanding of gynecological conditions, including knowledge of symptoms, diagnostic criteria, and potential differential diagnoses. The question also involves understanding the significance of an elevated CA-125 level and its association with a specific condition.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 25-year-old nulliparous woman with severe dysmenorrhea refractory to NSAIDs, non-cyclical intermittent pelvic pain, posterior cul-de-sac tenderness, no adnexal masses, and an elevated serum CA-125 level, which condition also typically presents with lesions outside the uterus?\n\nA. Primary dysmenorrhea\nB. Ovarian cysts\nC. Endometriosis\nD. Pelvic inflammatory disease"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The symptoms described in the question suggest a condition that involves pain and possibly the presence of lesions outside the uterus. The key points to consider are:\n\n- Severe dysmenorrhea (painful periods) that doesn't respond to NSAIDs\n- Non-cyclical intermittent pelvic pain\n- Posterior cul-de-sac tenderness\n- Elevated serum CA-125 level\n- No adnexal masses\n\nNow let's consider the options:\n\nA. Primary dysmenorrhea usually presents with painful periods but is not associated with lesions outside the uterus and typically responds to NSAIDs.\n\nB. Ovarian cysts can cause pelvic pain and may be associated with elevated CA-125 levels, but they usually present as adnexal masses on examination or imaging, which is not the case here.\n\nC. Endometriosis is characterized by the presence of endometrial-like tissue outside the uterus, which can cause severe dysmenorrhea, non-cyclical pelvic pain, and tenderness in the posterior cul-de-sac. Endometriosis can also be associated with elevated CA-125 levels, although this is not a specific marker for the condition.\n\nD. Pelvic inflammatory disease (PID) can cause pelvic pain and tenderness, but it is usually associated with a history of sexually transmitted infections and presents with other signs of infection, which are not mentioned in the scenario.\n\nGiven the information provided, endometriosis is the condition that typically presents with lesions outside the uterus, which aligns with the symptoms described.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.1131785382459189
+        }
+    ]
+}

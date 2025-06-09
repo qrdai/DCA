@@ -1,0 +1,208 @@
+{
+    "context": "A 46-year-old woman comes to the physician because of severe muscle and joint pain for 5 months. The pain varies in location and intensity. She also has joint stiffness in the morning and reports fatigue throughout the day that she attributes to not sleeping well. She reports a tingling sensation in her lower limbs. Her bowel habits are unchanged but she often feels bloated. She has primary hypertension and occasional migraine headaches. She does not smoke or consume alcohol. Her medications include propranolol and sumatriptan. She appears healthy. Examination shows symmetric muscular tenderness at the base of the neck, over the shoulders, and in the lumbosacral area. Strength and deep tendon reflexes are normal. Laboratory studies show:\nHemoglobin 14.3 g/dL\nLeukocyte count 9300/mm3\nPlatelet count 230,000/mm3\nMean corpuscular volume 85 \u03bcm3\nErythrocyte sedimentation rate 12 mm/h\nSerum\nGlucose 92 mg/dL\nCreatinine 0.6 mg/dL\nTSH 3.1 \u03bcU/mL\nUrinalysis is within normal limits. W\n\nHere are some knowledge points that might be relevant:\n### Knowledge Point 1: <Fibromyalgia>.\n- Definition: Fibromyalgia is a chronic disorder characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, and tenderness at specific points on the body. Patients often experience morning stiffness, cognitive difficulties, and other symptoms such as tingling sensations. Diagnosis is based on clinical criteria and exclusion of other conditions.\n\n### Knowledge Point 2: <Hypothyroidism>.\n- Definition: Hypothyroidism is a condition in which the thyroid gland does not produce enough thyroid hormone. Symptoms can include fatigue, muscle and joint pain, tingling sensations, constipation, and cold intolerance. Laboratory tests, including TSH levels, are used to diagnose hypothyroidism.\n\n### Knowledge Point 3: <Chronic Fatigue Syndrome (CFS)>.\n- Definition: Chronic Fatigue Syndrome is a complex disorder characterized by extreme fatigue that cannot be explained by any underlying medical condition. Patients may experience joint pain, muscle pain, and cognitive difficulties. Diagnosis is based on specific criteria and exclusion of other conditions.\n\n### Knowledge Point 4: <Peripheral Neuropathy>.\n- Definition: Peripheral neuropathy refers to the damage or dysfunction of nerves outside the brain and spinal cord. It can cause symptoms such as tingling sensations, muscle weakness, and pain in the affected areas. Various underlying conditions, including medication side effects, can lead to peripheral neuropathy.",
+    "query": "Which of the following is the most appropriate therapy for this patient?\n\nA. Temazepam\nB. Vitamin B12\nC. Amitriptyline\nD. Methotrexate\n\"",
+    "answer_letter": "C",
+    "question_idx": 1116,
+    "response": "Given the patient's symptoms of widespread musculoskeletal pain, fatigue, sleep disturbances, and tenderness at specific points on the body, along with normal laboratory findings except for a slightly elevated erythrocyte sedimentation rate (ESR), the most likely diagnosis is fibromyalgia. Hypothyroidism is less likely given the normal TSH level, and chronic fatigue syndrome (CFS) and peripheral neuropathy are not supported by the clinical picture or laboratory findings.\n\nThe treatment options for fibromyalgia include:\n- Temazepam is a benzodiazepine used for sleep disorders, which is not the primary treatment for fibromyalgia.\n- Vitamin B12 is not a treatment for fibromyalgia.\n- Amitriptyline is an antidepressant that is often used to treat fibromyalgia due to its analgesic and sleep-inducing properties.\n- Methotrexate is an immunosuppressant used in the treatment of rheumatoid arthritis and is not the first-line treatment for fibromyalgia.\n\nGiven the patient's symptoms and the need for a medication that can help with pain and sleep, amitriptyline is the most appropriate therapy for this patient.\n\nSo, the answer is C.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 46-year-old woman comes to the physician because of severe muscle and joint pain for 5 months.",
+            -0.0
+        ],
+        [
+            "The pain varies in location and intensity.",
+            -0.0
+        ],
+        [
+            "She also has joint stiffness in the morning and reports fatigue throughout the day that she attributes to not sleeping well.",
+            0.0
+        ],
+        [
+            "She reports a tingling sensation in her lower limbs.",
+            -0.0
+        ],
+        [
+            "Her bowel habits are unchanged but she often feels bloated.",
+            0.0
+        ],
+        [
+            "She has primary hypertension and occasional migraine headaches.",
+            -0.0
+        ],
+        [
+            "She does not smoke or consume alcohol.",
+            0.0
+        ],
+        [
+            "Her medications include propranolol and sumatriptan.",
+            -0.0
+        ],
+        [
+            "She appears healthy.",
+            -0.0
+        ],
+        [
+            "Examination shows symmetric muscular tenderness at the base of the neck, over the shoulders, and in the lumbosacral area.",
+            0.0
+        ],
+        [
+            "Strength and deep tendon reflexes are normal.",
+            0.0
+        ],
+        [
+            "Laboratory studies show:",
+            0.0
+        ],
+        [
+            "Hemoglobin 14.3 g/dL",
+            0.0
+        ],
+        [
+            "Leukocyte count 9300/mm3",
+            0.0
+        ],
+        [
+            "Platelet count 230,000/mm3",
+            -0.0
+        ],
+        [
+            "Mean corpuscular volume 85 \u03bcm3",
+            0.0
+        ],
+        [
+            "Erythrocyte sedimentation rate 12 mm/h",
+            0.0
+        ],
+        [
+            "Serum",
+            0.0
+        ],
+        [
+            "Glucose 92 mg/dL",
+            -0.0
+        ],
+        [
+            "Creatinine 0.6 mg/dL",
+            0.0
+        ],
+        [
+            "TSH 3.1 \u03bcU/mL",
+            0.0
+        ],
+        [
+            "Urinalysis is within normal limits.",
+            0.0
+        ],
+        [
+            "W",
+            -0.0
+        ],
+        [
+            "Here are some knowledge points that might be relevant:",
+            0.0
+        ],
+        [
+            "### Knowledge Point 1: <Fibromyalgia>.\n- Definition: Fibromyalgia is a chronic disorder characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, and tenderness at specific points on the body. Patients often experience morning stiffness, cognitive difficulties, and other symptoms such as tingling sensations. Diagnosis is based on clinical criteria and exclusion of other conditions.",
+            41.481643243977494
+        ],
+        [
+            "### Knowledge Point 2: <Hypothyroidism>.\n- Definition: Hypothyroidism is a condition in which the thyroid gland does not produce enough thyroid hormone. Symptoms can include fatigue, muscle and joint pain, tingling sensations, constipation, and cold intolerance. Laboratory tests, including TSH levels, are used to diagnose hypothyroidism.",
+            1.050736001204759
+        ],
+        [
+            "### Knowledge Point 3: <Chronic Fatigue Syndrome (CFS)>.\n- Definition: Chronic Fatigue Syndrome is a complex disorder characterized by extreme fatigue that cannot be explained by any underlying medical condition. Patients may experience joint pain, muscle pain, and cognitive difficulties. Diagnosis is based on specific criteria and exclusion of other conditions.",
+            5.415988627629913
+        ],
+        [
+            "### Knowledge Point 4: <Peripheral Neuropathy>.\n- Definition: Peripheral neuropathy refers to the damage or dysfunction of nerves outside the brain and spinal cord. It can cause symptoms such as tingling sensations, muscle weakness, and pain in the affected areas. Various underlying conditions, including medication side effects, can lead to peripheral neuropathy.",
+            4.113732112434955
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.13155360390412324
+        },
+        {
+            "id": "MedQA,815",
+            "type": "Exam",
+            "answer": "C",
+            "score": "Score: 8\n\nJustification: This question requires a deep understanding of HIV, its complications, and associated infections. It also involves knowledge of histopathology and treatment options for specific infections in immunocompromised individuals. The presence of technical terminology, the need for understanding of histological staining, and the complexity of treatment options contribute to the high difficulty and complexity of this question.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "A 25-year-old man presents with a nodule on his right foot. He says that he first noticed the nodule last week. It has not undergone any change in size and color. He denies any history of trauma or fever. Past medical history is significant for HIV, diagnosed 6 years ago. He is currently not on antiretroviral therapy. His last CD4+ T cell count was 0.19 x 109/L. He is afebrile, and his vital signs are within normal limits. On physical examination, there is a 3 cm x 4 cm nodule on the right foot, tan brown in color, non-tender, and covered with a fine scale. A biopsy of the nodule is performed and histopathological analysis reveals the proliferation of blood vessels with overgrown endothelial cells. Histological staining of the biopsy tissue reveals gram-negative bacilli. Which of the following is the best course of treatment for this patient?\n\nA. Cefazolin\nB. Penicillin\nC. Erythromycin\nD. Interferon-\u03b1"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The clinical presentation and histopathological findings suggest that the patient has bacillary angiomatosis, which is a vascular proliferative disease caused by infection with gram-negative bacilli, typically Bartonella henselae or Bartonella quintana. This condition is often seen in immunocompromised patients, such as those with HIV/AIDS.\n\nGiven the options provided:\n\nA. Cefazolin is a cephalosporin antibiotic that is not typically used to treat Bartonella infections.\n\nB. Penicillin is not effective against Bartonella species.\n\nC. Erythromycin is a macrolide antibiotic that is one of the treatments of choice for bacillary angiomatosis.\n\nD. Interferon-\u03b1 is an immunomodulatory agent that is not a standard treatment for bacterial infections like bacillary angiomatosis.\n\nThe best course of treatment for this patient, who is presenting with bacillary angiomatosis, is a macrolide antibiotic such as erythromycin.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.12252936581537811
+        },
+        {
+            "id": "TextBookQA,Neurology_Adams_3157",
+            "type": "Exam",
+            "answer": "B",
+            "score": "Score: 7\n\nJustification: This question involves a moderate level of difficulty and complexity. It requires knowledge of narcolepsy, its associated symptoms like cataplexy, and the pharmacological treatment options available. Understanding the mechanisms of action of different medications and their potential side effects, particularly in the context of a contraindication, adds to the complexity.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 22-year-old male with narcolepsy and frequent cataplectic attacks triggered by emotions such as laughter, which medication would be optimal to preferentially manage his cataplexy, while considering a contraindication for stimulant medications due to a comorbid cardiovascular condition?\n\nA. Gabapentin\nB. Clomipramine\nC. Modafinil\nD. Levodopa"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Firstly, we should consider the primary symptom we want to manage in this patient, which is cataplexy, a sudden and transient episode of muscle weakness accompanied by full conscious awareness, typically triggered by emotions such as laughter.\n\n- Modafinil (C) is a wakefulness-promoting agent used for the treatment of excessive daytime sleepiness associated with narcolepsy. However, it is not the primary choice for cataplexy and it is a stimulant, which is contraindicated in this patient due to a comorbid cardiovascular condition.\n\n- Levodopa (D) is primarily used in the treatment of Parkinson's disease and is not indicated for the treatment of narcolepsy or cataplexy.\n\n- Gabapentin (A) has been used off-label for the treatment of cataplexy; however, it is not the most effective or commonly used medication for this purpose.\n\n- Clomipramine (B) is a tricyclic antidepressant that has been shown to be effective in the treatment of cataplexy. It is not a stimulant and therefore does not carry the same cardiovascular risks. Clomipramine is often used to manage cataplexy in narcolepsy patients.\n\nGiven the need to preferentially manage cataplexy and the contraindication for stimulant medications due to a comorbid cardiovascular condition, clomipramine is the optimal choice.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.12127743022325015
+        },
+        {
+            "id": "TextBookQA,InternalMed_Harrison_2935",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of cardiology, including the pathophysiology of rheumatic fever, the clinical manifestations of valvular heart disease, and the interpretation of echocardiographic findings. It also involves the application of knowledge to a specific clinical scenario.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 59-year-old woman with a history of rheumatic fever during childhood, now presenting with exercise intolerance, palpitations, and a mid-diastolic murmur but no evidence of atrial fibrillation, which echocardiographic finding would most likely correlate with her clinical symptoms, taking into consideration the exclusion of left ventricular systolic dysfunction?\n\nA. Tricuspid valve regurgitation with right ventricular dilation and normal left heart size\nB. Aortic valve regurgitation with left ventricular concentric hypertrophy\nC. Pulmonic valve stenosis with post-stenotic dilation and normal right atrial size\nD. Mitral valve stenosis with left atrial enlargement and normal pulmonary artery pressure"
+                },
+                {
+                    "role": "assistant",
+                    "content": "A history of rheumatic fever is a key clue in this scenario, as it is known to cause chronic valve damage that can manifest decades after the initial illness. The symptoms of exercise intolerance, palpitations, and a mid-diastolic murmur are suggestive of a valvular heart disease.\n\nA. Tricuspid valve regurgitation with right ventricular dilation and normal left heart size is less likely because the tricuspid valve is not typically affected by rheumatic fever, and the symptoms are not typical for tricuspid regurgitation.\n\nB. Aortic valve regurgitation with left ventricular concentric hypertrophy could be a result of rheumatic fever, but the patient's symptoms and the described murmur do not fit well with aortic regurgitation, which usually causes a diastolic decrescendo murmur.\n\nC. Pulmonic valve stenosis with post-stenotic dilation and normal right atrial size is not consistent with rheumatic fever, which rarely affects the pulmonic valve.\n\nD. Mitral valve stenosis with left atrial enlargement and normal pulmonary artery pressure is the most likely diagnosis. Rheumatic fever is a common cause of mitral stenosis, and the described mid-diastolic murmur, exercise intolerance, and palpitations are classic for mitral stenosis. The left atrial enlargement would be due to the increased pressure from the stenotic mitral valve, and the normal pulmonary artery pressure suggests that pulmonary hypertension has not yet developed.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.11848619474024148
+        },
+        {
+            "id": "MedQA-Evol,363-synthetic-6",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 8. The question requires knowledge of ophthalmology, including the presentation and management of corneal ulceration, as well as understanding the potential complications of extended contact lens wear. Additionally, the question involves the consideration of appropriate antibiotic therapy and the potential risks of using steroids in the presence of a corneal ulcer.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 30-year-old woman presenting with a painful, red left eye, decreased visual acuity for 3 days, and corneal ulceration on slit lamp examination, what is the most appropriate management step given her history of extended contact lens wear and no improvement with saline washes?\n\nA. Start prednisolone eye drops post bacterial infection exclusion\nB. Begin oral amoxicillin, observing for systemic infection signs\nC. Urgent ophthalmologist referral for potential surgical measures\nD. Prescribe fluoroquinolone eye drops with specific pseudomonas coverage"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient presents with symptoms that are consistent with a corneal ulcer, which is a serious ocular condition that can lead to vision loss if not treated appropriately. Given her history of extended contact lens wear, she is at higher risk for a bacterial infection, particularly with Pseudomonas aeruginosa, which is a common and aggressive pathogen in contact lens-related infections.\n\nA. Starting prednisolone eye drops without confirming the absence of bacterial infection could exacerbate the condition if the ulcer is indeed bacterial, as steroids can suppress the immune response and allow bacteria to proliferate.\n\nB. Oral amoxicillin is not the first-line treatment for corneal ulcers and would not provide adequate coverage against Pseudomonas, which is a Gram-negative organism.\n\nC. While an urgent ophthalmologist referral is appropriate for a corneal ulcer, the question asks for the most appropriate management step given the patient's history and presentation. Immediate treatment should not be delayed while waiting for a referral.\n\nD. Prescribing fluoroquinolone eye drops with specific pseudomonas coverage is the most appropriate initial management step. Fluoroquinolones are broad-spectrum antibiotics that are effective against a variety of bacteria, including Pseudomonas, and are commonly used as first-line treatment for bacterial corneal ulcers.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.11818899051428808
+        }
+    ]
+}

@@ -1,0 +1,270 @@
+[nltk_data] Downloading package punkt_tab to /root/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+Namespace(test_file='../data/MedQA-USMLE-4-options/gpt-4-1106-preview-size5-seed42.json', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-388', output_dir='./qualitative_results', torch_dtype='bfloat16', rag=False, num_ablations=256) 
+
+tokenizer.pad_token: <|reserved_special_token_0|>
+tokenizer.chat_template:
+{% for message in messages %}
+{% if message['role'] == 'user' %}
+{{ '<|user|>
+' + message['content'] | trim }}
+{% elif message['role'] == 'assistant' %}
+{{ '<|assistant|>
+'  + message['content'] | trim + eos_token }}
+{% endif %}
+{% if loop.last and add_generation_prompt %}
+{{ '<|assistant|>' }}
+{% endif %}
+{% endfor %}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.07s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.07s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.05s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.37it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.17it/s]
+[INFO] Initializing `ContextCiter` from local customized context_cite
+  0%|          | 0/256 [00:00<?, ?it/s]/root/autodl-tmp/context-cite/context_cite/utils.py:142: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with ch.no_grad(), ch.cuda.amp.autocast():
+  0%|          | 1/256 [00:00<02:04,  2.05it/s]  1%|          | 3/256 [00:00<00:42,  5.96it/s]  2%|▏         | 5/256 [00:00<00:29,  8.56it/s]  3%|▎         | 7/256 [00:00<00:23, 10.39it/s]  4%|▎         | 9/256 [00:01<00:21, 11.62it/s]  4%|▍         | 11/256 [00:01<00:19, 12.59it/s]  5%|▌         | 13/256 [00:01<00:18, 13.31it/s]  6%|▌         | 15/256 [00:01<00:17, 13.52it/s]  7%|▋         | 17/256 [00:01<00:17, 13.94it/s]  7%|▋         | 19/256 [00:01<00:16, 14.06it/s]  8%|▊         | 21/256 [00:01<00:16, 14.25it/s]  9%|▉         | 23/256 [00:01<00:16, 14.43it/s] 10%|▉         | 25/256 [00:02<00:15, 14.46it/s] 11%|█         | 27/256 [00:02<00:15, 14.50it/s] 11%|█▏        | 29/256 [00:02<00:15, 14.46it/s] 12%|█▏        | 31/256 [00:02<00:15, 14.50it/s] 13%|█▎        | 33/256 [00:02<00:15, 14.40it/s] 14%|█▎        | 35/256 [00:02<00:15, 14.55it/s] 14%|█▍        | 37/256 [00:02<00:14, 14.63it/s] 15%|█▌        | 39/256 [00:03<00:14, 14.61it/s] 16%|█▌        | 41/256 [00:03<00:14, 14.49it/s] 17%|█▋        | 43/256 [00:03<00:14, 14.42it/s] 18%|█▊        | 45/256 [00:03<00:14, 14.47it/s] 18%|█▊        | 47/256 [00:03<00:14, 14.51it/s] 19%|█▉        | 49/256 [00:03<00:14, 14.48it/s] 20%|█▉        | 51/256 [00:03<00:14, 14.58it/s] 21%|██        | 53/256 [00:04<00:13, 14.73it/s] 21%|██▏       | 55/256 [00:04<00:13, 14.80it/s] 22%|██▏       | 57/256 [00:04<00:13, 14.79it/s] 23%|██▎       | 59/256 [00:04<00:13, 14.93it/s] 24%|██▍       | 61/256 [00:04<00:13, 14.92it/s] 25%|██▍       | 63/256 [00:04<00:12, 14.85it/s] 25%|██▌       | 65/256 [00:04<00:12, 14.81it/s] 26%|██▌       | 67/256 [00:04<00:12, 14.89it/s] 27%|██▋       | 69/256 [00:05<00:12, 14.78it/s] 28%|██▊       | 71/256 [00:05<00:12, 14.72it/s] 29%|██▊       | 73/256 [00:05<00:12, 14.69it/s] 29%|██▉       | 75/256 [00:05<00:12, 14.59it/s] 30%|███       | 77/256 [00:05<00:12, 14.56it/s] 31%|███       | 79/256 [00:05<00:12, 14.50it/s] 32%|███▏      | 81/256 [00:05<00:12, 14.50it/s] 32%|███▏      | 83/256 [00:06<00:11, 14.51it/s] 33%|███▎      | 85/256 [00:06<00:11, 14.54it/s] 34%|███▍      | 87/256 [00:06<00:11, 14.58it/s] 35%|███▍      | 89/256 [00:06<00:11, 14.57it/s] 36%|███▌      | 91/256 [00:06<00:11, 14.67it/s] 36%|███▋      | 93/256 [00:06<00:11, 14.75it/s] 37%|███▋      | 95/256 [00:06<00:11, 14.63it/s] 38%|███▊      | 97/256 [00:07<00:10, 14.53it/s] 39%|███▊      | 99/256 [00:07<00:10, 14.56it/s] 39%|███▉      | 101/256 [00:07<00:10, 14.58it/s] 40%|████      | 103/256 [00:07<00:10, 14.60it/s] 41%|████      | 105/256 [00:07<00:10, 14.61it/s] 42%|████▏     | 107/256 [00:07<00:10, 14.62it/s] 43%|████▎     | 109/256 [00:07<00:10, 14.61it/s] 43%|████▎     | 111/256 [00:07<00:09, 14.60it/s] 44%|████▍     | 113/256 [00:08<00:09, 14.67it/s] 45%|████▍     | 115/256 [00:08<00:09, 14.52it/s] 46%|████▌     | 117/256 [00:08<00:09, 14.55it/s] 46%|████▋     | 119/256 [00:08<00:09, 14.63it/s] 47%|████▋     | 121/256 [00:08<00:09, 14.48it/s] 48%|████▊     | 123/256 [00:08<00:09, 14.74it/s] 49%|████▉     | 125/256 [00:08<00:08, 14.75it/s] 50%|████▉     | 127/256 [00:09<00:08, 14.79it/s] 50%|█████     | 129/256 [00:09<00:08, 14.85it/s] 51%|█████     | 131/256 [00:09<00:08, 14.80it/s] 52%|█████▏    | 133/256 [00:09<00:08, 14.71it/s] 53%|█████▎    | 135/256 [00:09<00:08, 14.75it/s] 54%|█████▎    | 137/256 [00:09<00:08, 14.81it/s] 54%|█████▍    | 139/256 [00:09<00:07, 14.74it/s] 55%|█████▌    | 141/256 [00:10<00:07, 14.72it/s] 56%|█████▌    | 143/256 [00:10<00:07, 14.61it/s] 57%|█████▋    | 145/256 [00:10<00:07, 14.76it/s] 57%|█████▋    | 147/256 [00:10<00:07, 14.71it/s] 58%|█████▊    | 149/256 [00:10<00:07, 14.68it/s] 59%|█████▉    | 151/256 [00:10<00:07, 14.53it/s] 60%|█████▉    | 153/256 [00:10<00:07, 14.50it/s] 61%|██████    | 155/256 [00:10<00:06, 14.47it/s] 61%|██████▏   | 157/256 [00:11<00:06, 14.50it/s] 62%|██████▏   | 159/256 [00:11<00:06, 14.52it/s] 63%|██████▎   | 161/256 [00:11<00:06, 14.57it/s] 64%|██████▎   | 163/256 [00:11<00:06, 14.55it/s] 64%|██████▍   | 165/256 [00:11<00:06, 14.62it/s] 65%|██████▌   | 167/256 [00:11<00:06, 14.61it/s] 66%|██████▌   | 169/256 [00:11<00:06, 14.46it/s] 67%|██████▋   | 171/256 [00:12<00:05, 14.46it/s] 68%|██████▊   | 173/256 [00:12<00:05, 14.53it/s] 68%|██████▊   | 175/256 [00:12<00:05, 14.57it/s] 69%|██████▉   | 177/256 [00:12<00:05, 14.67it/s] 70%|██████▉   | 179/256 [00:12<00:05, 14.66it/s] 71%|███████   | 181/256 [00:12<00:05, 14.58it/s] 71%|███████▏  | 183/256 [00:12<00:05, 14.60it/s] 72%|███████▏  | 185/256 [00:13<00:04, 14.57it/s] 73%|███████▎  | 187/256 [00:13<00:04, 14.55it/s] 74%|███████▍  | 189/256 [00:13<00:04, 14.51it/s] 75%|███████▍  | 191/256 [00:13<00:04, 14.49it/s] 75%|███████▌  | 193/256 [00:13<00:04, 14.61it/s] 76%|███████▌  | 195/256 [00:13<00:04, 14.64it/s] 77%|███████▋  | 197/256 [00:13<00:04, 14.61it/s] 78%|███████▊  | 199/256 [00:14<00:03, 14.54it/s] 79%|███████▊  | 201/256 [00:14<00:03, 14.54it/s] 79%|███████▉  | 203/256 [00:14<00:03, 14.56it/s] 80%|████████  | 205/256 [00:14<00:03, 14.57it/s] 81%|████████  | 207/256 [00:14<00:03, 14.58it/s] 82%|████████▏ | 209/256 [00:14<00:03, 14.65it/s] 82%|████████▏ | 211/256 [00:14<00:03, 14.63it/s] 83%|████████▎ | 213/256 [00:14<00:02, 14.62it/s] 84%|████████▍ | 215/256 [00:15<00:02, 14.63it/s] 85%|████████▍ | 217/256 [00:15<00:02, 14.73it/s] 86%|████████▌ | 219/256 [00:15<00:02, 14.70it/s] 86%|████████▋ | 221/256 [00:15<00:02, 14.68it/s] 87%|████████▋ | 223/256 [00:15<00:02, 14.60it/s] 88%|████████▊ | 225/256 [00:15<00:02, 14.58it/s] 89%|████████▊ | 227/256 [00:15<00:01, 14.62it/s] 89%|████████▉ | 229/256 [00:16<00:01, 14.57it/s] 90%|█████████ | 231/256 [00:16<00:01, 14.52it/s] 91%|█████████ | 233/256 [00:16<00:01, 14.54it/s] 92%|█████████▏| 235/256 [00:16<00:01, 14.56it/s] 93%|█████████▎| 237/256 [00:16<00:01, 14.58it/s] 93%|█████████▎| 239/256 [00:16<00:01, 14.61it/s] 94%|█████████▍| 241/256 [00:16<00:01, 14.64it/s] 95%|█████████▍| 243/256 [00:17<00:00, 14.62it/s] 96%|█████████▌| 245/256 [00:17<00:00, 14.69it/s] 96%|█████████▋| 247/256 [00:17<00:00, 14.70it/s] 97%|█████████▋| 249/256 [00:17<00:00, 14.64it/s] 98%|█████████▊| 251/256 [00:17<00:00, 14.61it/s] 99%|█████████▉| 253/256 [00:17<00:00, 14.66it/s]100%|█████████▉| 255/256 [00:17<00:00, 14.67it/s]100%|██████████| 256/256 [00:17<00:00, 14.30it/s]
+For test question idx = 51:
+Context:
+A 56-year-old man with a history of hypertension presents to his physician with progressive fatigue and new onset muscle cramps. He has had no recent changes to his medication regimen, which includes hydrochlorothiazide, lisinopril, and amlodipine. His temperature is 98.0°F (36.7°C), blood pressure is 174/111 mmHg, pulse is 70/min, respirations are 12/min, and oxygen saturation is 98% on room air. The patient's cardiopulmonary and abdominal exams are unremarkable. Laboratory values are ordered as seen below.
+
+Serum:
+Na+: 138 mEq/L
+Cl-: 100 mEq/L
+K+: 3.3 mEq/L
+HCO3-: 33 mEq/L
+BUN: 20 mg/dL
+Glucose: 129 mg/dL
+Query:
+What is the most likely underlying etiology of this patient's hypertension?
+
+A. Aldosterone excess
+B. Catecholamine-secreting mass
+C. Cortisol excess
+D. Impaired kidney perfusion
+Ground-Truth Answer: A
+Response:
+The patient's symptoms of progressive fatigue and muscle cramps, along with his elevated blood pressure, are suggestive of a hypertensive crisis. The lab values show a normal sodium level, normal chloride level, low potassium level, and normal bicarbonate level. The BUN is also normal, which suggests that the kidneys are not significantly impaired at this time.
+
+Given the options:
+
+A. Aldosterone excess would typically lead to hypokalemia and metabolic alkalosis, which is not the case here.
+
+B. Catecholamine-secreting mass could cause hypertension due to the excess catecholamines, but this would not typically cause hypokalemia.
+
+C. Cortisol excess, or Cushing's syndrome, could cause hypertension and hypokalemia due to the effects of cortisol on the kidneys, leading to potassium wasting.
+
+D. Impaired kidney perfusion could lead to hypertension due to the activation of the renin-angiotensin-aldosterone system (RAAS), but this would not typically cause hypokalemia.
+
+The most likely underlying etiology of this patient's hypertension, given the hypokalemia and the absence of other electrolyte abnormalities, is cortisol excess. Cortisol can cause hypokalemia by increasing renal potassium excretion, which is not seen in the other options.
+
+So, the answer is C.<|end_of_text|>
+CA Scores:
+
+A 56-year-old man with a history of hypertension presents to his physician with progressive fatigue and new onset muscle cramps. --- 16.86732326157629
+He has had no recent changes to his medication regimen, which includes hydrochlorothiazide, lisinopril, and amlodipine. --- 0.0
+His temperature is 98.0°F (36.7°C), blood pressure is 174/111 mmHg, pulse is 70/min, respirations are 12/min, and oxygen saturation is 98% on room air. --- 3.5002537195207304
+The patient's cardiopulmonary and abdominal exams are unremarkable. --- 0.0
+Laboratory values are ordered as seen below. --- 0.0
+Serum: --- 0.0
+Na+: 138 mEq/L --- 1.0633555098525762
+Cl-: 100 mEq/L --- 0.0
+K+: 3.3 mEq/L --- 0.0
+HCO3-: 33 mEq/L --- 1.3011125868344078
+BUN: 20 mg/dL --- 5.528849240482246
+Glucose: 129 mg/dL --- -0.0
+
+
+[INFO] Initializing `ContextCiter` from local customized context_cite
+  0%|          | 0/256 [00:00<?, ?it/s]/root/autodl-tmp/context-cite/context_cite/utils.py:142: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with ch.no_grad(), ch.cuda.amp.autocast():
+  1%|          | 2/256 [00:00<00:14, 16.95it/s]  2%|▏         | 4/256 [00:00<00:16, 15.40it/s]  2%|▏         | 6/256 [00:00<00:17, 14.66it/s]  3%|▎         | 8/256 [00:00<00:17, 14.41it/s]  4%|▍         | 10/256 [00:00<00:17, 14.42it/s]  5%|▍         | 12/256 [00:00<00:16, 14.55it/s]  5%|▌         | 14/256 [00:00<00:16, 14.57it/s]  6%|▋         | 16/256 [00:01<00:16, 14.53it/s]  7%|▋         | 18/256 [00:01<00:16, 14.55it/s]  8%|▊         | 20/256 [00:01<00:16, 14.08it/s]  9%|▊         | 22/256 [00:01<00:16, 14.17it/s]  9%|▉         | 24/256 [00:01<00:16, 14.29it/s] 10%|█         | 26/256 [00:01<00:16, 14.29it/s] 11%|█         | 28/256 [00:01<00:16, 14.17it/s] 12%|█▏        | 30/256 [00:02<00:16, 14.04it/s] 12%|█▎        | 32/256 [00:02<00:15, 14.13it/s] 13%|█▎        | 34/256 [00:02<00:15, 14.06it/s] 14%|█▍        | 36/256 [00:02<00:15, 14.22it/s] 15%|█▍        | 38/256 [00:02<00:15, 14.13it/s] 16%|█▌        | 40/256 [00:02<00:15, 13.81it/s] 16%|█▋        | 42/256 [00:02<00:15, 13.96it/s] 17%|█▋        | 44/256 [00:03<00:14, 14.17it/s] 18%|█▊        | 46/256 [00:03<00:14, 14.22it/s] 19%|█▉        | 48/256 [00:03<00:14, 14.36it/s] 20%|█▉        | 50/256 [00:03<00:14, 14.18it/s] 20%|██        | 52/256 [00:03<00:14, 14.24it/s] 21%|██        | 54/256 [00:03<00:14, 14.24it/s] 22%|██▏       | 56/256 [00:03<00:14, 14.26it/s] 23%|██▎       | 58/256 [00:04<00:13, 14.31it/s] 23%|██▎       | 60/256 [00:04<00:13, 14.33it/s] 24%|██▍       | 62/256 [00:04<00:13, 14.33it/s] 25%|██▌       | 64/256 [00:04<00:13, 14.07it/s] 26%|██▌       | 66/256 [00:04<00:13, 14.24it/s] 27%|██▋       | 68/256 [00:04<00:13, 14.37it/s] 27%|██▋       | 70/256 [00:04<00:13, 14.22it/s] 28%|██▊       | 72/256 [00:05<00:12, 14.29it/s] 29%|██▉       | 74/256 [00:05<00:12, 14.30it/s] 30%|██▉       | 76/256 [00:05<00:12, 14.15it/s] 30%|███       | 78/256 [00:05<00:12, 14.03it/s] 31%|███▏      | 80/256 [00:05<00:12, 13.89it/s] 32%|███▏      | 82/256 [00:05<00:12, 13.89it/s] 33%|███▎      | 84/256 [00:05<00:12, 13.76it/s] 34%|███▎      | 86/256 [00:06<00:12, 13.78it/s] 34%|███▍      | 88/256 [00:06<00:12, 13.86it/s] 35%|███▌      | 90/256 [00:06<00:11, 13.86it/s] 36%|███▌      | 92/256 [00:06<00:11, 14.07it/s] 37%|███▋      | 94/256 [00:06<00:11, 14.08it/s] 38%|███▊      | 96/256 [00:06<00:11, 13.91it/s] 38%|███▊      | 98/256 [00:06<00:11, 13.60it/s] 39%|███▉      | 100/256 [00:07<00:11, 13.74it/s] 40%|███▉      | 102/256 [00:07<00:11, 13.85it/s] 41%|████      | 104/256 [00:07<00:11, 13.80it/s] 41%|████▏     | 106/256 [00:07<00:10, 13.97it/s] 42%|████▏     | 108/256 [00:07<00:10, 14.04it/s] 43%|████▎     | 110/256 [00:07<00:10, 14.10it/s] 44%|████▍     | 112/256 [00:07<00:10, 14.22it/s] 45%|████▍     | 114/256 [00:08<00:10, 14.06it/s] 45%|████▌     | 116/256 [00:08<00:10, 13.75it/s] 46%|████▌     | 118/256 [00:08<00:09, 14.20it/s] 47%|████▋     | 120/256 [00:08<00:09, 14.06it/s] 48%|████▊     | 122/256 [00:08<00:09, 14.12it/s] 48%|████▊     | 124/256 [00:08<00:09, 14.23it/s] 49%|████▉     | 126/256 [00:08<00:09, 14.30it/s] 50%|█████     | 128/256 [00:09<00:08, 14.32it/s] 51%|█████     | 130/256 [00:09<00:08, 14.37it/s] 52%|█████▏    | 132/256 [00:09<00:08, 14.34it/s] 52%|█████▏    | 134/256 [00:09<00:08, 14.42it/s] 53%|█████▎    | 136/256 [00:09<00:08, 14.26it/s] 54%|█████▍    | 138/256 [00:09<00:08, 14.33it/s] 55%|█████▍    | 140/256 [00:09<00:08, 14.29it/s] 55%|█████▌    | 142/256 [00:10<00:07, 14.37it/s] 56%|█████▋    | 144/256 [00:10<00:07, 14.36it/s] 57%|█████▋    | 146/256 [00:10<00:07, 14.08it/s] 58%|█████▊    | 148/256 [00:10<00:07, 14.11it/s] 59%|█████▊    | 150/256 [00:10<00:07, 14.00it/s] 59%|█████▉    | 152/256 [00:10<00:07, 13.70it/s] 60%|██████    | 154/256 [00:10<00:07, 13.87it/s] 61%|██████    | 156/256 [00:11<00:07, 13.80it/s] 62%|██████▏   | 158/256 [00:11<00:07, 13.87it/s] 62%|██████▎   | 160/256 [00:11<00:06, 13.79it/s] 63%|██████▎   | 162/256 [00:11<00:06, 13.94it/s] 64%|██████▍   | 164/256 [00:11<00:06, 13.86it/s] 65%|██████▍   | 166/256 [00:11<00:06, 13.88it/s] 66%|██████▌   | 168/256 [00:11<00:06, 13.90it/s] 66%|██████▋   | 170/256 [00:12<00:06, 13.89it/s] 67%|██████▋   | 172/256 [00:12<00:05, 14.05it/s] 68%|██████▊   | 174/256 [00:12<00:05, 14.02it/s] 69%|██████▉   | 176/256 [00:12<00:05, 14.03it/s] 70%|██████▉   | 178/256 [00:12<00:05, 14.11it/s] 70%|███████   | 180/256 [00:12<00:05, 13.94it/s] 71%|███████   | 182/256 [00:12<00:05, 14.14it/s] 72%|███████▏  | 184/256 [00:13<00:05, 14.23it/s] 73%|███████▎  | 186/256 [00:13<00:04, 14.33it/s] 73%|███████▎  | 188/256 [00:13<00:04, 14.14it/s] 74%|███████▍  | 190/256 [00:13<00:04, 14.15it/s] 75%|███████▌  | 192/256 [00:13<00:04, 14.05it/s] 76%|███████▌  | 194/256 [00:13<00:04, 14.18it/s] 77%|███████▋  | 196/256 [00:13<00:04, 14.05it/s] 77%|███████▋  | 198/256 [00:14<00:04, 13.99it/s] 78%|███████▊  | 200/256 [00:14<00:03, 14.17it/s] 79%|███████▉  | 202/256 [00:14<00:03, 14.06it/s] 80%|███████▉  | 204/256 [00:14<00:03, 13.93it/s] 80%|████████  | 206/256 [00:14<00:03, 13.80it/s] 81%|████████▏ | 208/256 [00:14<00:03, 13.59it/s] 82%|████████▏ | 210/256 [00:14<00:03, 14.19it/s] 83%|████████▎ | 212/256 [00:15<00:03, 14.18it/s] 84%|████████▎ | 214/256 [00:15<00:02, 14.29it/s] 84%|████████▍ | 216/256 [00:15<00:02, 14.44it/s] 85%|████████▌ | 218/256 [00:15<00:02, 14.45it/s] 86%|████████▌ | 220/256 [00:15<00:02, 14.23it/s] 87%|████████▋ | 222/256 [00:15<00:02, 14.30it/s] 88%|████████▊ | 224/256 [00:15<00:02, 14.33it/s] 88%|████████▊ | 226/256 [00:15<00:02, 14.26it/s] 89%|████████▉ | 228/256 [00:16<00:01, 14.19it/s] 90%|████████▉ | 230/256 [00:16<00:01, 14.06it/s] 91%|█████████ | 232/256 [00:16<00:01, 13.90it/s] 91%|█████████▏| 234/256 [00:16<00:01, 14.11it/s] 92%|█████████▏| 236/256 [00:16<00:01, 14.24it/s] 93%|█████████▎| 238/256 [00:16<00:01, 14.33it/s] 94%|█████████▍| 240/256 [00:16<00:01, 14.16it/s] 95%|█████████▍| 242/256 [00:17<00:00, 14.14it/s] 95%|█████████▌| 244/256 [00:17<00:00, 14.20it/s] 96%|█████████▌| 246/256 [00:17<00:00, 14.30it/s] 97%|█████████▋| 248/256 [00:17<00:00, 14.08it/s] 98%|█████████▊| 250/256 [00:17<00:00, 14.17it/s] 98%|█████████▊| 252/256 [00:17<00:00, 13.99it/s] 99%|█████████▉| 254/256 [00:17<00:00, 14.18it/s]100%|██████████| 256/256 [00:18<00:00, 14.31it/s]100%|██████████| 256/256 [00:18<00:00, 14.14it/s]
+For test question idx = 228:
+Context:
+A 21-year-old male presents to his primary care provider for fatigue. He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia. For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists. The patient has a past medical history of asthma managed with albuterol as needed. He is sexually active with both men and women, and he uses condoms “most of the time.” On physical exam, the patient’s temperature is 102.5°F (39.2°C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air. He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs. Tourniquet test is negative. Laboratory results are as follows:
+
+Hemoglobin: 14 g/dL
+Hematocrit: 44%
+Leukocyte count: 3,200/mm^3
+Platelet count: 112,000/mm^3
+
+Serum:
+Na+: 142 mEq/L
+Cl-: 104 mEq/L
+K+: 4.6 mEq/L
+HCO3-: 24 mEq/L
+BUN: 18 mg/dL
+Glucose: 87 mg/dL
+Creatinine: 0.9 mg/dL
+AST: 106 U/L
+ALT: 112 U/L
+Bilirubin (total): 0.8 mg/dL
+Bilirubin (conjugated): 0.3 mg/dL
+Query:
+Which of the following is the most likely diagnosis in this patient?
+
+A. Chikungunya
+B. Dengue fever
+C. Epstein-Barr virus
+D. Hepatitis A
+Ground-Truth Answer: A
+Response:
+The patient's symptoms and travel history are key to understanding the diagnosis. The patient has returned from a trip to Vietnam and Cambodia, which are areas where dengue fever is endemic. Dengue fever is a mosquito-borne viral infection that can cause a wide range of symptoms, from mild to severe. The patient's symptoms include fever, headache, malaise, and pain in the hands and wrists, which are consistent with dengue fever. The maculopapular rash and the fact that the patient is sexually active with both men and women (and uses condoms "most of the time") make sexually transmitted infections less likely.
+
+Chikungunya is another mosquito-borne disease that can cause similar symptoms, but it is less common in the areas the patient has visited. Epstein-Barr virus typically causes mononucleosis, which is not consistent with the patient's symptoms. Hepatitis A is a viral infection that affects the liver and can cause jaundice, which is not present in this patient.
+
+Given the patient's travel history and symptoms, dengue fever is the most likely diagnosis.
+
+So, the answer is B.<|end_of_text|>
+CA Scores:
+
+A 21-year-old male presents to his primary care provider for fatigue. --- -0.0
+He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia. --- 20.785661025449837
+For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists. --- 24.203600406614072
+The patient has a past medical history of asthma managed with albuterol as needed. --- 0.0
+He is sexually active with both men and women, and he uses condoms “most of the time.” On physical exam, the patient’s temperature is 102.5°F (39.2°C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air. --- 35.19665160420657
+He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs. --- 10.132005309451927
+Tourniquet test is negative. --- -0.0
+Laboratory results are as follows: --- -0.0
+Hemoglobin: 14 g/dL --- 0.0
+Hematocrit: 44% --- 0.0
+Leukocyte count: 3,200/mm^3 --- -0.0
+Platelet count: 112,000/mm^3 --- 0.0
+Serum: --- -0.0
+Na+: 142 mEq/L --- 0.0
+Cl-: 104 mEq/L --- 0.0
+K+: 4.6 mEq/L --- 0.0
+HCO3-: 24 mEq/L --- -0.0
+BUN: 18 mg/dL --- 0.0
+Glucose: 87 mg/dL --- 0.0
+Creatinine: 0.9 mg/dL --- 0.0
+AST: 106 U/L --- 0.0
+ALT: 112 U/L --- -0.0
+Bilirubin (total): 0.8 mg/dL --- 0.0
+Bilirubin (conjugated): 0.3 mg/dL --- 0.0
+
+
+[INFO] Initializing `ContextCiter` from local customized context_cite
+  0%|          | 0/256 [00:00<?, ?it/s]/root/autodl-tmp/context-cite/context_cite/utils.py:142: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with ch.no_grad(), ch.cuda.amp.autocast():
+  1%|          | 2/256 [00:00<00:15, 16.33it/s]  2%|▏         | 4/256 [00:00<00:16, 15.39it/s]  2%|▏         | 6/256 [00:00<00:17, 14.56it/s]  3%|▎         | 8/256 [00:00<00:17, 14.32it/s]  4%|▍         | 10/256 [00:00<00:17, 13.91it/s]  5%|▍         | 12/256 [00:00<00:17, 14.04it/s]  5%|▌         | 14/256 [00:00<00:17, 14.07it/s]  6%|▋         | 16/256 [00:01<00:17, 14.07it/s]  7%|▋         | 18/256 [00:01<00:16, 14.18it/s]  8%|▊         | 20/256 [00:01<00:16, 14.05it/s]  9%|▊         | 22/256 [00:01<00:16, 13.99it/s]  9%|▉         | 24/256 [00:01<00:16, 13.85it/s] 10%|█         | 26/256 [00:01<00:16, 14.01it/s] 11%|█         | 28/256 [00:01<00:16, 13.93it/s] 12%|█▏        | 30/256 [00:02<00:16, 13.78it/s] 12%|█▎        | 32/256 [00:02<00:16, 13.83it/s] 13%|█▎        | 34/256 [00:02<00:16, 13.78it/s] 14%|█▍        | 36/256 [00:02<00:15, 13.93it/s] 15%|█▍        | 38/256 [00:02<00:16, 13.53it/s] 16%|█▌        | 40/256 [00:02<00:15, 13.57it/s] 16%|█▋        | 42/256 [00:03<00:15, 13.69it/s] 17%|█▋        | 44/256 [00:03<00:15, 13.85it/s] 18%|█▊        | 46/256 [00:03<00:15, 13.75it/s] 19%|█▉        | 48/256 [00:03<00:14, 14.05it/s] 20%|█▉        | 50/256 [00:03<00:14, 13.96it/s] 20%|██        | 52/256 [00:03<00:14, 13.99it/s] 21%|██        | 54/256 [00:03<00:14, 13.92it/s] 22%|██▏       | 56/256 [00:04<00:14, 13.83it/s] 23%|██▎       | 58/256 [00:04<00:14, 14.00it/s] 23%|██▎       | 60/256 [00:04<00:14, 13.98it/s] 24%|██▍       | 62/256 [00:04<00:13, 14.00it/s] 25%|██▌       | 64/256 [00:04<00:13, 14.03it/s] 26%|██▌       | 66/256 [00:04<00:13, 14.14it/s] 27%|██▋       | 68/256 [00:04<00:13, 14.15it/s] 27%|██▋       | 70/256 [00:05<00:13, 14.07it/s] 28%|██▊       | 72/256 [00:05<00:13, 14.06it/s] 29%|██▉       | 74/256 [00:05<00:12, 14.10it/s] 30%|██▉       | 76/256 [00:05<00:12, 14.07it/s] 30%|███       | 78/256 [00:05<00:12, 13.98it/s] 31%|███▏      | 80/256 [00:05<00:12, 13.75it/s] 32%|███▏      | 82/256 [00:05<00:12, 13.70it/s] 33%|███▎      | 84/256 [00:06<00:12, 13.71it/s] 34%|███▎      | 86/256 [00:06<00:12, 13.78it/s] 34%|███▍      | 88/256 [00:06<00:12, 13.87it/s] 35%|███▌      | 90/256 [00:06<00:12, 13.79it/s] 36%|███▌      | 92/256 [00:06<00:11, 13.85it/s] 37%|███▋      | 94/256 [00:06<00:11, 13.90it/s] 38%|███▊      | 96/256 [00:06<00:11, 13.85it/s] 38%|███▊      | 98/256 [00:07<00:11, 13.83it/s] 39%|███▉      | 100/256 [00:07<00:11, 13.88it/s] 40%|███▉      | 102/256 [00:07<00:11, 13.81it/s] 41%|████      | 104/256 [00:07<00:11, 13.73it/s] 41%|████▏     | 106/256 [00:07<00:10, 13.89it/s] 42%|████▏     | 108/256 [00:07<00:10, 13.83it/s] 43%|████▎     | 110/256 [00:07<00:10, 13.97it/s] 44%|████▍     | 112/256 [00:08<00:10, 14.01it/s] 45%|████▍     | 114/256 [00:08<00:10, 14.00it/s] 45%|████▌     | 116/256 [00:08<00:10, 13.80it/s] 46%|████▌     | 118/256 [00:08<00:10, 13.80it/s] 47%|████▋     | 120/256 [00:08<00:09, 13.74it/s] 48%|████▊     | 122/256 [00:08<00:09, 13.81it/s] 48%|████▊     | 124/256 [00:08<00:09, 13.89it/s] 49%|████▉     | 126/256 [00:09<00:09, 13.99it/s] 50%|█████     | 128/256 [00:09<00:09, 13.98it/s] 51%|█████     | 130/256 [00:09<00:08, 14.03it/s] 52%|█████▏    | 132/256 [00:09<00:08, 14.03it/s] 52%|█████▏    | 134/256 [00:09<00:08, 13.94it/s] 53%|█████▎    | 136/256 [00:09<00:08, 13.81it/s] 54%|█████▍    | 138/256 [00:09<00:08, 13.87it/s] 55%|█████▍    | 140/256 [00:10<00:08, 13.82it/s] 55%|█████▌    | 142/256 [00:10<00:08, 13.95it/s] 56%|█████▋    | 144/256 [00:10<00:07, 14.05it/s] 57%|█████▋    | 146/256 [00:10<00:07, 14.11it/s] 58%|█████▊    | 148/256 [00:10<00:07, 14.09it/s] 59%|█████▊    | 150/256 [00:10<00:07, 13.84it/s] 59%|█████▉    | 152/256 [00:10<00:07, 13.61it/s] 60%|██████    | 154/256 [00:11<00:07, 13.76it/s] 61%|██████    | 156/256 [00:11<00:07, 13.69it/s] 62%|██████▏   | 158/256 [00:11<00:07, 13.89it/s] 62%|██████▎   | 160/256 [00:11<00:06, 13.83it/s] 63%|██████▎   | 162/256 [00:11<00:06, 13.80it/s] 64%|██████▍   | 164/256 [00:11<00:06, 13.75it/s] 65%|██████▍   | 166/256 [00:11<00:06, 13.79it/s] 66%|██████▌   | 168/256 [00:12<00:06, 13.76it/s] 66%|██████▋   | 170/256 [00:12<00:06, 13.68it/s] 67%|██████▋   | 172/256 [00:12<00:06, 13.82it/s] 68%|██████▊   | 174/256 [00:12<00:05, 13.92it/s] 69%|██████▉   | 176/256 [00:12<00:05, 13.89it/s] 70%|██████▉   | 178/256 [00:12<00:05, 14.04it/s] 70%|███████   | 180/256 [00:12<00:05, 13.83it/s] 71%|███████   | 182/256 [00:13<00:05, 13.85it/s] 72%|███████▏  | 184/256 [00:13<00:05, 13.80it/s] 73%|███████▎  | 186/256 [00:13<00:05, 13.96it/s] 73%|███████▎  | 188/256 [00:13<00:04, 13.76it/s] 74%|███████▍  | 190/256 [00:13<00:04, 13.57it/s] 75%|███████▌  | 192/256 [00:13<00:04, 13.74it/s] 76%|███████▌  | 194/256 [00:13<00:04, 13.89it/s] 77%|███████▋  | 196/256 [00:14<00:04, 13.74it/s] 77%|███████▋  | 198/256 [00:14<00:04, 13.73it/s] 78%|███████▊  | 200/256 [00:14<00:04, 13.74it/s] 79%|███████▉  | 202/256 [00:14<00:03, 13.69it/s] 80%|███████▉  | 204/256 [00:14<00:03, 13.52it/s] 80%|████████  | 206/256 [00:14<00:03, 13.43it/s] 81%|████████▏ | 208/256 [00:14<00:03, 13.59it/s] 82%|████████▏ | 210/256 [00:15<00:03, 13.68it/s] 83%|████████▎ | 212/256 [00:15<00:03, 13.71it/s] 84%|████████▎ | 214/256 [00:15<00:03, 13.87it/s] 84%|████████▍ | 216/256 [00:15<00:02, 14.06it/s] 85%|████████▌ | 218/256 [00:15<00:02, 14.15it/s] 86%|████████▌ | 220/256 [00:15<00:02, 14.14it/s] 87%|████████▋ | 222/256 [00:15<00:02, 14.15it/s] 88%|████████▊ | 224/256 [00:16<00:02, 14.05it/s] 88%|████████▊ | 226/256 [00:16<00:02, 14.07it/s] 89%|████████▉ | 228/256 [00:16<00:02, 13.95it/s] 90%|████████▉ | 230/256 [00:16<00:01, 14.05it/s] 91%|█████████ | 232/256 [00:16<00:01, 13.93it/s] 91%|█████████▏| 234/256 [00:16<00:01, 14.00it/s] 92%|█████████▏| 236/256 [00:16<00:01, 14.04it/s] 93%|█████████▎| 238/256 [00:17<00:01, 13.93it/s] 94%|█████████▍| 240/256 [00:17<00:01, 13.84it/s] 95%|█████████▍| 242/256 [00:17<00:01, 13.86it/s] 95%|█████████▌| 244/256 [00:17<00:00, 13.95it/s] 96%|█████████▌| 246/256 [00:17<00:00, 14.11it/s] 97%|█████████▋| 248/256 [00:17<00:00, 14.17it/s] 98%|█████████▊| 250/256 [00:17<00:00, 13.98it/s] 98%|█████████▊| 252/256 [00:18<00:00, 13.85it/s] 99%|█████████▉| 254/256 [00:18<00:00, 13.94it/s]100%|██████████| 256/256 [00:18<00:00, 14.03it/s]100%|██████████| 256/256 [00:18<00:00, 13.91it/s]
+For test question idx = 457:
+Context:
+A 59-year-old man is brought to the emergency department with a history of black, tarry stools but denies vomiting of blood or abdominal pain. His family has noticed progressive confusion. History is significant for liver cirrhosis and alcoholism. His heart rate is 112/min, temperature is 37.1°C (98.7°F), and blood pressure is 110/70 mm Hg. On examination, he is jaundiced, lethargic, is oriented to person and place but not date, and has moderate ascites. Neurological examination reveals asterixis, and his stool is guaiac-positive. Liver function test are shown below:
+Total albumin 2 g/dL
+Prothrombin time 9 seconds
+Total bilirubin 5 mg/dL
+Alanine aminotransferase (ALT) 100 U/L
+Aspartate aminotransferase (AST) 220 U/L
+Query:
+Which of the following is a feature of this patient condition?
+
+A. Ammonia level is the best initial test to confirm the diagnosis
+B. It is a diagnosis of exclusion
+C. It only occurs in patients with cirrhosis
+D. Electroencephalography (EEG) usually shows focal localising abnormality
+Ground-Truth Answer: B
+Response:
+The patient described is presenting with black, tarry stools (melena), jaundice, confusion, and asterixis, which are all signs of liver dysfunction. The history of liver cirrhosis and alcoholism further supports this diagnosis. The liver function tests show elevated bilirubin and transaminases, which are indicative of liver damage.
+
+The confusion and asterixis are signs of hepatic encephalopathy, which is a condition that occurs in patients with advanced liver disease and is characterized by a spectrum of neurological abnormalities ranging from mild confusion to coma. Hepatic encephalopathy is a common complication of cirrhosis and is often precipitated by factors such as gastrointestinal bleeding, infection, or electrolyte imbalances.
+
+Ammonia is a key factor in the pathogenesis of hepatic encephalopathy, and ammonia levels can be elevated in patients with liver disease due to the inability to detoxify ammonia. Therefore, ammonia level is a useful test to confirm the diagnosis of hepatic encephalopathy.
+
+It is important to note that hepatic encephalopathy is a diagnosis of exclusion, meaning that other causes of altered mental status must be ruled out before making the diagnosis. However, the clinical presentation and laboratory findings in this patient are highly suggestive of hepatic encephalopathy.
+
+Electroencephalography (EEG) is not typically used to diagnose hepatic encephalopathy. While it may show nonspecific changes, it does not usually show focal localizing abnormalities.
+
+So, the answer is A.<|end_of_text|>
+CA Scores:
+
+A 59-year-old man is brought to the emergency department with a history of black, tarry stools but denies vomiting of blood or abdominal pain. --- 13.300754753670049
+His family has noticed progressive confusion. --- 0.0
+History is significant for liver cirrhosis and alcoholism. --- 15.304101960454064
+His heart rate is 112/min, temperature is 37.1°C (98.7°F), and blood pressure is 110/70 mm Hg. --- 0.0
+On examination, he is jaundiced, lethargic, is oriented to person and place but not date, and has moderate ascites. --- 0.0
+Neurological examination reveals asterixis, and his stool is guaiac-positive. --- 4.733945816325844
+Liver function test are shown below: --- 0.0
+Total albumin 2 g/dL --- 0.0
+Prothrombin time 9 seconds --- 0.0
+Total bilirubin 5 mg/dL --- 0.0
+Alanine aminotransferase (ALT) 100 U/L --- 0.0
+Aspartate aminotransferase (AST) 220 U/L --- 0.0
+
+
+[INFO] Initializing `ContextCiter` from local customized context_cite
+  0%|          | 0/256 [00:00<?, ?it/s]/root/autodl-tmp/context-cite/context_cite/utils.py:142: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with ch.no_grad(), ch.cuda.amp.autocast():
+  1%|          | 2/256 [00:00<00:14, 17.56it/s]  2%|▏         | 4/256 [00:00<00:16, 15.52it/s]  2%|▏         | 6/256 [00:00<00:16, 14.94it/s]  3%|▎         | 8/256 [00:00<00:16, 14.63it/s]  4%|▍         | 10/256 [00:00<00:16, 14.51it/s]  5%|▍         | 12/256 [00:00<00:16, 14.50it/s]  5%|▌         | 14/256 [00:00<00:16, 14.45it/s]  6%|▋         | 16/256 [00:01<00:16, 14.41it/s]  7%|▋         | 18/256 [00:01<00:16, 14.44it/s]  8%|▊         | 20/256 [00:01<00:16, 14.42it/s]  9%|▊         | 22/256 [00:01<00:16, 14.44it/s]  9%|▉         | 24/256 [00:01<00:16, 14.48it/s] 10%|█         | 26/256 [00:01<00:15, 14.42it/s] 11%|█         | 28/256 [00:01<00:15, 14.39it/s] 12%|█▏        | 30/256 [00:02<00:15, 14.36it/s] 12%|█▎        | 32/256 [00:02<00:15, 14.35it/s] 13%|█▎        | 34/256 [00:02<00:15, 14.37it/s] 14%|█▍        | 36/256 [00:02<00:15, 14.44it/s] 15%|█▍        | 38/256 [00:02<00:15, 14.42it/s] 16%|█▌        | 40/256 [00:02<00:15, 14.38it/s] 16%|█▋        | 42/256 [00:02<00:14, 14.45it/s] 17%|█▋        | 44/256 [00:03<00:14, 14.50it/s] 18%|█▊        | 46/256 [00:03<00:14, 14.54it/s] 19%|█▉        | 48/256 [00:03<00:14, 14.48it/s] 20%|█▉        | 50/256 [00:03<00:14, 14.47it/s] 20%|██        | 52/256 [00:03<00:14, 14.45it/s] 21%|██        | 54/256 [00:03<00:13, 14.48it/s] 22%|██▏       | 56/256 [00:03<00:13, 14.50it/s] 23%|██▎       | 58/256 [00:03<00:13, 14.49it/s] 23%|██▎       | 60/256 [00:04<00:13, 14.45it/s] 24%|██▍       | 62/256 [00:04<00:13, 14.39it/s] 25%|██▌       | 64/256 [00:04<00:13, 14.45it/s] 26%|██▌       | 66/256 [00:04<00:13, 14.43it/s] 27%|██▋       | 68/256 [00:04<00:13, 14.30it/s] 27%|██▋       | 70/256 [00:04<00:12, 14.37it/s] 28%|██▊       | 72/256 [00:04<00:12, 14.33it/s] 29%|██▉       | 74/256 [00:05<00:12, 14.31it/s] 30%|██▉       | 76/256 [00:05<00:12, 14.29it/s] 30%|███       | 78/256 [00:05<00:12, 14.33it/s] 31%|███▏      | 80/256 [00:05<00:12, 14.30it/s] 32%|███▏      | 82/256 [00:05<00:12, 14.33it/s] 33%|███▎      | 84/256 [00:05<00:12, 14.29it/s] 34%|███▎      | 86/256 [00:05<00:11, 14.36it/s] 34%|███▍      | 88/256 [00:06<00:11, 14.38it/s] 35%|███▌      | 90/256 [00:06<00:11, 14.23it/s] 36%|███▌      | 92/256 [00:06<00:11, 14.35it/s] 37%|███▋      | 94/256 [00:06<00:11, 14.36it/s] 38%|███▊      | 96/256 [00:06<00:11, 14.35it/s] 38%|███▊      | 98/256 [00:06<00:11, 14.28it/s] 39%|███▉      | 100/256 [00:06<00:10, 14.29it/s] 40%|███▉      | 102/256 [00:07<00:10, 14.30it/s] 41%|████      | 104/256 [00:07<00:10, 14.24it/s] 41%|████▏     | 106/256 [00:07<00:10, 14.35it/s] 42%|████▏     | 108/256 [00:07<00:10, 14.39it/s] 43%|████▎     | 110/256 [00:07<00:10, 14.41it/s] 44%|████▍     | 112/256 [00:07<00:09, 14.42it/s] 45%|████▍     | 114/256 [00:07<00:09, 14.42it/s] 45%|████▌     | 116/256 [00:08<00:09, 14.43it/s] 46%|████▌     | 118/256 [00:08<00:09, 14.48it/s] 47%|████▋     | 120/256 [00:08<00:09, 14.41it/s] 48%|████▊     | 122/256 [00:08<00:09, 14.39it/s] 48%|████▊     | 124/256 [00:08<00:09, 14.37it/s] 49%|████▉     | 126/256 [00:08<00:09, 14.42it/s] 50%|█████     | 128/256 [00:08<00:08, 14.43it/s] 51%|█████     | 130/256 [00:09<00:08, 14.31it/s] 52%|█████▏    | 132/256 [00:09<00:08, 14.34it/s] 52%|█████▏    | 134/256 [00:09<00:08, 14.34it/s] 53%|█████▎    | 136/256 [00:09<00:08, 14.32it/s] 54%|█████▍    | 138/256 [00:09<00:08, 14.37it/s] 55%|█████▍    | 140/256 [00:09<00:08, 14.35it/s] 55%|█████▌    | 142/256 [00:09<00:07, 14.37it/s] 56%|█████▋    | 144/256 [00:09<00:07, 14.35it/s] 57%|█████▋    | 146/256 [00:10<00:07, 14.39it/s] 58%|█████▊    | 148/256 [00:10<00:07, 14.42it/s] 59%|█████▊    | 150/256 [00:10<00:07, 14.43it/s] 59%|█████▉    | 152/256 [00:10<00:07, 14.35it/s] 60%|██████    | 154/256 [00:10<00:07, 14.33it/s] 61%|██████    | 156/256 [00:10<00:07, 14.24it/s] 62%|██████▏   | 158/256 [00:10<00:06, 14.28it/s] 62%|██████▎   | 160/256 [00:11<00:06, 14.35it/s] 63%|██████▎   | 162/256 [00:11<00:06, 14.41it/s] 64%|██████▍   | 164/256 [00:11<00:06, 14.39it/s] 65%|██████▍   | 166/256 [00:11<00:06, 14.42it/s] 66%|██████▌   | 168/256 [00:11<00:06, 14.36it/s] 66%|██████▋   | 170/256 [00:11<00:06, 14.32it/s] 67%|██████▋   | 172/256 [00:11<00:05, 14.30it/s] 68%|██████▊   | 174/256 [00:12<00:05, 14.32it/s] 69%|██████▉   | 176/256 [00:12<00:05, 14.34it/s] 70%|██████▉   | 178/256 [00:12<00:05, 14.07it/s] 70%|███████   | 180/256 [00:12<00:05, 14.10it/s] 71%|███████   | 182/256 [00:12<00:05, 14.20it/s] 72%|███████▏  | 184/256 [00:12<00:05, 14.23it/s] 73%|███████▎  | 186/256 [00:12<00:04, 14.18it/s] 73%|███████▎  | 188/256 [00:13<00:04, 14.30it/s] 74%|███████▍  | 190/256 [00:13<00:04, 14.32it/s] 75%|███████▌  | 192/256 [00:13<00:04, 14.31it/s] 76%|███████▌  | 194/256 [00:13<00:04, 14.35it/s] 77%|███████▋  | 196/256 [00:13<00:04, 14.23it/s] 77%|███████▋  | 198/256 [00:13<00:04, 14.21it/s] 78%|███████▊  | 200/256 [00:13<00:03, 14.14it/s] 79%|███████▉  | 202/256 [00:14<00:03, 14.23it/s] 80%|███████▉  | 204/256 [00:14<00:03, 14.22it/s] 80%|████████  | 206/256 [00:14<00:03, 14.35it/s] 81%|████████▏ | 208/256 [00:14<00:03, 14.29it/s] 82%|████████▏ | 210/256 [00:14<00:03, 14.45it/s] 83%|████████▎ | 212/256 [00:14<00:03, 14.43it/s] 84%|████████▎ | 214/256 [00:14<00:02, 14.43it/s] 84%|████████▍ | 216/256 [00:15<00:02, 14.28it/s] 85%|████████▌ | 218/256 [00:15<00:02, 14.46it/s] 86%|████████▌ | 220/256 [00:15<00:02, 14.43it/s] 87%|████████▋ | 222/256 [00:15<00:02, 14.38it/s] 88%|████████▊ | 224/256 [00:15<00:02, 14.40it/s] 88%|████████▊ | 226/256 [00:15<00:02, 14.54it/s] 89%|████████▉ | 228/256 [00:15<00:01, 14.47it/s] 90%|████████▉ | 230/256 [00:15<00:01, 14.44it/s] 91%|█████████ | 232/256 [00:16<00:01, 14.40it/s] 91%|█████████▏| 234/256 [00:16<00:01, 14.43it/s] 92%|█████████▏| 236/256 [00:16<00:01, 14.38it/s] 93%|█████████▎| 238/256 [00:16<00:01, 14.25it/s] 94%|█████████▍| 240/256 [00:16<00:01, 14.26it/s] 95%|█████████▍| 242/256 [00:16<00:00, 14.15it/s] 95%|█████████▌| 244/256 [00:16<00:00, 14.16it/s] 96%|█████████▌| 246/256 [00:17<00:00, 14.28it/s] 97%|█████████▋| 248/256 [00:17<00:00, 14.18it/s] 98%|█████████▊| 250/256 [00:17<00:00, 14.29it/s] 98%|█████████▊| 252/256 [00:17<00:00, 14.14it/s] 99%|█████████▉| 254/256 [00:17<00:00, 14.24it/s]100%|██████████| 256/256 [00:17<00:00, 14.27it/s]100%|██████████| 256/256 [00:17<00:00, 14.37it/s]
+For test question idx = 501:
+Context:
+A 36-year-old man undergoes open reduction and internal fixation of a left femur fracture sustained after a motor vehicle collision. Three days after the surgery, he develops fever and redness around the surgical site. His temperature is 39.5°C (103.1°F). Physical examination shows purulent discharge from the wound with erythema of the surrounding skin. Wound culture of the purulent discharge shows gram-positive cocci in clusters. Treatment with oral dicloxacillin is initiated. Four days later, the patient continues to have high-grade fever, pain, and purulent discharge.
+Query:
+Which of the following characteristics of the infecting organism best explains the failure to improve with antibiotic therapy?
+
+A. Presence of an impenetrable outer membrane
+B. Ability to cleave β-lactam rings
+C. Development of efflux pumps
+D. Adaptation in binding proteins
+Ground-Truth Answer: D
+Response:
+The patient is presenting with signs of infection after surgery, which is indicated by fever, redness, and purulent discharge. The culture of the discharge shows gram-positive cocci in clusters, which is suggestive of Staphylococcus aureus, a common cause of surgical site infections. The treatment with oral dicloxacillin, which is a β-lactam antibiotic, has not been effective, suggesting that the organism is resistant to this class of antibiotics.
+
+The options given are characteristics of bacteria that can affect antibiotic efficacy:
+
+A. Presence of an impenetrable outer membrane - This is a characteristic of gram-negative bacteria, not gram-positive cocci like Staphylococcus aureus.
+
+B. Ability to cleave β-lactam rings - This is a characteristic of β-lactamase-producing bacteria, which can hydrolyze the β-lactam ring of β-lactam antibiotics, rendering them ineffective.
+
+C. Development of efflux pumps - Efflux pumps can actively pump antibiotics out of the bacterial cell, reducing their intracellular concentration and thus their effectiveness.
+
+D. Adaptation in binding proteins - This is not a common mechanism of antibiotic resistance in bacteria.
+
+Given that the patient's infection is not responding to a β-lactam antibiotic, the most likely explanation is that the infecting organism has developed a mechanism to resist the action of β-lactam antibiotics, such as the production of β-lactamase enzymes. This would allow the bacteria to cleave the β-lactam ring of the antibiotic, rendering it ineffective.
+
+So, the answer is B.<|end_of_text|>
+CA Scores:
+
+A 36-year-old man undergoes open reduction and internal fixation of a left femur fracture sustained after a motor vehicle collision. --- 0.0
+Three days after the surgery, he develops fever and redness around the surgical site. --- 16.11507161558062
+His temperature is 39.5°C (103.1°F). --- 0.0
+Physical examination shows purulent discharge from the wound with erythema of the surrounding skin. --- 0.0
+Wound culture of the purulent discharge shows gram-positive cocci in clusters. --- 21.969692837670053
+Treatment with oral dicloxacillin is initiated. --- 20.485868515089102
+Four days later, the patient continues to have high-grade fever, pain, and purulent discharge. --- 0.0
+
+
+[INFO] Initializing `ContextCiter` from local customized context_cite
+  0%|          | 0/256 [00:00<?, ?it/s]/root/autodl-tmp/context-cite/context_cite/utils.py:142: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with ch.no_grad(), ch.cuda.amp.autocast():
+  1%|          | 2/256 [00:00<00:14, 18.02it/s]  2%|▏         | 4/256 [00:00<00:15, 16.43it/s]  2%|▏         | 6/256 [00:00<00:16, 15.52it/s]  3%|▎         | 8/256 [00:00<00:16, 15.29it/s]  4%|▍         | 10/256 [00:00<00:16, 15.14it/s]  5%|▍         | 12/256 [00:00<00:16, 15.23it/s]  5%|▌         | 14/256 [00:00<00:15, 15.29it/s]  6%|▋         | 16/256 [00:01<00:15, 15.14it/s]  7%|▋         | 18/256 [00:01<00:15, 15.20it/s]  8%|▊         | 20/256 [00:01<00:15, 15.14it/s]  9%|▊         | 22/256 [00:01<00:15, 15.14it/s]  9%|▉         | 24/256 [00:01<00:15, 14.98it/s] 10%|█         | 26/256 [00:01<00:15, 14.99it/s] 11%|█         | 28/256 [00:01<00:15, 15.10it/s] 12%|█▏        | 30/256 [00:01<00:14, 15.19it/s] 12%|█▎        | 32/256 [00:02<00:14, 15.07it/s] 13%|█▎        | 34/256 [00:02<00:14, 15.09it/s] 14%|█▍        | 36/256 [00:02<00:14, 15.06it/s] 15%|█▍        | 38/256 [00:02<00:14, 14.85it/s] 16%|█▌        | 40/256 [00:02<00:14, 14.83it/s] 16%|█▋        | 42/256 [00:02<00:14, 15.01it/s] 17%|█▋        | 44/256 [00:02<00:14, 14.93it/s] 18%|█▊        | 46/256 [00:03<00:14, 14.91it/s] 19%|█▉        | 48/256 [00:03<00:13, 15.03it/s] 20%|█▉        | 50/256 [00:03<00:13, 15.12it/s] 20%|██        | 52/256 [00:03<00:13, 15.04it/s] 21%|██        | 54/256 [00:03<00:13, 14.87it/s] 22%|██▏       | 56/256 [00:03<00:13, 15.13it/s] 23%|██▎       | 58/256 [00:03<00:13, 15.12it/s] 23%|██▎       | 60/256 [00:03<00:12, 15.23it/s] 24%|██▍       | 62/256 [00:04<00:12, 15.01it/s] 25%|██▌       | 64/256 [00:04<00:12, 15.18it/s] 26%|██▌       | 66/256 [00:04<00:12, 15.22it/s] 27%|██▋       | 68/256 [00:04<00:12, 15.27it/s] 27%|██▋       | 70/256 [00:04<00:12, 15.26it/s] 28%|██▊       | 72/256 [00:04<00:12, 15.19it/s] 29%|██▉       | 74/256 [00:04<00:12, 15.02it/s] 30%|██▉       | 76/256 [00:05<00:12, 14.97it/s] 30%|███       | 78/256 [00:05<00:11, 14.99it/s] 31%|███▏      | 80/256 [00:05<00:11, 15.01it/s] 32%|███▏      | 82/256 [00:05<00:11, 14.99it/s] 33%|███▎      | 84/256 [00:05<00:11, 15.01it/s] 34%|███▎      | 86/256 [00:05<00:11, 15.10it/s] 34%|███▍      | 88/256 [00:05<00:11, 15.10it/s] 35%|███▌      | 90/256 [00:05<00:11, 15.01it/s] 36%|███▌      | 92/256 [00:06<00:10, 15.19it/s] 37%|███▋      | 94/256 [00:06<00:10, 15.16it/s] 38%|███▊      | 96/256 [00:06<00:10, 14.97it/s] 38%|███▊      | 98/256 [00:06<00:10, 15.10it/s] 39%|███▉      | 100/256 [00:06<00:10, 15.11it/s] 40%|███▉      | 102/256 [00:06<00:10, 15.14it/s] 41%|████      | 104/256 [00:06<00:09, 15.25it/s] 41%|████▏     | 106/256 [00:07<00:09, 15.35it/s] 42%|████▏     | 108/256 [00:07<00:09, 15.39it/s] 43%|████▎     | 110/256 [00:07<00:09, 15.35it/s] 44%|████▍     | 112/256 [00:07<00:09, 15.33it/s] 45%|████▍     | 114/256 [00:07<00:09, 15.29it/s] 45%|████▌     | 116/256 [00:07<00:09, 15.34it/s] 46%|████▌     | 118/256 [00:07<00:09, 15.30it/s] 47%|████▋     | 120/256 [00:07<00:08, 15.29it/s] 48%|████▊     | 122/256 [00:08<00:08, 15.01it/s] 48%|████▊     | 124/256 [00:08<00:08, 15.19it/s] 49%|████▉     | 126/256 [00:08<00:08, 15.21it/s] 50%|█████     | 128/256 [00:08<00:08, 15.17it/s] 51%|█████     | 130/256 [00:08<00:08, 15.16it/s] 52%|█████▏    | 132/256 [00:08<00:08, 15.10it/s] 52%|█████▏    | 134/256 [00:08<00:08, 15.02it/s] 53%|█████▎    | 136/256 [00:08<00:07, 15.01it/s] 54%|█████▍    | 138/256 [00:09<00:07, 15.09it/s] 55%|█████▍    | 140/256 [00:09<00:07, 15.01it/s] 55%|█████▌    | 142/256 [00:09<00:07, 14.99it/s] 56%|█████▋    | 144/256 [00:09<00:07, 15.02it/s] 57%|█████▋    | 146/256 [00:09<00:07, 15.07it/s] 58%|█████▊    | 148/256 [00:09<00:07, 15.19it/s] 59%|█████▊    | 150/256 [00:09<00:07, 15.08it/s] 59%|█████▉    | 152/256 [00:10<00:06, 15.02it/s] 60%|██████    | 154/256 [00:10<00:06, 14.93it/s] 61%|██████    | 156/256 [00:10<00:06, 15.00it/s] 62%|██████▏   | 158/256 [00:10<00:06, 15.20it/s] 62%|██████▎   | 160/256 [00:10<00:06, 15.16it/s] 63%|██████▎   | 162/256 [00:10<00:06, 15.25it/s] 64%|██████▍   | 164/256 [00:10<00:06, 15.06it/s] 65%|██████▍   | 166/256 [00:10<00:05, 15.11it/s] 66%|██████▌   | 168/256 [00:11<00:05, 15.09it/s] 66%|██████▋   | 170/256 [00:11<00:05, 15.28it/s] 67%|██████▋   | 172/256 [00:11<00:05, 15.23it/s] 68%|██████▊   | 174/256 [00:11<00:05, 15.21it/s] 69%|██████▉   | 176/256 [00:11<00:05, 15.21it/s] 70%|██████▉   | 178/256 [00:11<00:05, 15.16it/s] 70%|███████   | 180/256 [00:11<00:05, 15.07it/s] 71%|███████   | 182/256 [00:12<00:04, 14.94it/s] 72%|███████▏  | 184/256 [00:12<00:04, 15.14it/s] 73%|███████▎  | 186/256 [00:12<00:04, 15.23it/s] 73%|███████▎  | 188/256 [00:12<00:04, 15.11it/s] 74%|███████▍  | 190/256 [00:12<00:04, 14.95it/s] 75%|███████▌  | 192/256 [00:12<00:04, 14.88it/s] 76%|███████▌  | 194/256 [00:12<00:04, 15.08it/s] 77%|███████▋  | 196/256 [00:12<00:03, 15.29it/s] 77%|███████▋  | 198/256 [00:13<00:03, 15.18it/s] 78%|███████▊  | 200/256 [00:13<00:03, 15.12it/s] 79%|███████▉  | 202/256 [00:13<00:03, 15.05it/s] 80%|███████▉  | 204/256 [00:13<00:03, 14.84it/s] 80%|████████  | 206/256 [00:13<00:03, 15.03it/s] 81%|████████▏ | 208/256 [00:13<00:03, 15.10it/s] 82%|████████▏ | 210/256 [00:13<00:03, 15.12it/s] 83%|████████▎ | 212/256 [00:14<00:02, 15.10it/s] 84%|████████▎ | 214/256 [00:14<00:02, 15.11it/s] 84%|████████▍ | 216/256 [00:14<00:02, 15.15it/s] 85%|████████▌ | 218/256 [00:14<00:02, 15.26it/s] 86%|████████▌ | 220/256 [00:14<00:02, 15.33it/s] 87%|████████▋ | 222/256 [00:14<00:02, 15.40it/s] 88%|████████▊ | 224/256 [00:14<00:02, 15.24it/s] 88%|████████▊ | 226/256 [00:14<00:01, 15.32it/s] 89%|████████▉ | 228/256 [00:15<00:01, 15.20it/s] 90%|████████▉ | 230/256 [00:15<00:01, 15.27it/s] 91%|█████████ | 232/256 [00:15<00:01, 15.15it/s] 91%|█████████▏| 234/256 [00:15<00:01, 15.26it/s] 92%|█████████▏| 236/256 [00:15<00:01, 15.25it/s] 93%|█████████▎| 238/256 [00:15<00:01, 15.23it/s] 94%|█████████▍| 240/256 [00:15<00:01, 15.20it/s] 95%|█████████▍| 242/256 [00:15<00:00, 15.21it/s] 95%|█████████▌| 244/256 [00:16<00:00, 15.18it/s] 96%|█████████▌| 246/256 [00:16<00:00, 15.33it/s] 97%|█████████▋| 248/256 [00:16<00:00, 15.38it/s] 98%|█████████▊| 250/256 [00:16<00:00, 15.24it/s] 98%|█████████▊| 252/256 [00:16<00:00, 15.28it/s] 99%|█████████▉| 254/256 [00:16<00:00, 15.29it/s]100%|██████████| 256/256 [00:16<00:00, 15.34it/s]100%|██████████| 256/256 [00:16<00:00, 15.15it/s]
+For test question idx = 563:
+Context:
+A 47-year-old woman seeks evaluation at your office because she has had postcoital vaginal bleeding for the past 8 months with occasional intermenstrual watery, blood-tinged vaginal discharge. Her family history is negative for malignancies and inherited disorders. She is the result of a pregnancy complicated by numerous miscarriages in the 1960s, for which her mother received diethylstilbestrol. During a pelvic examination, you notice a polypoid mass on the anterior wall of the vagina. The bimanual examination is negative for adnexal masses. You suspect the presence of carcinoma and, therefore, send tissue samples to pathology, which confirmed the presence of malignant cells.
+Query:
+Which of the following is the most likely malignant tumor in this patient?
+
+A. Clear cell adenocarcinoma
+B. Melanoma
+C. Botryoid sarcoma
+D. Verrucous carcinoma
+Ground-Truth Answer: A
+Response:
+The patient's history of exposure to diethylstilbestrol (DES) during her mother's pregnancy is a significant risk factor for clear cell adenocarcinoma of the vagina. DES is a synthetic estrogen that was prescribed to pregnant women in the United States from the 1940s to the early 1970s to prevent miscarriage and premature labor. However, it was later found to increase the risk of clear cell adenocarcinoma in the daughters of women who took DES during pregnancy.
+
+The other options listed are not typically associated with DES exposure:
+
+B. Melanoma is a type of skin cancer and is not related to DES exposure.
+C. Botryoid sarcoma is a type of sarcoma that can occur in the vagina, but it is not specifically associated with DES exposure.
+D. Verrucous carcinoma is a type of squamous cell carcinoma that can occur in the genital tract, but it is not associated with DES exposure.
+
+Given the patient's history of DES exposure and the presence of a polypoid mass in the vagina, the most likely malignant tumor in this patient is clear cell adenocarcinoma.
+
+So, the answer is A.<|end_of_text|>
+CA Scores:
+
+A 47-year-old woman seeks evaluation at your office because she has had postcoital vaginal bleeding for the past 8 months with occasional intermenstrual watery, blood-tinged vaginal discharge. --- -0.0
+Her family history is negative for malignancies and inherited disorders. --- 0.0
+She is the result of a pregnancy complicated by numerous miscarriages in the 1960s, for which her mother received diethylstilbestrol. --- 14.285942034140032
+During a pelvic examination, you notice a polypoid mass on the anterior wall of the vagina. --- 13.511532981490783
+The bimanual examination is negative for adnexal masses. --- 0.0
+You suspect the presence of carcinoma and, therefore, send tissue samples to pathology, which confirmed the presence of malignant cells. --- -0.0
+
+

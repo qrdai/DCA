@@ -1,0 +1,144 @@
+{
+    "context": "A 56-year-old man with a history of hypertension presents to his physician with progressive fatigue and new onset muscle cramps. He has had no recent changes to his medication regimen, which includes hydrochlorothiazide, lisinopril, and amlodipine. His temperature is 98.0\u00b0F (36.7\u00b0C), blood pressure is 174/111 mmHg, pulse is 70/min, respirations are 12/min, and oxygen saturation is 98% on room air. The patient's cardiopulmonary and abdominal exams are unremarkable. Laboratory values are ordered as seen below.\n\nSerum:\nNa+: 138 mEq/L\nCl-: 100 mEq/L\nK+: 3.3 mEq/L\nHCO3-: 33 mEq/L\nBUN: 20 mg/dL\nGlucose: 129 mg/dL",
+    "query": "What is the most likely underlying etiology of this patient's hypertension?\n\nA. Aldosterone excess\nB. Catecholamine-secreting mass\nC. Cortisol excess\nD. Impaired kidney perfusion",
+    "answer_letter": "A",
+    "question_idx": 51,
+    "response": "The patient's symptoms of progressive fatigue and muscle cramps, along with his elevated blood pressure, are suggestive of a hypertensive crisis. The lab values show a normal sodium level, normal chloride level, low potassium level, and normal bicarbonate level. The BUN is also normal, which suggests that the kidneys are not significantly impaired at this time.\n\nGiven the options:\n\nA. Aldosterone excess would typically lead to hypokalemia and metabolic alkalosis, which is not the case here.\n\nB. Catecholamine-secreting mass could cause hypertension due to the excess catecholamines, but this would not typically cause hypokalemia.\n\nC. Cortisol excess, or Cushing's syndrome, could cause hypertension and hypokalemia due to the effects of cortisol on the kidneys, leading to potassium wasting.\n\nD. Impaired kidney perfusion could lead to hypertension due to the activation of the renin-angiotensin-aldosterone system (RAAS), but this would not typically cause hypokalemia.\n\nThe most likely underlying etiology of this patient's hypertension, given the hypokalemia and the absence of other electrolyte abnormalities, is cortisol excess. Cortisol can cause hypokalemia by increasing renal potassium excretion, which is not seen in the other options.\n\nSo, the answer is C.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 56-year-old man with a history of hypertension presents to his physician with progressive fatigue and new onset muscle cramps.",
+            16.86732326157629
+        ],
+        [
+            "He has had no recent changes to his medication regimen, which includes hydrochlorothiazide, lisinopril, and amlodipine.",
+            0.0
+        ],
+        [
+            "His temperature is 98.0\u00b0F (36.7\u00b0C), blood pressure is 174/111 mmHg, pulse is 70/min, respirations are 12/min, and oxygen saturation is 98% on room air.",
+            3.5002537195207304
+        ],
+        [
+            "The patient's cardiopulmonary and abdominal exams are unremarkable.",
+            0.0
+        ],
+        [
+            "Laboratory values are ordered as seen below.",
+            0.0
+        ],
+        [
+            "Serum:",
+            0.0
+        ],
+        [
+            "Na+: 138 mEq/L",
+            1.0633555098525762
+        ],
+        [
+            "Cl-: 100 mEq/L",
+            0.0
+        ],
+        [
+            "K+: 3.3 mEq/L",
+            0.0
+        ],
+        [
+            "HCO3-: 33 mEq/L",
+            1.3011125868344078
+        ],
+        [
+            "BUN: 20 mg/dL",
+            5.528849240482246
+        ],
+        [
+            "Glucose: 129 mg/dL",
+            -0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.11851615828300287
+        },
+        {
+            "id": "MedMCQA,29167",
+            "type": "Exam",
+            "answer": "B",
+            "score": "Score: 7\n\nJustification: This question requires a deep understanding of microbiology and medical terminology to identify the most common cause of catheter-induced blood infections. It also involves knowledge of different types of bacteria and fungi.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "Most common catheter induced blood infection is due to -\n\nA. Staphylococcus aureus\nB. Coagulase negative staphylococci\nC. Gram negative bacilli\nD. Candida"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Catheter-induced blood infections, also known as catheter-related bloodstream infections (CRBSIs), are a significant cause of hospital-acquired infections. These infections are often associated with the use of central venous catheters (CVCs), which are inserted into large veins for various medical purposes, such as administering medication, fluids, or nutrition, or for dialysis.\n\nThe most common organisms responsible for CRBSIs vary, but typically include:\n\nA. Staphylococcus aureus - This is a common cause of bloodstream infections and can be associated with catheter use. However, it is not the most common cause of catheter-induced infections.\n\nB. Coagulase negative staphylococci - These bacteria are part of the normal skin flora and are a frequent cause of CRBSIs. Because they are common on the skin, they can easily contaminate catheters during insertion or while being maintained.\n\nC. Gram negative bacilli - These organisms, which include a wide variety of bacteria such as E. coli and Pseudomonas aeruginosa, can also cause CRBSIs, but they are not the most common cause.\n\nD. Candida - This is a type of fungus that can cause bloodstream infections associated with catheters, particularly in immunocompromised patients, but again, it is not the most common cause.\n\nThe most common cause of catheter-induced blood infections is coagulase negative staphylococci, primarily because of their prevalence on the skin, which increases the risk of contamination and subsequent infection.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.11716092122717667
+        },
+        {
+            "id": "MedQA-Evol,2762-synthetic-6",
+            "type": "Exam",
+            "answer": "D",
+            "score": "I would rate this question as a 9. \n\nJustification: This question requires a deep understanding of neurology, epilepsy, and differential diagnosis. It involves multiple concepts such as seizure types, differential diagnosis, and clinical presentation. The presence of specific medical terminology and the need to apply knowledge to a complex clinical scenario contribute to the high difficulty and complexity rating.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 22-year-old woman with normal vital signs, who experienced a witnessed convulsive episode with automatisms such as lip-smacking and fumbling with clothing, lasting about 5 minutes followed by a postictal state, and considering normal serum glucose, electrolytes, calcium levels, a clear urine toxicology screen, and an unremarkable CT brain scan, which diagnosis is most probable, especially in the context of no preceding aura or other warning signs?\n\nA. Transient ischemic attack with atypical presentation\nB. Psychogenic non-epileptic seizures\nC. Migraine with aura featuring atypical motor symptoms\nD. Temporal lobe epilepsy"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The described symptoms of a convulsive episode with automatisms such as lip-smacking and fumbling with clothing, followed by a postictal state, are typical features of a seizure. Since the serum glucose, electrolytes, calcium levels, and urine toxicology screen are normal, metabolic and toxic causes can be ruled out. The unremarkable CT brain scan also makes acute structural brain abnormalities less likely.\n\nTransient ischemic attack (TIA) with atypical presentation (A) is less likely because TIAs usually do not cause convulsive seizures or postictal states.\n\nPsychogenic non-epileptic seizures (B) could present with similar symptoms, but these are more often associated with psychiatric conditions and are not typically followed by a postictal state.\n\nMigraine with aura featuring atypical motor symptoms (C) can sometimes mimic seizures, but the lack of headache and the presence of a postictal state make this diagnosis less likely.\n\nTemporal lobe epilepsy (D) is a type of epilepsy that often presents with seizures that include automatisms like lip-smacking and manual fumbling, and it can occur without an aura or warning signs. The postictal state is also consistent with a seizure originating from the temporal lobe.\n\nGiven the information provided, temporal lobe epilepsy is the most probable diagnosis.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.11413592300414552
+        },
+        {
+            "id": "TextBookQA,InternalMed_Harrison_19622",
+            "type": "Exam",
+            "answer": "B",
+            "score": "I would rate this question as a 9. It requires a deep understanding of systemic atherosclerotic disease, endothelial dysfunction, HMG-CoA reductase inhibitors, ACE inhibitors, and urinary biomarkers. It also involves technical terminology and the application of knowledge to a specific medical context.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of systemic atherosclerotic disease, which urinary biomarker, reflective of endothelial dysfunction and prognostic of future cardiovascular incidents, is known to decrease following therapy with HMG-CoA reductase inhibitors, specifically in patients not concurrently receiving ACE inhibitors?\n\nA. Urinary potassium excretion\nB. Urinary albumin excretion (UAE)\nC. Urinary sodium excretion\nD. Urinary creatinine clearance"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of systemic atherosclerotic disease, endothelial dysfunction is a key factor in the progression of atherosclerosis and subsequent cardiovascular events. One of the biomarkers reflective of endothelial dysfunction is urinary albumin excretion (UAE). Increased UAE is associated with an increased risk of cardiovascular events and is considered a marker of vascular damage.\n\nHMG-CoA reductase inhibitors, commonly known as statins, are known to improve endothelial function and reduce inflammation, which can lead to a decrease in UAE. Statins have been shown to reduce the progression of atherosclerosis and the risk of cardiovascular events.\n\nACE inhibitors are another class of medications used to treat hypertension and heart failure, which also have beneficial effects on endothelial function and can reduce UAE. However, the question specifically asks for the urinary biomarker that decreases following therapy with HMG-CoA reductase inhibitors in patients not concurrently receiving ACE inhibitors.\n\nGiven the information, the urinary biomarker in question is urinary albumin excretion (UAE).\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.11222809606976034
+        },
+        {
+            "id": "TextBookQA,Surgery_Schwartz_12165",
+            "type": "Exam",
+            "answer": "C",
+            "score": "This question would be rated as a 9. It requires a deep understanding of neurosurgery, traumatic brain injury, and the management of acute-on-chronic subdural hematomas. Additionally, the consideration of the patient's history of congestive heart failure adds complexity to the question. The question involves multiple concepts, technical terminology, and quantitative considerations related to patient management.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 74-year-old male patient with a history of a fall four weeks prior, now presenting with progressive left hemiplegia and lethargy, and a CT scan revealing an acute-on-chronic subdural hematoma with the acute portion appearing hyperdense in the dependent section, which postoperative management strategy would best promote brain expansion and aid hematoma resolution, while also considering the patient's history of congestive heart failure?\n\nA. Immediate repeat craniotomy, with careful intraoperative hemodynamic monitoring\nB. Mannitol infusion, with monitoring for potential cardiac overload\nC. Administration of hypertonic saline\nD. High levels of inspired oxygen, adjusted for cardiac function"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In this scenario, the patient has an acute-on-chronic subdural hematoma, which is causing progressive neurological symptoms, such as left hemiplegia and lethargy. The treatment for a subdural hematoma that is causing significant symptoms or brain compression typically involves surgical intervention to evacuate the hematoma.\n\nA. Immediate repeat craniotomy, with careful intraoperative hemodynamic monitoring \u2013 This option would be considered if the patient's condition is deteriorating and there is a need for immediate intervention to relieve pressure on the brain. Intraoperative hemodynamic monitoring is particularly important in this patient due to his history of congestive heart failure.\n\nB. Mannitol infusion, with monitoring for potential cardiac overload \u2013 Mannitol is an osmotic diuretic that can help reduce intracranial pressure by drawing fluid out of the brain tissue and into the bloodstream. However, in a patient with congestive heart failure, mannitol could exacerbate heart failure by increasing the volume of fluid that the heart has to pump.\n\nC. Administration of hypertonic saline \u2013 Hypertonic saline works similarly to mannitol in reducing intracranial pressure. It is also an osmotic agent, but it has the advantage of being less likely to cause fluid overload compared to mannitol, making it a potentially safer option in patients with congestive heart failure.\n\nD. High levels of inspired oxygen, adjusted for cardiac function \u2013 While oxygen therapy can support brain tissue that is at risk due to decreased blood flow, it does not directly aid in the resolution of a hematoma or promote brain expansion.\n\nConsidering the patient's history of congestive heart failure, the best option that would promote brain expansion and aid hematoma resolution while also considering the patient's cardiac status is hypertonic saline. It can help reduce intracranial pressure without significantly increasing the risk of cardiac overload.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.10604098717272273
+        }
+    ]
+}

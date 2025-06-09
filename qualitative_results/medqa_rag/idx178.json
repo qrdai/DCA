@@ -1,0 +1,140 @@
+{
+    "context": "A 40-year-old businessman who was previously well is brought into the emergency department by his assistant with a complaint of left-sided weakness after a chiropractic neck manipulation. He has never felt like this before. Past medical history is insignificant. His blood pressure is 125/75 mm Hg, pulse 86/min, respiratory rate 13/min, temperature 36.8\u00b0C (98.2\u00b0F). A T2-weighted MRI shows a left C5 hemicord lesion. The patient is treated with cervical immobilization, a course of steroids, and physical therapy.\n\nHere are some knowledge points that might be relevant:\n### Knowledge Point 1: <Spinal Cord Injury and Neurological Findings>.\n- Definition: Spinal cord injury can lead to various neurological findings depending on the level and extent of the injury. These findings may include motor deficits, sensory deficits, and autonomic dysfunction. Understanding the specific neurological manifestations associated with spinal cord lesions is crucial for predicting the patient's clinical presentation.\n\n### Knowledge Point 2: <Cervical Spinal Cord Lesions>.\n- Definition: Cervical spinal cord lesions can result in distinct patterns of neurological deficits based on the level of the lesion. Knowledge of the anatomical organization of the spinal cord and the corresponding neurological functions at different levels is essential for predicting the specific deficits that may occur in patients with cervical cord lesions.\n\n### Knowledge Point 3: <Horner's Syndrome>.\n- Definition: Horner's syndrome is a combination of symptoms caused by a disruption of the sympathetic nerve pathway to the eye and face. It typically presents with ptosis (drooping of the upper eyelid), miosis (constricted pupil), anhidrosis (lack of sweating), and sometimes enophthalmos (sunken appearance of the eye). Understanding the clinical features and etiology of Horner's syndrome is important for recognizing its presence in patients with relevant neurological conditions.\n\n### Knowledge Point 4: <Corticospinal Tract and Motor Function>.\n- Definition: The corticospinal tract is a major descending motor pathway responsible for voluntary motor control. Understanding the anatomical organization and function of the corticospinal tract is crucial for predicting the motor deficits that may occur in patients with spinal cord lesions affecting this pathway.",
+    "query": "What other finding will most likely be seen in this patient?\n\nA. Spastic paralysis at the level of lesion\nB. Right-sided Horner's syndrome\nC. Contralateral corticospinal tract involvement\nD. Right-sided analgesia",
+    "answer_letter": "D",
+    "question_idx": 178,
+    "response": "Given the patient's presentation with left-sided weakness after a cervical manipulation, we can infer that the lesion is likely in the cervical region of the spinal cord. The left-sided weakness suggests that the lesion is on the right side of the spinal cord, as the corticospinal tract decussates at the level of the medulla oblongata, meaning that motor signals from the left side of the brain cross to the right side of the spinal cord to control the left side of the body.\n\nThe presence of a left C5 hemicord lesion indicates that the lesion is affecting the right side of the spinal cord at the level of C5. This level corresponds to the cervical region of the spinal cord, which is responsible for motor control of the upper limbs and diaphragm.\n\nGiven the options provided:\nA. Spastic paralysis at the level of lesion - This is a common finding in spinal cord injuries due to the loss of inhibitory control over the motor neurons, leading to increased muscle tone and spasms.\nB. Right-sided Horner's syndrome - This is not likely because Horner's syndrome is associated with a disruption of the sympathetic pathway, which is not typically affected by a C5 hemicord lesion.\nC. Contralateral corticospinal tract involvement - This is not correct because the corticospinal tract is already crossed at the level of the medulla oblongata, so a lesion at C5 would not affect the contralateral (left) corticospinal tract.\nD. Right-sided analgesia - This is not likely because the C5 level is not typically associated with sensory deficits, and the lesion is described as a hemicord lesion, which would not affect the entire cross-section of the spinal cord.\n\nBased on the information provided and the typical neurological findings associated with cervical spinal cord lesions, the most likely additional finding in this patient would be spastic paralysis at the level of the lesion, which would manifest as increased muscle tone and spasms in the upper limbs and diaphragm.\n\nSo, the answer is A.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 40-year-old businessman who was previously well is brought into the emergency department by his assistant with a complaint of left-sided weakness after a chiropractic neck manipulation.",
+            16.395187725973546
+        ],
+        [
+            "He has never felt like this before.",
+            -0.0
+        ],
+        [
+            "Past medical history is insignificant.",
+            -0.0
+        ],
+        [
+            "His blood pressure is 125/75 mm Hg, pulse 86/min, respiratory rate 13/min, temperature 36.8\u00b0C (98.2\u00b0F).",
+            -0.0
+        ],
+        [
+            "A T2-weighted MRI shows a left C5 hemicord lesion.",
+            30.016080305836088
+        ],
+        [
+            "The patient is treated with cervical immobilization, a course of steroids, and physical therapy.",
+            0.0
+        ],
+        [
+            "Here are some knowledge points that might be relevant:",
+            -0.0
+        ],
+        [
+            "### Knowledge Point 1: <Spinal Cord Injury and Neurological Findings>.\n- Definition: Spinal cord injury can lead to various neurological findings depending on the level and extent of the injury. These findings may include motor deficits, sensory deficits, and autonomic dysfunction. Understanding the specific neurological manifestations associated with spinal cord lesions is crucial for predicting the patient's clinical presentation.",
+            3.6643576244665366
+        ],
+        [
+            "### Knowledge Point 2: <Cervical Spinal Cord Lesions>.\n- Definition: Cervical spinal cord lesions can result in distinct patterns of neurological deficits based on the level of the lesion. Knowledge of the anatomical organization of the spinal cord and the corresponding neurological functions at different levels is essential for predicting the specific deficits that may occur in patients with cervical cord lesions.",
+            4.557941303805569
+        ],
+        [
+            "### Knowledge Point 3: <Horner's Syndrome>.\n- Definition: Horner's syndrome is a combination of symptoms caused by a disruption of the sympathetic nerve pathway to the eye and face. It typically presents with ptosis (drooping of the upper eyelid), miosis (constricted pupil), anhidrosis (lack of sweating), and sometimes enophthalmos (sunken appearance of the eye). Understanding the clinical features and etiology of Horner's syndrome is important for recognizing its presence in patients with relevant neurological conditions.",
+            0.0
+        ],
+        [
+            "### Knowledge Point 4: <Corticospinal Tract and Motor Function>.\n- Definition: The corticospinal tract is a major descending motor pathway responsible for voluntary motor control. Understanding the anatomical organization and function of the corticospinal tract is crucial for predicting the motor deficits that may occur in patients with spinal cord lesions affecting this pathway.",
+            0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.12598404169291982
+        },
+        {
+            "id": "MedQA-Evol,8987-synthetic-4",
+            "type": "Exam",
+            "answer": "D",
+            "score": "Score: 8\n\nJustification: This question requires a deep understanding of Graves' disease, methimazole therapy, adverse effects of medication, interpretation of peripheral blood smear findings, and the potential impact of viral infections on the patient's presentation. Additionally, it involves the application of knowledge to identify a specific finding indicative of agranulocytosis.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 32-year-old female patient with a recent diagnosis of Graves' disease undergoing methimazole therapy, who now presents with fever, malaise, sore throat, and a leukocyte count of 3,200/mm3 with 8% segmented neutrophils, which additional finding on a peripheral blood smear would be indicative of agranulocytosis, a known adverse effect of methimazole treatment, especially considering the patient's recent exposure to a child with a viral infection?\n\nA. Hypersegmented neutrophils indicative of megaloblastic anemia, possibly due to concurrent folic acid deficiency\nB. Reed-Sternberg cells suggestive of Hodgkin lymphoma, which could be an incidental finding\nC. Spherocytes and a concomitant increase in reticulocyte count, which may suggest an immune-mediated hemolysis\nD. A reduction in mature neutrophils while preserving normal cellular morphology, consistent with drug-induced agranulocytosis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient is undergoing methimazole therapy for Graves' disease and presents with symptoms of fever, malaise, and sore throat along with a low leukocyte count and a small percentage of segmented neutrophils. These findings are concerning for agranulocytosis, which is a known adverse effect of methimazole.\n\nAgranulocytosis is characterized by a marked decrease in the number of granulocytes, which are a type of white blood cell that includes neutrophils, eosinophils, and basophils. Neutrophils are the most abundant type of granulocytes and are crucial for fighting infections. A reduction in mature neutrophils would lead to an increased risk of infections, which aligns with the patient's presentation.\n\nNow, let's evaluate the options:\n\nA. Hypersegmented neutrophils are indicative of megaloblastic anemia, which is not related to the adverse effects of methimazole or the symptoms described.\n\nB. Reed-Sternberg cells are a hallmark of Hodgkin lymphoma, which is not suggested by the patient's symptoms or history.\n\nC. Spherocytes and an increased reticulocyte count would suggest hemolytic anemia, which does not explain the low leukocyte count and the patient's symptoms.\n\nD. A reduction in mature neutrophils while preserving normal cellular morphology is consistent with drug-induced agranulocytosis. This would explain the patient's symptoms and is a known side effect of methimazole.\n\nGiven the information provided and the options available, the finding on a peripheral blood smear that would be indicative of agranulocytosis in this patient would be a reduction in mature neutrophils while preserving normal cellular morphology.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.10749183670299392
+        },
+        {
+            "id": "MedQA-Evol,8315-synthetic-7",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 7. It requires a deep understanding of the pathophysiology of chronic atrophic gastritis, intrinsic factor, vitamin B12 absorption, and hematopoiesis. It also involves knowledge of potential complications related to these conditions.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 52-year-old female patient with chronic atrophic gastritis leading to decreased intrinsic factor from parietal cell destruction, which complication is she most at risk for, given the necessity of intrinsic factor for vitamin B12 absorption and subsequent hematopoiesis?\n\nA. Hypokalemia due to altered potassium homeostasis\nB. Iron-deficiency anemia owing to impaired iron uptake\nC. Osteoporosis due to calcium absorption disruption\nD. Megaloblastic anemia as a result of cobalamin (vitamin B12) deficiency"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Intrinsic factor is a glycoprotein secreted by the parietal cells of the stomach that is necessary for the absorption of vitamin B12 (cobalamin) in the small intestine. Chronic atrophic gastritis can lead to the destruction of parietal cells, which in turn can cause a deficiency in intrinsic factor production. Without intrinsic factor, vitamin B12 cannot be effectively absorbed, leading to a deficiency.\n\nVitamin B12 is essential for proper red blood cell formation, neurological function, and DNA synthesis. A deficiency in vitamin B12 can lead to megaloblastic anemia, which is characterized by the production of large, abnormal red blood cells (megaloblasts) due to impaired DNA synthesis.\n\nThe other options listed do not directly relate to the function of intrinsic factor or vitamin B12 absorption:\n\nA. Hypokalemia is related to potassium levels and is not directly linked to intrinsic factor or vitamin B12 deficiency.\nB. Iron-deficiency anemia is due to a lack of iron, not vitamin B12, and is not directly caused by a lack of intrinsic factor.\nC. Osteoporosis is a condition where bones become weak and brittle, typically related to calcium or vitamin D deficiency, not vitamin B12.\n\nTherefore, the most likely complication that the patient with chronic atrophic gastritis and decreased intrinsic factor production is at risk for is megaloblastic anemia due to cobalamin (vitamin B12) deficiency.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.09929909216915303
+        },
+        {
+            "id": "TextBookQA,Pediatrics_Nelson_485",
+            "type": "Exam",
+            "answer": "C",
+            "score": "This question rates around a 7 in difficulty and complexity. It requires a deep understanding of the psychology of child sexual abuse, including sociocultural factors, offender profiling, and modus operandi. Respondents need to grasp concepts related to offender-victim dynamics, psychological manipulation, and the various profiles of perpetrators. Additionally, familiarity with terminology related to criminology and psychology is necessary to differentiate between the options.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "When accounting for sociocultural factors and the psychological profile of the offender, which of the following best characterizes the usual profile of the perpetrator in child sexual abuse scenarios, including their typical relationship to the victim and their modus operandi?\n\nA. Predominantly female relatives employing intimidation involving threats of physical harm and promises of social ostracism\nB. Generally adolescents with no prior relationship to the child, using sophisticated manipulation and deceit\nC. Commonly adults or adolescents familiar to the child, employing psychological manipulation and subtle coercion\nD. Mainly strangers to the child, utilizing overt physical violence and explicit threats"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Child sexual abuse is a sensitive and complex issue that involves various factors, including the relationship between the perpetrator and the victim, as well as the methods used to commit the abuse.\n\nA. This option suggests that female relatives are the usual perpetrators using intimidation and threats. While female perpetrators do exist, they are not the majority, and the described methods are not the most common.\n\nB. This option implies that adolescents with no prior relationship to the child are the usual offenders and that they use sophisticated manipulation and deceit. While adolescents can be perpetrators, they are not typically the most common demographic, and having no prior relationship is less common in child sexual abuse cases.\n\nC. This option indicates that the usual perpetrators are adults or adolescents who are familiar to the child and that they use psychological manipulation and subtle coercion. This aligns with the patterns observed in many child sexual abuse cases, where the perpetrator is often someone the child knows and trusts, and the abuse is carried out using manipulation rather than overt violence.\n\nD. This option suggests that strangers are the main perpetrators and that they use physical violence and explicit threats. While stranger danger is a concern, the majority of child sexual abuse cases involve someone known to the child, not a stranger.\n\nBased on the evidence and patterns observed in child sexual abuse cases, the most accurate profile of a perpetrator is someone who is familiar to the child and who uses psychological manipulation and coercion to abuse the child.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.09884473151502184
+        },
+        {
+            "id": "MedQA-Evol,9607-synthetic-6",
+            "type": "Exam",
+            "answer": "A",
+            "score": "This question would be rated as a 7. It requires a deep understanding of COPD exacerbation management, including knowledge of appropriate medication regimens, potential bacterial etiologies, and allergy management. It also involves the application of clinical judgment in selecting the next intervention.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "For a 65-year-old female patient with a history of COPD exacerbation marked by worsening dyspnea, productive cough with green sputum, significant tobacco use, on a regimen of tiotropium, salmeterol, and fluticasone, exhibiting diffuse wheezing and reduced lung base sounds, which intervention is indicated next? Assume the exacerbation is due to a likely bacterial etiology, and she has a known allergy to penicillin.\n\nA. Begin targeted antibiotic therapy avoiding penicillin derivatives\nB. Initiate systemic corticosteroids\nC. Increase the dose of existing inhaled corticosteroids\nD. Add another inhaled anticholinergic agent"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the case of a COPD exacerbation with symptoms of worsening dyspnea, productive cough with green sputum, and a likely bacterial etiology, the use of antibiotics is indicated. Since the patient has a known allergy to penicillin, it is important to choose an antibiotic that is not a penicillin derivative to avoid an allergic reaction.\n\nSystemic corticosteroids are also commonly used in the treatment of COPD exacerbations as they can help reduce inflammation and improve symptoms. However, the question specifically suggests that the exacerbation is likely due to a bacterial infection, which makes the use of antibiotics more immediately relevant.\n\nIncreasing the dose of existing inhaled corticosteroids might be considered in some cases, but this would not address the acute bacterial infection that is likely causing the exacerbation.\n\nAdding another inhaled anticholinergic agent would not be appropriate because the patient is already on tiotropium, which is a long-acting anticholinergic. Adding another agent of the same class would not provide additional benefit and could increase the risk of side effects.\n\nGiven the scenario, the most appropriate intervention is to begin targeted antibiotic therapy avoiding penicillin derivatives.\n\nSo, the answer is A."
+                }
+            ],
+            "influence": 0.0961631921865781
+        }
+    ]
+}

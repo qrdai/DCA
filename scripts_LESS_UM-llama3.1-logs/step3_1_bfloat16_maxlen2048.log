@@ -1,0 +1,1031 @@
+Namespace(task='medqa_nonrag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-97', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt97-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=True, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.24s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.21s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.02it/s]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10 examples [00:00, 2443.66 examples/s]
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-nonrag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.95 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:00<00:00, 11.44 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.25 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1393.92 examples/s]
+After Filtering: len(validation_set) = 10
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 56-year-old man with a history of hypertension presents to his physician with progressive fatigue and new onset muscle cramps. He has had no recent changes to his medication regimen, which includes hydrochlorothiazide, lisinopril, and amlodipine. His temperature is 98.0°F (36.7°C), blood pressure is 174/111 mmHg, pulse is 70/min, respirations are 12/min, and oxygen saturation is 98% on room air. The patient's cardiopulmonary and abdominal exams are unremarkable. Laboratory values are ordered as seen below.
+
+Serum:
+Na+: 138 mEq/L
+Cl-: 100 mEq/L
+K+: 3.3 mEq/L
+HCO3-: 33 mEq/L
+BUN: 20 mg/dL
+Glucose: 129 mg/dL
+
+Query: What is the most likely underlying etiology of this patient's hypertension?
+
+A. Aldosterone excess
+B. Catecholamine-secreting mass
+C. Cortisol excess
+D. Impaired kidney perfusion
+<|assistant|>
+
+Completion (labels):
+The patient's symptoms of progressive fatigue and muscle cramps, along with his elevated blood pressure, are suggestive of a hypertensive crisis. The lab values show a normal sodium level, normal chloride level, low potassium level, and normal bicarbonate level. The BUN is also normal, which suggests that the kidneys are not significantly impaired at this time.
+
+Given the options:
+
+A. Aldosterone excess would typically lead to hypokalemia and metabolic alkalosis, which is not the case here.
+
+B. Catecholamine-secreting mass could cause hypertension due to the excess catecholamines, but this would not typically cause hypokalemia.
+
+C. Cortisol excess, or Cushing's syndrome, could cause hypertension and hypokalemia due to the effects of cortisol on the kidneys, leading to potassium wasting.
+
+D. Impaired kidney perfusion could lead to hypertension due to the activation of the renin-angiotensin-aldosterone system (RAAS), but this would not typically cause hypokalemia.
+
+The most likely underlying etiology of this patient's hypertension, given the hypokalemia and the absence of other electrolyte abnormalities, is cortisol excess. Cortisol can cause hypokalemia by increasing renal potassium excretion, which is not seen in the other options.
+
+So, the answer is C.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 21-year-old male presents to his primary care provider for fatigue. He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia. For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists. The patient has a past medical history of asthma managed with albuterol as needed. He is sexually active with both men and women, and he uses condoms “most of the time.” On physical exam, the patient’s temperature is 102.5°F (39.2°C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air. He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs. Tourniquet test is negative. Laboratory results are as follows:
+
+Hemoglobin: 14 g/dL
+Hematocrit: 44%
+Leukocyte count: 3,200/mm^3
+Platelet count: 112,000/mm^3
+
+Serum:
+Na+: 142 mEq/L
+Cl-: 104 mEq/L
+K+: 4.6 mEq/L
+HCO3-: 24 mEq/L
+BUN: 18 mg/dL
+Glucose: 87 mg/dL
+Creatinine: 0.9 mg/dL
+AST: 106 U/L
+ALT: 112 U/L
+Bilirubin (total): 0.8 mg/dL
+Bilirubin (conjugated): 0.3 mg/dL
+
+Query: Which of the following is the most likely diagnosis in this patient?
+
+A. Chikungunya
+B. Dengue fever
+C. Epstein-Barr virus
+D. Hepatitis A
+<|assistant|>
+
+Completion (labels):
+The patient's symptoms and travel history are key to understanding the diagnosis. The patient has returned from a trip to Vietnam and Cambodia, which are areas where dengue fever is endemic. Dengue fever is a mosquito-borne viral infection that can cause a wide range of symptoms, from mild to severe. The patient's symptoms include fever, headache, malaise, and pain in the hands and wrists, which are consistent with dengue fever. The maculopapular rash and the fact that the patient is sexually active with both men and women (and uses condoms "most of the time") make sexually transmitted infections less likely.
+
+Chikungunya is another mosquito-borne disease that can cause similar symptoms, but it is less common in the areas the patient has visited. Epstein-Barr virus typically causes mononucleosis, which is not consistent with the patient's symptoms. Hepatitis A is a viral infection that affects the liver and can cause jaundice, which is not present in this patient.
+
+Given the patient's travel history and symptoms, dengue fever is the most likely diagnosis.
+
+So, the answer is B.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 59-year-old man is brought to the emergency department with a history of black, tarry stools but denies vomiting of blood or abdominal pain. His family has noticed progressive confusion. History is significant for liver cirrhosis and alcoholism. His heart rate is 112/min, temperature is 37.1°C (98.7°F), and blood pressure is 110/70 mm Hg. On examination, he is jaundiced, lethargic, is oriented to person and place but not date, and has moderate ascites. Neurological examination reveals asterixis, and his stool is guaiac-positive. Liver function test are shown below:
+Total albumin 2 g/dL
+Prothrombin time 9 seconds
+Total bilirubin 5 mg/dL
+Alanine aminotransferase (ALT) 100 U/L
+Aspartate aminotransferase (AST) 220 U/L
+
+Query: Which of the following is a feature of this patient condition?
+
+A. Ammonia level is the best initial test to confirm the diagnosis
+B. It is a diagnosis of exclusion
+C. It only occurs in patients with cirrhosis
+D. Electroencephalography (EEG) usually shows focal localising abnormality
+<|assistant|>
+
+Completion (labels):
+The patient described is presenting with black, tarry stools (melena), jaundice, confusion, and asterixis, which are all signs of liver dysfunction. The history of liver cirrhosis and alcoholism further supports this diagnosis. The liver function tests show elevated bilirubin and transaminases, which are indicative of liver damage.
+
+The confusion and asterixis are signs of hepatic encephalopathy, which is a condition that occurs in patients with advanced liver disease and is characterized by a spectrum of neurological abnormalities ranging from mild confusion to coma. Hepatic encephalopathy is a common complication of cirrhosis and is often precipitated by factors such as gastrointestinal bleeding, infection, or electrolyte imbalances.
+
+Ammonia is a key factor in the pathogenesis of hepatic encephalopathy, and ammonia levels can be elevated in patients with liver disease due to the inability to detoxify ammonia. Therefore, ammonia level is a useful test to confirm the diagnosis of hepatic encephalopathy.
+
+It is important to note that hepatic encephalopathy is a diagnosis of exclusion, meaning that other causes of altered mental status must be ruled out before making the diagnosis. However, the clinical presentation and laboratory findings in this patient are highly suggestive of hepatic encephalopathy.
+
+Electroencephalography (EEG) is not typically used to diagnose hepatic encephalopathy. While it may show nonspecific changes, it does not usually show focal localizing abnormalities.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 36-year-old man undergoes open reduction and internal fixation of a left femur fracture sustained after a motor vehicle collision. Three days after the surgery, he develops fever and redness around the surgical site. His temperature is 39.5°C (103.1°F). Physical examination shows purulent discharge from the wound with erythema of the surrounding skin. Wound culture of the purulent discharge shows gram-positive cocci in clusters. Treatment with oral dicloxacillin is initiated. Four days later, the patient continues to have high-grade fever, pain, and purulent discharge.
+
+Query: Which of the following characteristics of the infecting organism best explains the failure to improve with antibiotic therapy?
+
+A. Presence of an impenetrable outer membrane
+B. Ability to cleave β-lactam rings
+C. Development of efflux pumps
+D. Adaptation in binding proteins
+<|assistant|>
+
+Completion (labels):
+The patient is presenting with signs of infection after surgery, which is indicated by fever, redness, and purulent discharge. The culture of the discharge shows gram-positive cocci in clusters, which is suggestive of Staphylococcus aureus, a common cause of surgical site infections. The treatment with oral dicloxacillin, which is a β-lactam antibiotic, has not been effective, suggesting that the organism is resistant to this class of antibiotics.
+
+The options given are characteristics of bacteria that can affect antibiotic efficacy:
+
+A. Presence of an impenetrable outer membrane - This is a characteristic of gram-negative bacteria, not gram-positive cocci like Staphylococcus aureus.
+
+B. Ability to cleave β-lactam rings - This is a characteristic of β-lactamase-producing bacteria, which can hydrolyze the β-lactam ring of β-lactam antibiotics, rendering them ineffective.
+
+C. Development of efflux pumps - Efflux pumps can actively pump antibiotics out of the bacterial cell, reducing their intracellular concentration and thus their effectiveness.
+
+D. Adaptation in binding proteins - This is not a common mechanism of antibiotic resistance in bacteria.
+
+Given that the patient's infection is not responding to a β-lactam antibiotic, the most likely explanation is that the infecting organism has developed a mechanism to resist the action of β-lactam antibiotics, such as the production of β-lactamase enzymes. This would allow the bacteria to cleave the β-lactam ring of the antibiotic, rendering it ineffective.
+
+So, the answer is B.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 47-year-old woman seeks evaluation at your office because she has had postcoital vaginal bleeding for the past 8 months with occasional intermenstrual watery, blood-tinged vaginal discharge. Her family history is negative for malignancies and inherited disorders. She is the result of a pregnancy complicated by numerous miscarriages in the 1960s, for which her mother received diethylstilbestrol. During a pelvic examination, you notice a polypoid mass on the anterior wall of the vagina. The bimanual examination is negative for adnexal masses. You suspect the presence of carcinoma and, therefore, send tissue samples to pathology, which confirmed the presence of malignant cells.
+
+Query: Which of the following is the most likely malignant tumor in this patient?
+
+A. Clear cell adenocarcinoma
+B. Melanoma
+C. Botryoid sarcoma
+D. Verrucous carcinoma
+<|assistant|>
+
+Completion (labels):
+The patient's history of exposure to diethylstilbestrol (DES) during her mother's pregnancy is a significant risk factor for clear cell adenocarcinoma of the vagina. DES is a synthetic estrogen that was prescribed to pregnant women in the United States from the 1940s to the early 1970s to prevent miscarriage and premature labor. However, it was later found to increase the risk of clear cell adenocarcinoma in the daughters of women who took DES during pregnancy.
+
+The other options listed are not typically associated with DES exposure:
+
+B. Melanoma is a type of skin cancer and is not related to DES exposure.
+C. Botryoid sarcoma is a type of sarcoma that can occur in the vagina, but it is not specifically associated with DES exposure.
+D. Verrucous carcinoma is a type of squamous cell carcinoma that can occur in the genital tract, but it is not associated with DES exposure.
+
+Given the patient's history of DES exposure and the presence of a polypoid mass in the vagina, the most likely malignant tumor in this patient is clear cell adenocarcinoma.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 40-year-old businessman who was previously well is brought into the emergency department by his assistant with a complaint of left-sided weakness after a chiropractic neck manipulation. He has never felt like this before. Past medical history is insignificant. His blood pressure is 125/75 mm Hg, pulse 86/min, respiratory rate 13/min, temperature 36.8°C (98.2°F). A T2-weighted MRI shows a left C5 hemicord lesion. The patient is treated with cervical immobilization, a course of steroids, and physical therapy.
+
+Query: What other finding will most likely be seen in this patient?
+
+A. Spastic paralysis at the level of lesion
+B. Right-sided Horner's syndrome
+C. Contralateral corticospinal tract involvement
+D. Right-sided analgesia
+<|assistant|>
+
+Completion (labels):
+The patient has a left C5 hemicord lesion, which means there is damage to the left side of the spinal cord at the level of the C5 vertebra. The spinal cord is divided into two main parts: the dorsal (posterior) column and the ventral (anterior) column. The ventral column contains the corticospinal tract, which is responsible for motor function, and the dorsal column, which is responsible for sensory function.
+
+Given that the lesion is on the left side of the spinal cord, the right side of the body will be affected because the spinal cord carries information from the left side of the body to the right side of the brain, and vice versa. Therefore, the right side of the body will be affected by the lesion.
+
+A. Spastic paralysis at the level of lesion - This would be expected because the corticospinal tract, which is responsible for voluntary motor control, is located in the ventral column of the spinal cord.
+
+B. Right-sided Horner's syndrome - This is a condition that affects the sympathetic nervous system and would not be expected with a lesion at the C5 level, which is not in the area of the sympathetic chain.
+
+C. Contralateral corticospinal tract involvement - This is not correct because the lesion is on the left side of the spinal cord, and the corticospinal tract is involved on the right side of the body.
+
+D. Right-sided analgesia - This would not be expected because the dorsal column, which is responsible for sensory function, is not affected by this lesion.
+
+The most likely finding in this patient would be spastic paralysis on the right side of the body, which is the side opposite to the lesion and corresponds to the side of the body that the corticospinal tract innervates.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 58-year-old white man with hypertension and type 2 diabetes mellitus comes to the physician because of a 3-month history of a painless lesion on his lower lip. He has smoked one pack of cigarettes daily for 20 years. He has worked as a fruit picker for the past 25 years. His current medications include captopril and metformin. Examination of the oral cavity shows a single ulcer near the vermillion border.
+
+Query: Which of the following is the most likely diagnosis?
+
+A. Squamous cell carcinoma
+B. Aphthous stomatitis
+C. Actinic keratosis
+D. Traumatic ulcer
+<|assistant|>
+
+Completion (labels):
+The patient is a 58-year-old white man with a history of smoking and occupational exposure to sunlight (as a fruit picker). The lesion is described as painless and located on the lower lip, which are classic features for actinic keratosis. Actinic keratosis is a precancerous skin condition that is caused by chronic sun exposure and is more common in fair-skinned individuals. It typically presents as a scaly, rough patch on sun-exposed areas such as the face, lips, and hands.
+
+Squamous cell carcinoma (A) is a type of skin cancer that can arise from actinic keratosis, but it is less likely to be the initial diagnosis given the patient's history and the description of the lesion.
+
+Aphthous stomatitis (B) is a recurrent oral ulceration that is not related to sun exposure and is typically painful.
+
+Traumatic ulcer (D) could be a possibility, but the patient's history of sun exposure and the location of the lesion on the lower lip make actinic keratosis a more likely diagnosis.
+
+So, the answer is C.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 30-year-old man presents to his primary care physician with complaints of excessive fatigue and weakness for the last several weeks. He also complains of abdominal pain and constipation for the same duration. On further questioning, he reports that he has lost 8 pounds in the last 2 weeks. Past medical history and family history are insignificant. His temperature is 37.3° C (99.2° F), respirations are 21/min, pulse is 63/min, and blood pressure is 99/70 mm Hg. On physical examination, he is a tired-appearing, thin male. He has a bronze discoloration to his skin, but he denies being outside in the sun or any history of laying in tanning beds.
+
+Query: What is the next best step in the management of this patient?
+
+A. Administer intravenous fludrocortisone
+B. Start him on androgen replacement treatment
+C. Start him on both hydrocortisone and fludrocortisone therapy
+D. Order an ACTH stimulation test
+<|assistant|>
+
+Completion (labels):
+The patient's symptoms of excessive fatigue, weakness, abdominal pain, constipation, and weight loss, along with the bronze skin discoloration, are suggestive of Addison's disease, which is a condition characterized by the inadequate production of cortisol and aldosterone by the adrenal glands. The bronze skin discoloration is a classic sign of Addison's disease, known as hyperpigmentation, which is due to increased levels of ACTH (adrenocorticotropic hormone) as the body tries to compensate for the lack of cortisol.
+
+The next best step in the management of this patient would be to confirm the diagnosis of Addison's disease. An ACTH stimulation test is a diagnostic test that can help confirm the diagnosis by measuring the adrenal response to ACTH. This test involves administering synthetic ACTH and then measuring the cortisol levels in the blood. If the cortisol levels do not rise appropriately, it indicates adrenal insufficiency.
+
+Therefore, the next best step in the management of this patient would be to order an ACTH stimulation test to confirm the diagnosis of Addison's disease.
+
+So, the answer is D.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 46-year-old woman comes to the physician because of severe muscle and joint pain for 5 months. The pain varies in location and intensity. She also has joint stiffness in the morning and reports fatigue throughout the day that she attributes to not sleeping well. She reports a tingling sensation in her lower limbs. Her bowel habits are unchanged but she often feels bloated. She has primary hypertension and occasional migraine headaches. She does not smoke or consume alcohol. Her medications include propranolol and sumatriptan. She appears healthy. Examination shows symmetric muscular tenderness at the base of the neck, over the shoulders, and in the lumbosacral area. Strength and deep tendon reflexes are normal. Laboratory studies show:
+Hemoglobin 14.3 g/dL
+Leukocyte count 9300/mm3
+Platelet count 230,000/mm3
+Mean corpuscular volume 85 μm3
+Erythrocyte sedimentation rate 12 mm/h
+Serum
+Glucose 92 mg/dL
+Creatinine 0.6 mg/dL
+TSH 3.1 μU/mL
+Urinalysis is within normal limits. W
+
+Query: Which of the following is the most appropriate therapy for this patient?
+
+A. Temazepam
+B. Vitamin B12
+C. Amitriptyline
+D. Methotrexate
+"
+<|assistant|>
+
+Completion (labels):
+The patient presents with symptoms of muscle and joint pain, joint stiffness, fatigue, tingling sensation in the lower limbs, and a history of primary hypertension and migraine headaches. The examination findings are significant for symmetric muscular tenderness and normal strength and deep tendon reflexes. The laboratory studies show normal hemoglobin, leukocyte count, platelet count, mean corpuscular volume, glucose, creatinine, and TSH levels, with an erythrocyte sedimentation rate (ESR) of 12 mm/h, which is slightly elevated but not significantly so.
+
+Given the patient's symptoms and the normal laboratory findings, the most likely diagnosis is fibromyalgia. Fibromyalgia is a chronic condition characterized by widespread musculoskeletal pain, fatigue, and tenderness in specific areas of the body. It is often associated with other symptoms such as sleep disturbances, cognitive difficulties, and mood disorders.
+
+The treatment of fibromyalgia typically involves a combination of pharmacological and non-pharmacological therapies. Non-pharmacological treatments include exercise, cognitive-behavioral therapy, and stress management. Pharmacological treatments may include analgesics, antidepressants, and anticonvulsants.
+
+Among the options provided:
+
+A. Temazepam is a benzodiazepine used for the short-term relief of insomnia. It is not typically used for the treatment of fibromyalgia.
+
+B. Vitamin B12 is not a treatment for fibromyalgia and is not indicated by the patient's symptoms or laboratory findings.
+
+C. Amitriptyline is an antidepressant that is often used in the treatment of fibromyalgia due to its analgesic and sedative properties. It can help with pain relief and improve sleep quality, which are common issues in fibromyalgia patients.
+
+D. Methotrexate is an immunosuppressive drug used in the treatment of rheumatoid arthritis and other autoimmune conditions. It is not indicated for fibromyalgia.
+
+Given the patient's symptoms and the need for a medication that can help with pain relief and improve sleep quality, amitriptyline is the most appropriate therapy.
+
+So, the answer is C.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 29-year-old man is brought to the emergency department by a concerned neighbor. The patient appears disheveled, has a flat affect, and appears to be having auditory hallucinations. He is alert and oriented to time, person, and place and has an intact long-term and short-term memory. His neighbor says that he never really knew the patient that well and that he mostly kept to himself. They have been neighbors for the past 3 years at an apartment close to the hospital. What worried the neighbor was a sudden change in the patient's behavior which started last week. He suddenly seemed interested in attending all the local council meetings and social gatherings. He is very talkative at these events and boasts highly of himself and starts suggesting changes that the committee could make with his help. He gets very agitated when they deny accepting his suggestions.
+
+Query: Which of the following is a predictor of good prognosis for this patient's condition?
+
+A. Affective symptoms
+B. Being single
+C. Male sex
+D. Negative symptoms
+<|assistant|>
+
+Completion (labels):
+The patient described is exhibiting symptoms of schizophrenia, which is characterized by a range of symptoms including hallucinations, delusions, disorganized speech, and disorganized or catatonic behavior. The prognosis for schizophrenia can be influenced by several factors, including the presence of positive or negative symptoms, the age of onset, the severity of the symptoms, and the patient's response to treatment.
+
+A. Affective symptoms are those that involve mood changes, such as depression or mania. In the context of schizophrenia, affective symptoms can be a predictor of a good prognosis because they are more responsive to treatment and are less likely to be chronic.
+
+B. Being single is not a predictor of prognosis in schizophrenia. While social support can be beneficial, it is not a direct predictor of the course of the illness.
+
+C. Male sex is not a predictor of prognosis in schizophrenia. Gender is not a direct predictor of the course of the illness.
+
+D. Negative symptoms, such as flat affect, avolition, and anhedonia, are generally associated with a poorer prognosis in schizophrenia. These symptoms are less responsive to treatment and are more likely to be chronic.
+
+Given the information provided, the patient's affective symptoms (A) are a predictor of a good prognosis because they are more responsive to treatment and less likely to be chronic. Therefore, affective symptoms are a positive predictor of a good prognosis in schizophrenia.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:03,  2.36it/s] 20%|██        | 2/10 [00:00<00:01,  4.01it/s] 30%|███       | 3/10 [00:00<00:01,  5.09it/s] 40%|████      | 4/10 [00:00<00:01,  5.92it/s] 50%|█████     | 5/10 [00:00<00:00,  6.86it/s] 60%|██████    | 6/10 [00:01<00:00,  7.17it/s] 70%|███████   | 7/10 [00:01<00:00,  7.89it/s] 80%|████████  | 8/10 [00:01<00:00,  8.43it/s] 90%|█████████ | 9/10 [00:01<00:00,  8.07it/s] 90%|█████████ | 9/10 [00:01<00:00,  6.03it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt97-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt97-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt97-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+
+Namespace(task='medqa_rag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-97', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt97-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=True, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.25s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.16s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.07it/s]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10 examples [00:00, 2881.10 examples/s]
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-rag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.44 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.10 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1693.57 examples/s]
+After Filtering: len(validation_set) = 10
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 56-year-old man with a history of hypertension presents to his physician with progressive fatigue and new onset muscle cramps. He has had no recent changes to his medication regimen, which includes hydrochlorothiazide, lisinopril, and amlodipine. His temperature is 98.0°F (36.7°C), blood pressure is 174/111 mmHg, pulse is 70/min, respirations are 12/min, and oxygen saturation is 98% on room air. The patient's cardiopulmonary and abdominal exams are unremarkable. Laboratory values are ordered as seen below.
+
+Serum:
+Na+: 138 mEq/L
+Cl-: 100 mEq/L
+K+: 3.3 mEq/L
+HCO3-: 33 mEq/L
+BUN: 20 mg/dL
+Glucose: 129 mg/dL
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Hypertension Etiologies>.
+- Definition: Hypertension, or high blood pressure, can have various etiologies including primary (essential) hypertension, which has no identifiable cause, and secondary hypertension, which is due to identifiable causes such as kidney disease, endocrine disorders, or the use of certain medications. Understanding the different causes is crucial for targeted treatment.
+
+### Knowledge Point 2: <Electrolyte Disturbances and Muscle Cramps>.
+- Definition: Electrolyte disturbances, such as hypokalemia (low potassium levels), can lead to muscle cramps, weakness, and fatigue. Potassium plays a key role in muscle function and the maintenance of heart health, and its imbalance can have significant clinical manifestations.
+
+### Knowledge Point 3: <Medication Side Effects>.
+- Definition: Medications can have side effects that impact electrolyte balance and blood pressure. For example, hydrochlorothiazide is a diuretic that can cause electrolyte imbalances, including hypokalemia, and may contribute to secondary hypertension if it leads to an aldosterone excess or other compensatory mechanisms.
+
+### Knowledge Point 4: <Aldosterone and Blood Pressure Regulation>.
+- Definition: Aldosterone is a hormone produced by the adrenal glands that helps regulate blood pressure by controlling sodium and potassium levels in the blood. Excess aldosterone can lead to hypertension, hypokalemia, and metabolic alkalosis, which can be indicated by an elevated bicarbonate level.
+
+### Knowledge Point 5: <Secondary Hypertension Due to Endocrine Causes>.
+- Definition: Endocrine disorders such as primary hyperaldosteronism (Conn's syndrome), pheochromocytoma (catecholamine-secreting mass), and Cushing's syndrome (cortisol excess) can cause secondary hypertension. These conditions are characterized by an overproduction of hormones that increase blood pressure.
+
+### Knowledge Point 6: <Renal Artery Stenosis and Hypertension>.
+- Definition: Renal artery stenosis is a condition that can lead to impaired kidney perfusion and secondary hypertension. It occurs when the arteries that supply blood to the kidneys become narrowed, which can lead to activation of the renin-angiotensin-aldosterone system and an increase in blood pressure.
+
+Query: What is the most likely underlying etiology of this patient's hypertension?
+
+A. Aldosterone excess
+B. Catecholamine-secreting mass
+C. Cortisol excess
+D. Impaired kidney perfusion
+<|assistant|>
+
+Completion (labels):
+The patient's presentation includes progressive fatigue, new onset muscle cramps, and a high blood pressure reading of 174/111 mmHg. His medication regimen includes hydrochlorothiazide, which is a diuretic that can cause electrolyte imbalances, particularly hypokalemia. The lab results show a potassium level of 3.3 mEq/L, which is low, and a bicarbonate level of 33 mEq/L, which is elevated, suggesting metabolic alkalosis.
+
+Given the patient's medication history and lab findings, we can infer that the diuretic therapy is likely contributing to the electrolyte imbalance. Hydrochlorothiazide can lead to hypokalemia by increasing potassium excretion, which can in turn lead to metabolic alkalosis as the body compensates by retaining bicarbonate to buffer the acid load from the increased potassium excretion.
+
+The patient's hypertension could be secondary to the hypokalemia, which can activate the renin-angiotensin-aldosterone system (RAAS) in an attempt to conserve potassium and sodium. This can lead to an increase in aldosterone levels, which can further exacerbate hypertension by causing sodium retention and potassium excretion, leading to volume expansion and increased blood pressure.
+
+The other options are less likely given the information provided:
+B. Catecholamine-secreting mass (pheochromocytoma) would typically present with episodic hypertension, palpitations, and sweating, which is not described in the patient's history.
+C. Cortisol excess (Cushing's syndrome) would typically present with features of hypercortisolism, such as central obesity, moon facies, and proximal muscle weakness, which are not mentioned in the patient's history.
+D. Impaired kidney perfusion due to renal artery stenosis would likely present with signs of renal insufficiency or failure, which are not mentioned in the patient's presentation.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 21-year-old male presents to his primary care provider for fatigue. He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia. For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists. The patient has a past medical history of asthma managed with albuterol as needed. He is sexually active with both men and women, and he uses condoms “most of the time.” On physical exam, the patient’s temperature is 102.5°F (39.2°C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air. He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs. Tourniquet test is negative. Laboratory results are as follows:
+
+Hemoglobin: 14 g/dL
+Hematocrit: 44%
+Leukocyte count: 3,200/mm^3
+Platelet count: 112,000/mm^3
+
+Serum:
+Na+: 142 mEq/L
+Cl-: 104 mEq/L
+K+: 4.6 mEq/L
+HCO3-: 24 mEq/L
+BUN: 18 mg/dL
+Glucose: 87 mg/dL
+Creatinine: 0.9 mg/dL
+AST: 106 U/L
+ALT: 112 U/L
+Bilirubin (total): 0.8 mg/dL
+Bilirubin (conjugated): 0.3 mg/dL
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Chikungunya>.
+- Definition: Chikungunya is a viral disease transmitted to humans by infected mosquitoes, particularly Aedes aegypti and Aedes albopictus. It is characterized by an abrupt onset of fever accompanied by joint pain, which can be severe and debilitating. Other symptoms may include headache, muscle pain, joint swelling, or rash.
+
+### Knowledge Point 2: <Dengue Fever>.
+- Definition: Dengue fever is a mosquito-borne tropical disease caused by the dengue virus. Symptoms typically begin three to fourteen days after infection and may include a high fever, headache, vomiting, muscle and joint pains, and a characteristic skin rash. The tourniquet test, which can indicate capillary fragility, is often used in the diagnosis of dengue to assess the presence of petechiae after applying pressure.
+
+### Knowledge Point 3: <Epstein-Barr Virus (EBV)>.
+- Definition: Epstein-Barr virus, also known as human herpesvirus 4, is one of the most common viruses in humans. It is best known for causing infectious mononucleosis, often called "mono" or "the kissing disease." Symptoms of EBV infection can include fever, sore throat, swollen lymph nodes, fatigue, and at times, a widespread rash.
+
+### Knowledge Point 4: <Hepatitis A>.
+- Definition: Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. It is usually transmitted by the fecal-oral route, either through person-to-person contact or consumption of contaminated food or water. Symptoms include fatigue, nausea, abdominal pain, loss of appetite, and jaundice, but not typically joint pain or rash.
+
+### Knowledge Point 5: <Tourniquet Test>.
+- Definition: The tourniquet test is a diagnostic tool used in the evaluation of patients with suspected dengue fever. It involves inflating a blood pressure cuff on the patient's arm to a point between the systolic and diastolic pressures for five minutes, then deflating and counting the number of petechiae that appear. A positive test suggests increased capillary fragility associated with dengue fever.
+
+### Knowledge Point 6: <Maculopapular Rash>.
+- Definition: A maculopapular rash is a skin change that involves both macules and papules. Macules are flat, distinct, discolored areas of skin, and papules are small raised bumps. This type of rash can be seen in various infectious diseases, including viral exanthems and syphilis, as well as in reaction to medications or vaccines.
+
+### Knowledge Point 7: <Arthralgia and Arthritis in Viral Infections>.
+- Definition: Arthralgia refers to joint pain without inflammation, while arthritis is the inflammation of one or more joints, causing pain and stiffness. Both can be symptoms of viral infections. Certain viruses, like chikungunya and dengue fever, are known to cause severe joint pain and are often considered in the differential diagnosis when a patient presents with fever and joint symptoms, especially with a relevant travel history.
+
+Query: Which of the following is the most likely diagnosis in this patient?
+
+A. Chikungunya
+B. Dengue fever
+C. Epstein-Barr virus
+D. Hepatitis A
+<|assistant|>
+
+Completion (labels):
+Given the patient's recent travel to Vietnam and Cambodia, the symptoms of fever, headache, malaise, and joint pain, and the presence of a maculopapular rash, we need to consider the most likely diagnosis among the options provided.
+
+Chikungunya is a viral disease transmitted by mosquitoes, and it is known to cause severe joint pain, fever, and a rash. The patient's symptoms align well with this diagnosis, especially considering the recent travel to areas where chikungunya is endemic.
+
+Dengue fever is also a mosquito-borne disease that can cause a high fever, severe joint and muscle pain, and a rash. The tourniquet test, which is negative in this case, is not a definitive test for dengue, but it can be used as an indicator of capillary fragility, which is associated with dengue. However, the negative tourniquet test does not rule out dengue, and the patient's symptoms are consistent with this diagnosis.
+
+Epstein-Barr virus (EBV) typically causes infectious mononucleosis, which can include fever, sore throat, and swollen lymph nodes, but it is less likely to cause the severe joint pain and rash described in this case.
+
+Hepatitis A is a liver infection that can cause jaundice and abdominal pain but is not typically associated with joint pain or rash.
+
+Given the patient's travel history and the presentation of symptoms, chikungunya is the most likely diagnosis.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 59-year-old man is brought to the emergency department with a history of black, tarry stools but denies vomiting of blood or abdominal pain. His family has noticed progressive confusion. History is significant for liver cirrhosis and alcoholism. His heart rate is 112/min, temperature is 37.1°C (98.7°F), and blood pressure is 110/70 mm Hg. On examination, he is jaundiced, lethargic, is oriented to person and place but not date, and has moderate ascites. Neurological examination reveals asterixis, and his stool is guaiac-positive. Liver function test are shown below:
+Total albumin 2 g/dL
+Prothrombin time 9 seconds
+Total bilirubin 5 mg/dL
+Alanine aminotransferase (ALT) 100 U/L
+Aspartate aminotransferase (AST) 220 U/L
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Hepatic Encephalopathy>.
+- Definition: Hepatic encephalopathy is a complex neuropsychiatric syndrome that can occur in patients with acute or chronic liver disease, characterized by a spectrum of neurological or psychiatric abnormalities ranging from subclinical alterations to coma. It is often precipitated by factors that increase blood ammonia levels, such as gastrointestinal bleeding or dietary protein overload.
+
+### Knowledge Point 2: <Liver Cirrhosis>.
+- Definition: Liver cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism. Cirrhosis can lead to liver failure and is associated with various complications, including variceal bleeding, ascites, and hepatic encephalopathy.
+
+### Knowledge Point 3: <Asterixis>.
+- Definition: Asterixis is a type of negative myoclonus characterized by a flapping tremor of the hands when the wrists are extended, often described as a "liver flap." It is a physical sign associated with hepatic encephalopathy and other metabolic encephalopathies.
+
+### Knowledge Point 4: <Guaiac-positive Stool>.
+- Definition: A guaiac-positive stool test indicates the presence of occult (hidden) blood in the stool. It is a simple screening tool used to detect gastrointestinal bleeding, which can be a sign of various conditions, including peptic ulcers, colorectal cancer, or variceal bleeding in the context of liver cirrhosis.
+
+### Knowledge Point 5: <Ammonia and Its Role in Hepatic Encephalopathy>.
+- Definition: Ammonia is a byproduct of protein metabolism and is normally converted into urea by the liver and excreted by the kidneys. In the context of liver dysfunction, such as cirrhosis, the detoxification of ammonia is impaired, leading to increased levels in the blood, which can contribute to the development of hepatic encephalopathy.
+
+### Knowledge Point 6: <Prothrombin Time (PT)>.
+- Definition: Prothrombin time is a blood test that measures how long it takes blood to clot. It is used to evaluate the integrity of the extrinsic and common coagulation pathways. In liver disease, PT can be prolonged due to the liver's inability to synthesize clotting factors.
+
+### Knowledge Point 7: <Electroencephalography (EEG)>.
+- Definition: Electroencephalography is a non-invasive test that records electrical activity of the brain. It is used to diagnose and monitor neurological disorders. In hepatic encephalopathy, EEG may show generalized slowing of the brain waves, rather than focal localizing abnormalities.
+
+Query: Which of the following is a feature of this patient condition?
+
+A. Ammonia level is the best initial test to confirm the diagnosis
+B. It is a diagnosis of exclusion
+C. It only occurs in patients with cirrhosis
+D. Electroencephalography (EEG) usually shows focal localising abnormality
+<|assistant|>
+
+Completion (labels):
+The patient in question has a history of liver cirrhosis and alcoholism, which are risk factors for hepatic encephalopathy. The presence of jaundice, ascites, and asterixis, along with a guaiac-positive stool, suggests a complication of liver disease. The neurological examination finding of asterixis is a classic sign of hepatic encephalopathy.
+
+The liver function tests show elevated bilirubin and transaminases, which are indicative of liver dysfunction. The prolonged prothrombin time is consistent with impaired liver function and the inability to synthesize clotting factors.
+
+The question asks which of the following is a feature of this patient's condition. Let's evaluate the options:
+
+A. Ammonia level is the best initial test to confirm the diagnosis - While ammonia levels are important in the diagnosis of hepatic encephalopathy, they are not the best initial test. The diagnosis is often made clinically based on the patient's history, physical examination, and laboratory findings, including liver function tests and prothrombin time.
+
+B. It is a diagnosis of exclusion - This is not entirely accurate. While hepatic encephalopathy can be a diagnosis of exclusion in some cases, it is not always the case. The clinical presentation and laboratory findings can often lead to a presumptive diagnosis without the need for exclusion of other causes.
+
+C. It only occurs in patients with cirrhosis - This is not true. While hepatic encephalopathy is most commonly associated with cirrhosis, it can also occur in acute liver failure or other conditions that impair liver function.
+
+D. Electroencephalography (EEG) usually shows focal localizing abnormality - This is incorrect. In hepatic encephalopathy, EEG typically shows generalized slowing of the brain waves, not focal localizing abnormalities.
+
+Given the information and the options provided, the most accurate statement about this patient's condition is that it is a diagnosis of exclusion. However, since the question asks for a feature of the patient's condition, the most relevant feature is the presence of asterixis, which is a physical sign associated with hepatic encephalopathy.
+
+So, the answer is B.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 36-year-old man undergoes open reduction and internal fixation of a left femur fracture sustained after a motor vehicle collision. Three days after the surgery, he develops fever and redness around the surgical site. His temperature is 39.5°C (103.1°F). Physical examination shows purulent discharge from the wound with erythema of the surrounding skin. Wound culture of the purulent discharge shows gram-positive cocci in clusters. Treatment with oral dicloxacillin is initiated. Four days later, the patient continues to have high-grade fever, pain, and purulent discharge.
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Postoperative Infection>.
+- Definition: Postoperative infection, also known as surgical site infection (SSI), occurs after surgery in the part of the body where the surgery took place. It can involve the skin, tissues under the skin, organs, or implanted material and typically presents with symptoms such as fever, redness, and purulent discharge.
+
+### Knowledge Point 2: <Staphylococcus aureus>.
+- Definition: Staphylococcus aureus is a type of gram-positive cocci that often appears in clusters resembling grapes. It is a common cause of skin and soft tissue infections, including those that occur postoperatively. It can also be resistant to many antibiotics, making it a challenging pathogen to treat.
+
+### Knowledge Point 3: <Antibiotic Resistance Mechanisms>.
+- Definition: Antibiotic resistance mechanisms are the ways by which bacteria can survive and multiply despite the presence of an antibiotic. Common mechanisms include the production of enzymes that break down the antibiotic (e.g., β-lactamases that cleave β-lactam rings), changes to the target site of the antibiotic (e.g., alterations in penicillin-binding proteins), and the presence of efflux pumps that expel the antibiotic from the bacterial cell.
+
+### Knowledge Point 4: <β-lactam Antibiotics>.
+- Definition: β-lactam antibiotics are a class of broad-spectrum antibiotics that include penicillins, cephalosporins, carbapenems, and monobactams. They work by inhibiting the synthesis of the bacterial cell wall, which is essential for bacterial survival. The β-lactam ring is a key structural component of these antibiotics, and its integrity is necessary for their antibacterial activity.
+
+### Knowledge Point 5: <Methicillin-resistant Staphylococcus aureus (MRSA)>.
+- Definition: MRSA is a strain of Staphylococcus aureus that has developed resistance to methicillin and other β-lactam antibiotics, often through the acquisition of the mecA gene, which alters penicillin-binding proteins. MRSA infections can be difficult to treat and may require alternative antibiotics that are not part of the β-lactam class.
+
+Query: Which of the following characteristics of the infecting organism best explains the failure to improve with antibiotic therapy?
+
+A. Presence of an impenetrable outer membrane
+B. Ability to cleave β-lactam rings
+C. Development of efflux pumps
+D. Adaptation in binding proteins
+<|assistant|>
+
+Completion (labels):
+The patient's condition is not improving despite treatment with oral dicloxacillin, which is a β-lactam antibiotic. This suggests that the infecting organism may have developed resistance mechanisms that render the antibiotic ineffective. The options provided are related to resistance mechanisms:
+
+A. Presence of an impenetrable outer membrane - This is a characteristic of gram-negative bacteria, not typically relevant to Staphylococcus aureus.
+
+B. Ability to cleave β-lactam rings - This is a resistance mechanism that involves the production of β-lactamases, which break down the β-lactam ring of β-lactam antibiotics, rendering them ineffective.
+
+C. Development of efflux pumps - This is a resistance mechanism that involves the active pumping of antibiotics out of the bacterial cell, reducing their intracellular concentration.
+
+D. Adaptation in binding proteins - This refers to changes in penicillin-binding proteins, which are a resistance mechanism in Staphylococcus aureus, particularly in the case of MRSA.
+
+Given that the infecting organism is Staphylococcus aureus and the antibiotic is a β-lactam, the most likely explanation for the failure to improve with antibiotic therapy is the development of resistance mechanisms that affect the binding of the antibiotic to its target, such as the presence of altered penicillin-binding proteins (option D).
+
+So, the answer is D.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 47-year-old woman seeks evaluation at your office because she has had postcoital vaginal bleeding for the past 8 months with occasional intermenstrual watery, blood-tinged vaginal discharge. Her family history is negative for malignancies and inherited disorders. She is the result of a pregnancy complicated by numerous miscarriages in the 1960s, for which her mother received diethylstilbestrol. During a pelvic examination, you notice a polypoid mass on the anterior wall of the vagina. The bimanual examination is negative for adnexal masses. You suspect the presence of carcinoma and, therefore, send tissue samples to pathology, which confirmed the presence of malignant cells.
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Diethylstilbestrol (DES) Exposure>.
+- Definition: Diethylstilbestrol (DES) is a synthetic form of estrogen that was prescribed to pregnant women between 1940 and 1971 to prevent miscarriages and other pregnancy complications. However, it was later found to cause a rare type of vaginal and cervical cancer in daughters exposed to DES in utero, as well as other reproductive system abnormalities.
+
+### Knowledge Point 2: <Clear Cell Adenocarcinoma>.
+- Definition: Clear cell adenocarcinoma is a rare type of cancer that can occur in the vagina or cervix. It is often associated with in utero exposure to diethylstilbestrol (DES). This malignancy is characterized by the presence of clear cells in the tumor and can present with symptoms such as vaginal bleeding or discharge.
+
+### Knowledge Point 3: <Postcoital Vaginal Bleeding>.
+- Definition: Postcoital vaginal bleeding refers to bleeding that occurs after sexual intercourse. It can be a symptom of various conditions, including infections, trauma, or malignancies such as cervical or vaginal cancer. It is an important symptom that warrants further investigation to determine the underlying cause.
+
+### Knowledge Point 4: <Vaginal Carcinoma>.
+- Definition: Vaginal carcinoma is a rare type of cancer that occurs in the vagina. It can present with symptoms such as vaginal bleeding, discharge, or a mass, and it may be associated with risk factors such as HPV infection or in utero exposure to diethylstilbestrol (DES). Diagnosis is typically confirmed through biopsy and histological examination.
+
+### Knowledge Point 5: <Bimanual Examination>.
+- Definition: A bimanual examination is a physical examination procedure used to assess the female reproductive organs, including the uterus, cervix, ovaries, and fallopian tubes. During the examination, one hand is placed on the abdomen while the other hand is inserted into the vagina, allowing the practitioner to palpate the pelvic organs. It is used to detect abnormalities such as masses or tenderness.
+
+Query: Which of the following is the most likely malignant tumor in this patient?
+
+A. Clear cell adenocarcinoma
+B. Melanoma
+C. Botryoid sarcoma
+D. Verrucous carcinoma
+<|assistant|>
+
+Completion (labels):
+Given the patient's history of in utero exposure to diethylstilbestrol (DES) and the presence of a polypoid mass on the anterior wall of the vagina, along with postcoital vaginal bleeding, the most likely malignant tumor in this patient is clear cell adenocarcinoma. This type of cancer is known to be associated with DES exposure and can present with symptoms such as vaginal bleeding and discharge.
+
+Melanoma (B) is a type of skin cancer and is not typically associated with DES exposure or vaginal bleeding. Botryoid sarcoma (C) is a type of sarcoma that can occur in the vagina but is not specifically associated with DES exposure. Verrucous carcinoma (D) is a type of squamous cell carcinoma that can occur in the genital tract but is not typically associated with DES exposure.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 40-year-old businessman who was previously well is brought into the emergency department by his assistant with a complaint of left-sided weakness after a chiropractic neck manipulation. He has never felt like this before. Past medical history is insignificant. His blood pressure is 125/75 mm Hg, pulse 86/min, respiratory rate 13/min, temperature 36.8°C (98.2°F). A T2-weighted MRI shows a left C5 hemicord lesion. The patient is treated with cervical immobilization, a course of steroids, and physical therapy.
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Spinal Cord Injury and Neurological Findings>.
+- Definition: Spinal cord injury can lead to various neurological findings depending on the level and extent of the injury. These findings may include motor deficits, sensory deficits, and autonomic dysfunction. Understanding the specific neurological manifestations associated with spinal cord lesions is crucial for predicting the patient's clinical presentation.
+
+### Knowledge Point 2: <Cervical Spinal Cord Lesions>.
+- Definition: Cervical spinal cord lesions can result in distinct patterns of neurological deficits based on the level of the lesion. Knowledge of the anatomical organization of the spinal cord and the corresponding neurological functions at different levels is essential for predicting the specific deficits that may occur in patients with cervical cord lesions.
+
+### Knowledge Point 3: <Horner's Syndrome>.
+- Definition: Horner's syndrome is a combination of symptoms caused by a disruption of the sympathetic nerve pathway to the eye and face. It typically presents with ptosis (drooping of the upper eyelid), miosis (constricted pupil), anhidrosis (lack of sweating), and sometimes enophthalmos (sunken appearance of the eye). Understanding the clinical features and etiology of Horner's syndrome is important for recognizing its presence in patients with relevant neurological conditions.
+
+### Knowledge Point 4: <Corticospinal Tract and Motor Function>.
+- Definition: The corticospinal tract is a major descending motor pathway responsible for voluntary motor control. Understanding the anatomical organization and function of the corticospinal tract is crucial for predicting the motor deficits that may occur in patients with spinal cord lesions affecting this pathway.
+
+Query: What other finding will most likely be seen in this patient?
+
+A. Spastic paralysis at the level of lesion
+B. Right-sided Horner's syndrome
+C. Contralateral corticospinal tract involvement
+D. Right-sided analgesia
+<|assistant|>
+
+Completion (labels):
+Given the patient's presentation with left-sided weakness after a cervical manipulation, we can infer that the lesion is likely in the cervical region of the spinal cord. The left-sided weakness suggests that the lesion is on the right side of the spinal cord, as the corticospinal tract decussates at the level of the medulla oblongata, meaning that motor signals from the left side of the brain cross to the right side of the spinal cord to control the left side of the body.
+
+The presence of a left C5 hemicord lesion indicates that the lesion is affecting the right side of the spinal cord at the level of C5. This level corresponds to the cervical region of the spinal cord, which is responsible for motor control of the upper limbs and diaphragm.
+
+Given the options provided:
+A. Spastic paralysis at the level of lesion - This is a common finding in spinal cord injuries due to the loss of inhibitory control over the motor neurons, leading to increased muscle tone and spasms.
+B. Right-sided Horner's syndrome - This is not likely because Horner's syndrome is associated with a disruption of the sympathetic pathway, which is not typically affected by a C5 hemicord lesion.
+C. Contralateral corticospinal tract involvement - This is not correct because the corticospinal tract is already crossed at the level of the medulla oblongata, so a lesion at C5 would not affect the contralateral (left) corticospinal tract.
+D. Right-sided analgesia - This is not likely because the C5 level is not typically associated with sensory deficits, and the lesion is described as a hemicord lesion, which would not affect the entire cross-section of the spinal cord.
+
+Based on the information provided and the typical neurological findings associated with cervical spinal cord lesions, the most likely additional finding in this patient would be spastic paralysis at the level of the lesion, which would manifest as increased muscle tone and spasms in the upper limbs and diaphragm.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 58-year-old white man with hypertension and type 2 diabetes mellitus comes to the physician because of a 3-month history of a painless lesion on his lower lip. He has smoked one pack of cigarettes daily for 20 years. He has worked as a fruit picker for the past 25 years. His current medications include captopril and metformin. Examination of the oral cavity shows a single ulcer near the vermillion border.
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Squamous Cell Carcinoma (SCC)>.
+- Definition: Squamous cell carcinoma is a common type of skin cancer that often presents as a persistent, non-healing ulcer or lesion. Risk factors for SCC include chronic sun exposure, smoking, and immunosuppression. In the oral cavity, SCC commonly presents as an ulcer or mass, especially in individuals with a history of tobacco use.
+
+### Knowledge Point 2: <Aphthous Stomatitis>.
+- Definition: Aphthous stomatitis, also known as canker sores, is a common condition characterized by recurrent, painful ulcers in the oral cavity. It is not typically associated with risk factors such as smoking or chronic sun exposure, and it tends to present as multiple, small ulcers rather than a single ulcer.
+
+### Knowledge Point 3: <Actinic Keratosis>.
+- Definition: Actinic keratosis is a precancerous skin lesion caused by long-term sun exposure. It appears as a rough, scaly patch on sun-exposed areas and is not commonly found in the oral cavity. Actinic keratosis is not typically associated with smoking or fruit picking.
+
+### Knowledge Point 4: <Traumatic Ulcer>.
+- Definition: A traumatic ulcer is a lesion that results from physical injury or trauma to the oral mucosa, such as biting the lip or cheek. It is typically a single, shallow ulcer and is not associated with risk factors such as smoking or chronic sun exposure.
+
+Query: Which of the following is the most likely diagnosis?
+
+A. Squamous cell carcinoma
+B. Aphthous stomatitis
+C. Actinic keratosis
+D. Traumatic ulcer
+<|assistant|>
+
+Completion (labels):
+Given the patient's history of smoking and occupational exposure to sunlight (as a fruit picker), both of which are significant risk factors for squamous cell carcinoma (SCC), the most likely diagnosis is SCC. The lesion described as a painless ulcer near the vermillion border of the lower lip is a classic presentation for SCC in the oral cavity. The other options, such as aphthous stomatitis, actinic keratosis, and traumatic ulcer, do not fit the clinical presentation or risk factors as well as SCC.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 30-year-old man presents to his primary care physician with complaints of excessive fatigue and weakness for the last several weeks. He also complains of abdominal pain and constipation for the same duration. On further questioning, he reports that he has lost 8 pounds in the last 2 weeks. Past medical history and family history are insignificant. His temperature is 37.3° C (99.2° F), respirations are 21/min, pulse is 63/min, and blood pressure is 99/70 mm Hg. On physical examination, he is a tired-appearing, thin male. He has a bronze discoloration to his skin, but he denies being outside in the sun or any history of laying in tanning beds.
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Addison's Disease>.
+- Definition: Addison's disease, or primary adrenal insufficiency, is a rare endocrine disorder characterized by insufficient production of adrenal hormones, particularly cortisol and aldosterone. Common symptoms include fatigue, weakness, weight loss, abdominal pain, hyperpigmentation (bronze skin discoloration), and hypotension. Diagnosis involves laboratory tests such as ACTH stimulation test and measurement of serum electrolytes.
+
+### Knowledge Point 2: <Adrenal Crisis>.
+- Definition: Adrenal crisis is a life-threatening condition that occurs due to acute adrenal insufficiency, often triggered by stress, infection, trauma, or cessation of glucocorticoid therapy. It presents with severe hypotension, shock, abdominal pain, and altered mental status. Prompt recognition and treatment with intravenous hydrocortisone and fluid resuscitation are essential in managing adrenal crisis.
+
+### Knowledge Point 3: <ACTH Stimulation Test>.
+- Definition: The ACTH stimulation test is used to assess the functioning of the adrenal glands. It involves administering synthetic ACTH and measuring the cortisol response. In primary adrenal insufficiency (such as Addison's disease), the adrenal glands fail to produce an adequate cortisol response, leading to a diagnosis of adrenal insufficiency.
+
+### Knowledge Point 4: <Glucocorticoid and Mineralocorticoid Replacement Therapy>.
+- Definition: Management of Addison's disease involves lifelong replacement therapy with glucocorticoids (e.g., hydrocortisone) to replace cortisol and mineralocorticoids (e.g., fludrocortisone) to replace aldosterone. This therapy aims to restore hormonal balance and prevent adrenal crisis.
+
+Query: What is the next best step in the management of this patient?
+
+A. Administer intravenous fludrocortisone
+B. Start him on androgen replacement treatment
+C. Start him on both hydrocortisone and fludrocortisone therapy
+D. Order an ACTH stimulation test
+<|assistant|>
+
+Completion (labels):
+The patient presents with symptoms suggestive of adrenal insufficiency, including fatigue, weakness, weight loss, abdominal pain, and bronze skin discoloration. These symptoms are consistent with Addison's disease. The immediate concern is to rule out adrenal crisis, which can be life-threatening.
+
+The next best step in management would be to initiate glucocorticoid replacement therapy. Since the patient is showing signs of adrenal insufficiency, it is crucial to provide cortisol replacement immediately. Hydrocortisone is the glucocorticoid of choice for acute adrenal insufficiency and can be administered intravenously in the case of an adrenal crisis.
+
+Fludrocortisone is a mineralocorticoid and is used to replace aldosterone, but it is not the immediate priority in this scenario. Androgen replacement is not indicated at this stage, and an ACTH stimulation test is not necessary for immediate management; it is more of a diagnostic tool.
+
+So, the answer is C.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 46-year-old woman comes to the physician because of severe muscle and joint pain for 5 months. The pain varies in location and intensity. She also has joint stiffness in the morning and reports fatigue throughout the day that she attributes to not sleeping well. She reports a tingling sensation in her lower limbs. Her bowel habits are unchanged but she often feels bloated. She has primary hypertension and occasional migraine headaches. She does not smoke or consume alcohol. Her medications include propranolol and sumatriptan. She appears healthy. Examination shows symmetric muscular tenderness at the base of the neck, over the shoulders, and in the lumbosacral area. Strength and deep tendon reflexes are normal. Laboratory studies show:
+Hemoglobin 14.3 g/dL
+Leukocyte count 9300/mm3
+Platelet count 230,000/mm3
+Mean corpuscular volume 85 μm3
+Erythrocyte sedimentation rate 12 mm/h
+Serum
+Glucose 92 mg/dL
+Creatinine 0.6 mg/dL
+TSH 3.1 μU/mL
+Urinalysis is within normal limits. W
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Fibromyalgia>.
+- Definition: Fibromyalgia is a chronic disorder characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, and tenderness at specific points on the body. Patients often experience morning stiffness, cognitive difficulties, and other symptoms such as tingling sensations. Diagnosis is based on clinical criteria and exclusion of other conditions.
+
+### Knowledge Point 2: <Hypothyroidism>.
+- Definition: Hypothyroidism is a condition in which the thyroid gland does not produce enough thyroid hormone. Symptoms can include fatigue, muscle and joint pain, tingling sensations, constipation, and cold intolerance. Laboratory tests, including TSH levels, are used to diagnose hypothyroidism.
+
+### Knowledge Point 3: <Chronic Fatigue Syndrome (CFS)>.
+- Definition: Chronic Fatigue Syndrome is a complex disorder characterized by extreme fatigue that cannot be explained by any underlying medical condition. Patients may experience joint pain, muscle pain, and cognitive difficulties. Diagnosis is based on specific criteria and exclusion of other conditions.
+
+### Knowledge Point 4: <Peripheral Neuropathy>.
+- Definition: Peripheral neuropathy refers to the damage or dysfunction of nerves outside the brain and spinal cord. It can cause symptoms such as tingling sensations, muscle weakness, and pain in the affected areas. Various underlying conditions, including medication side effects, can lead to peripheral neuropathy.
+
+Query: Which of the following is the most appropriate therapy for this patient?
+
+A. Temazepam
+B. Vitamin B12
+C. Amitriptyline
+D. Methotrexate
+"
+<|assistant|>
+
+Completion (labels):
+Given the patient's symptoms of widespread musculoskeletal pain, fatigue, sleep disturbances, and tenderness at specific points on the body, along with normal laboratory findings except for a slightly elevated erythrocyte sedimentation rate (ESR), the most likely diagnosis is fibromyalgia. Hypothyroidism is less likely given the normal TSH level, and chronic fatigue syndrome (CFS) and peripheral neuropathy are not supported by the clinical picture or laboratory findings.
+
+The treatment options for fibromyalgia include:
+- Temazepam is a benzodiazepine used for sleep disorders, which is not the primary treatment for fibromyalgia.
+- Vitamin B12 is not a treatment for fibromyalgia.
+- Amitriptyline is an antidepressant that is often used to treat fibromyalgia due to its analgesic and sleep-inducing properties.
+- Methotrexate is an immunosuppressant used in the treatment of rheumatoid arthritis and is not the first-line treatment for fibromyalgia.
+
+Given the patient's symptoms and the need for a medication that can help with pain and sleep, amitriptyline is the most appropriate therapy for this patient.
+
+So, the answer is C.<|end_of_text|>
+******** Example ends ********
+******** Example starts ********
+Prompt:
+<|begin_of_text|><|user|>
+Context: A 29-year-old man is brought to the emergency department by a concerned neighbor. The patient appears disheveled, has a flat affect, and appears to be having auditory hallucinations. He is alert and oriented to time, person, and place and has an intact long-term and short-term memory. His neighbor says that he never really knew the patient that well and that he mostly kept to himself. They have been neighbors for the past 3 years at an apartment close to the hospital. What worried the neighbor was a sudden change in the patient's behavior which started last week. He suddenly seemed interested in attending all the local council meetings and social gatherings. He is very talkative at these events and boasts highly of himself and starts suggesting changes that the committee could make with his help. He gets very agitated when they deny accepting his suggestions.
+
+Here are some knowledge points that might be relevant:
+### Knowledge Point 1: <Schizophrenia Diagnosis and Symptoms>.
+- Definition: Schizophrenia is a chronic mental disorder characterized by disturbances in thinking, perception, emotions, and behavior. Symptoms include hallucinations, delusions, disorganized thinking, and negative symptoms such as reduced emotional expression and motivation. Understanding the symptoms and diagnostic criteria for schizophrenia is crucial in assessing the patient's condition.
+
+### Knowledge Point 2: <Prognostic Factors in Schizophrenia>.
+- Definition: Prognostic factors in schizophrenia include early age of onset, good premorbid functioning, presence of affective symptoms, and good social support. Identifying these factors helps in predicting the course and outcome of the illness and guiding treatment decisions.
+
+### Knowledge Point 3: <Psychosocial Support and Schizophrenia>.
+- Definition: Psychosocial support, including family involvement and community support, plays a significant role in the prognosis of schizophrenia. It is important to consider the patient's social and support network when assessing the prognosis and planning the management of schizophrenia.
+
+### Knowledge Point 4: <Treatment Adherence and Prognosis>.
+- Definition: Treatment adherence, including medication compliance and engagement in therapy, is a critical factor in determining the prognosis of schizophrenia. Understanding the impact of treatment adherence on the long-term outcome of the illness is essential in evaluating the patient's prognosis.
+
+Query: Which of the following is a predictor of good prognosis for this patient's condition?
+
+A. Affective symptoms
+B. Being single
+C. Male sex
+D. Negative symptoms
+<|assistant|>
+
+Completion (labels):
+To answer the question, we need to consider the prognostic factors for schizophrenia and how they relate to the patient's condition. Here's a breakdown of the options:
+
+A. Affective symptoms - These are symptoms that involve mood, such as depression or mania, and are often associated with a better prognosis in schizophrenia. This is because affective symptoms are more responsive to treatment and are less likely to be chronic.
+
+B. Being single - While social support is important, being single is not a prognostic factor in itself. It could be a factor if the patient has no social support, but the question does not provide information about the patient's social support.
+
+C. Male sex - There is no strong evidence that male sex is a predictor of good prognosis in schizophrenia. Gender is not a primary prognostic factor in the disease.
+
+D. Negative symptoms - Negative symptoms, such as reduced emotional expression and motivation, are generally associated with a poorer prognosis in schizophrenia. They are more difficult to treat and are less responsive to medication.
+
+Given the information provided, the patient's affective symptoms (option A) are a predictor of good prognosis because they are more responsive to treatment and less likely to be chronic. The other options do not have a direct correlation with good prognosis in schizophrenia.
+
+So, the answer is A.<|end_of_text|>
+******** Example ends ********
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:04,  2.10it/s] 20%|██        | 2/10 [00:00<00:02,  2.94it/s] 30%|███       | 3/10 [00:00<00:02,  3.38it/s] 40%|████      | 4/10 [00:01<00:01,  3.95it/s] 50%|█████     | 5/10 [00:01<00:01,  4.48it/s] 60%|██████    | 6/10 [00:01<00:00,  4.79it/s] 70%|███████   | 7/10 [00:01<00:00,  5.40it/s] 80%|████████  | 8/10 [00:01<00:00,  5.64it/s] 90%|█████████ | 9/10 [00:01<00:00,  5.74it/s] 90%|█████████ | 9/10 [00:02<00:00,  4.23it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt97-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt97-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt97-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+
+Namespace(task='medqa_nonrag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-194', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt194-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=False, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.23s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.14s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.08it/s]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-nonrag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.83 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00, 11.14 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.06 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1748.36 examples/s]
+After Filtering: len(validation_set) = 10
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:03,  2.31it/s] 20%|██        | 2/10 [00:00<00:02,  3.96it/s] 30%|███       | 3/10 [00:00<00:01,  5.05it/s] 40%|████      | 4/10 [00:00<00:01,  5.88it/s] 50%|█████     | 5/10 [00:00<00:00,  6.86it/s] 60%|██████    | 6/10 [00:01<00:00,  7.15it/s] 70%|███████   | 7/10 [00:01<00:00,  7.78it/s] 80%|████████  | 8/10 [00:01<00:00,  8.28it/s] 90%|█████████ | 9/10 [00:01<00:00,  8.01it/s] 90%|█████████ | 9/10 [00:01<00:00,  5.95it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt194-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt194-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt194-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+
+Namespace(task='medqa_rag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-194', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt194-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=False, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.20s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.13s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.10s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.09it/s]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-rag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.77 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00, 11.09 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.00 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1688.80 examples/s]
+After Filtering: len(validation_set) = 10
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:04,  2.08it/s] 20%|██        | 2/10 [00:00<00:02,  2.93it/s] 30%|███       | 3/10 [00:00<00:02,  3.38it/s] 40%|████      | 4/10 [00:01<00:01,  3.93it/s] 50%|█████     | 5/10 [00:01<00:01,  4.48it/s] 60%|██████    | 6/10 [00:01<00:00,  4.80it/s] 70%|███████   | 7/10 [00:01<00:00,  5.40it/s] 80%|████████  | 8/10 [00:01<00:00,  5.65it/s] 90%|█████████ | 9/10 [00:01<00:00,  5.76it/s] 90%|█████████ | 9/10 [00:02<00:00,  4.23it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt194-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt194-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt194-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+
+Namespace(task='medqa_nonrag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-291', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt291-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=False, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.15s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.22s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.25s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.02s/it]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-nonrag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.97 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:00<00:00, 11.36 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.22 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1624.94 examples/s]
+After Filtering: len(validation_set) = 10
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:03,  2.37it/s] 20%|██        | 2/10 [00:00<00:01,  4.02it/s] 30%|███       | 3/10 [00:00<00:01,  5.11it/s] 40%|████      | 4/10 [00:00<00:01,  5.92it/s] 50%|█████     | 5/10 [00:00<00:00,  6.89it/s] 60%|██████    | 6/10 [00:01<00:00,  7.17it/s] 70%|███████   | 7/10 [00:01<00:00,  7.85it/s] 80%|████████  | 8/10 [00:01<00:00,  8.35it/s] 90%|█████████ | 9/10 [00:01<00:00,  8.02it/s] 90%|█████████ | 9/10 [00:01<00:00,  6.02it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt291-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt291-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt291-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+
+Namespace(task='medqa_rag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-291', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt291-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=False, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.29s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.24s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.00it/s]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-rag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.61 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00, 11.24 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.01 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1660.72 examples/s]
+After Filtering: len(validation_set) = 10
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:04,  2.03it/s] 20%|██        | 2/10 [00:00<00:02,  2.88it/s] 30%|███       | 3/10 [00:00<00:02,  3.35it/s] 40%|████      | 4/10 [00:01<00:01,  3.90it/s] 50%|█████     | 5/10 [00:01<00:01,  4.43it/s] 60%|██████    | 6/10 [00:01<00:00,  4.75it/s] 70%|███████   | 7/10 [00:01<00:00,  5.35it/s] 80%|████████  | 8/10 [00:01<00:00,  5.60it/s] 90%|█████████ | 9/10 [00:01<00:00,  5.72it/s] 90%|█████████ | 9/10 [00:02<00:00,  4.18it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt291-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt291-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt291-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+
+Namespace(task='medqa_nonrag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-388', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt388-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=False, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.28s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.17s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.13s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.06it/s]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-nonrag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.31 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.07 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1513.86 examples/s]
+After Filtering: len(validation_set) = 10
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:03,  2.29it/s] 20%|██        | 2/10 [00:00<00:02,  3.90it/s] 30%|███       | 3/10 [00:00<00:01,  4.94it/s] 40%|████      | 4/10 [00:00<00:01,  5.80it/s] 50%|█████     | 5/10 [00:00<00:00,  6.79it/s] 60%|██████    | 6/10 [00:01<00:00,  7.08it/s] 70%|███████   | 7/10 [00:01<00:00,  7.82it/s] 80%|████████  | 8/10 [00:01<00:00,  8.35it/s] 90%|█████████ | 9/10 [00:01<00:00,  8.01it/s] 90%|█████████ | 9/10 [00:01<00:00,  5.94it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt388-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt388-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_nonrag-ckpt388-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+
+Namespace(task='medqa_rag', train_file=None, info_type='grads', model_path='../out/LESS_UM-llama3.1/Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/checkpoint-388', max_samples=None, torch_dtype='bfloat16', output_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt388-sgd', gradient_projection_dimension=[8192], gradient_type='sgd', max_length=2048, batch_size=1, print_ex=False, overwrite_cache=False, initialize_lora=False, lora_r=8, lora_alpha=32, lora_dropout=0.1, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']) 
+
+Tokenizer already has a pre-defined chat_template saved with model checkpoints.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.09s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.30it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.13it/s]
+tokenizer already has pre-defined pad_token: <|reserved_special_token_0|>
+eos_token is: <|end_of_text|>, which should be different from pad_token
+tokenizer.pad_token_id: 128002
+tokenizer.eos_token_id: 128001
+trainable params: 109,051,904 || all params: 8,139,313,152 || trainable%: 1.3398
+Sample order inside ['../context-cite/qualitative_results/size10-seed42-ablations256-rag.jsonl'] is always maintained, since it's a Validation Dataset.
+Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):   0%|          | 0/10 [00:00<?, ? examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2):  50%|█████     | 5/10 [00:00<00:00,  5.82 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00, 11.38 examples/s]Chat-Formatting, Tokenizing, and Masking Validation Dataset (num_proc=2): 100%|██████████| 10/10 [00:01<00:00,  9.19 examples/s]
+Before Filtering: len(validation_set) = 10
+Filter:   0%|          | 0/10 [00:00<?, ? examples/s]Filter: 100%|██████████| 10/10 [00:00<00:00, 1677.25 examples/s]
+After Filtering: len(validation_set) = 10
+There are 10 examples in the dataset
+args.max_samples: 10
+args.batch_size: 1
+
+Using CudaProjector
+Total number of parameters that require gradients: 109051904
+  0%|          | 0/10 [00:00<?, ?it/s]/root/autodl-tmp/miniconda3/envs/new_less_2/lib/python3.11/site-packages/transformers/data/data_collator.py:657: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+ 10%|█         | 1/10 [00:00<00:04,  2.08it/s] 20%|██        | 2/10 [00:00<00:02,  2.92it/s] 30%|███       | 3/10 [00:00<00:02,  3.36it/s] 40%|████      | 4/10 [00:01<00:01,  3.92it/s] 50%|█████     | 5/10 [00:01<00:01,  4.45it/s] 60%|██████    | 6/10 [00:01<00:00,  4.77it/s] 70%|███████   | 7/10 [00:01<00:00,  5.37it/s] 80%|████████  | 8/10 [00:01<00:00,  5.61it/s] 90%|█████████ | 9/10 [00:01<00:00,  5.73it/s] 90%|█████████ | 9/10 [00:02<00:00,  4.20it/s]
+Using SGD gradients
+Saving ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt388-sgd/dim8192/grads-10.pt, torch.Size([10, 8192])
+Saving the normalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt388-sgd/dim8192/all_orig.pt.
+Saving the unnormalized grads (Shape: torch.Size([10, 8192])) to ../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/medqa_rag-ckpt388-sgd/dim8192/all_unormalized.pt.
+Finished
+
+
+
+

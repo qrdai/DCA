@@ -1,0 +1,116 @@
+{
+    "context": "A 58-year-old white man with hypertension and type 2 diabetes mellitus comes to the physician because of a 3-month history of a painless lesion on his lower lip. He has smoked one pack of cigarettes daily for 20 years. He has worked as a fruit picker for the past 25 years. His current medications include captopril and metformin. Examination of the oral cavity shows a single ulcer near the vermillion border.",
+    "query": "Which of the following is the most likely diagnosis?\n\nA. Squamous cell carcinoma\nB. Aphthous stomatitis\nC. Actinic keratosis\nD. Traumatic ulcer",
+    "answer_letter": "A",
+    "question_idx": 209,
+    "response": "The patient is a 58-year-old white man with a history of smoking and occupational exposure to sunlight (as a fruit picker). The lesion is described as painless and located on the lower lip, which are classic features for actinic keratosis. Actinic keratosis is a precancerous skin condition that is caused by chronic sun exposure and is more common in fair-skinned individuals. It typically presents as a scaly, rough patch on sun-exposed areas such as the face, lips, and hands.\n\nSquamous cell carcinoma (A) is a type of skin cancer that can arise from actinic keratosis, but it is less likely to be the initial diagnosis given the patient's history and the description of the lesion.\n\nAphthous stomatitis (B) is a recurrent oral ulceration that is not related to sun exposure and is typically painful.\n\nTraumatic ulcer (D) could be a possibility, but the patient's history of sun exposure and the location of the lesion on the lower lip make actinic keratosis a more likely diagnosis.\n\nSo, the answer is C.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 58-year-old white man with hypertension and type 2 diabetes mellitus comes to the physician because of a 3-month history of a painless lesion on his lower lip.",
+            34.72547496643566
+        ],
+        [
+            "He has smoked one pack of cigarettes daily for 20 years.",
+            0.0
+        ],
+        [
+            "He has worked as a fruit picker for the past 25 years.",
+            19.904429153160038
+        ],
+        [
+            "His current medications include captopril and metformin.",
+            0.0
+        ],
+        [
+            "Examination of the oral cavity shows a single ulcer near the vermillion border.",
+            -0.2113240853634753
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "MedQA-Evol,210-synthetic-5",
+            "type": "Exam",
+            "answer": "C",
+            "score": "I would rate this question as a 9. \n\nJustification: This question requires a deep understanding of cardiovascular and respiratory anatomy, physiology, and pathology, as well as knowledge of the diagnostic criteria for various cardiovascular conditions. The question also involves the interpretation of clinical findings and imaging results, making it complex and difficult.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 48-year-old male with poorly controlled type 2 diabetes and hypertension, presenting with sudden, severe, tearing chest pain radiating to the back and accompanied by transient loss of consciousness, a physical examination reveals a differential in blood pressure of 30 mmHg between the arms, arrhythmic pulse at 110 bpm, and a chest X-ray shows a widened mediastinum. Which condition is most consistent with these findings and the presence of a diastolic murmur best heard over the right second intercostal space?\n\nA. Acute myocardial infarction\nB. Pulmonary embolism\nC. Aortic dissection\nD. Pericarditis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient presents with sudden, severe, tearing chest pain radiating to the back and a transient loss of consciousness, which are classic symptoms of aortic dissection. Additionally, the differential in blood pressure between the arms is a common finding in aortic dissection due to the involvement of the subclavian arteries. The arrhythmic pulse and the chest X-ray showing a widened mediastinum further support the diagnosis of aortic dissection. A diastolic murmur heard over the right second intercostal space can be associated with aortic regurgitation, which may occur secondary to aortic dissection.\n\nAcute myocardial infarction (A) may present with chest pain but typically does not cause a differential in blood pressure between the arms or a widened mediastinum on X-ray.\n\nPulmonary embolism (B) can cause chest pain and shortness of breath but is not typically associated with a differential in blood pressure between the arms or a widened mediastinum.\n\nPericarditis (D) can cause chest pain that changes with position and may be associated with a pericardial friction rub, but it does not usually cause a differential in blood pressure between the arms or a widened mediastinum.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.16982376323084722
+        },
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.1592150030492926
+        },
+        {
+            "id": "MedQA-Evol,5613-synthetic-6",
+            "type": "Exam",
+            "answer": "C",
+            "score": "I would rate this question a 9. It requires a deep understanding of medical terminology, knowledge of asbestos-related diseases, and the ability to interpret clinical and diagnostic information to arrive at the correct diagnosis. Additionally, the question involves quantitative components in the form of serum hyaluronic acid levels.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 63-year-old male with a history of asbestos exposure who presents with worsening dyspnea, dry cough, recent unexplained weight loss, imaging showing unilateral pleural thickening and plaques, and a negative sputum cytology, which diagnosis is supported by the presence of elevated serum hyaluronic acid levels?\n\nA. Bronchogenic carcinoma\nB. Silicosis\nC. Malignant mesothelioma\nD. Pulmonary fibrosis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient has a history of asbestos exposure and presents with symptoms such as worsening dyspnea, dry cough, and unexplained weight loss, along with imaging findings of unilateral pleural thickening and plaques. These clinical features are highly suggestive of a disease related to asbestos exposure.\n\nA. Bronchogenic carcinoma is a type of lung cancer that can be associated with smoking and, less commonly, with asbestos exposure. However, the elevated serum hyaluronic acid levels are not typically associated with bronchogenic carcinoma.\n\nB. Silicosis is a lung disease caused by inhaling silica dust, not asbestos. It would not typically present with elevated serum hyaluronic acid levels.\n\nC. Malignant mesothelioma is a rare cancer that affects the lining of the lungs (pleura) and is strongly associated with asbestos exposure. Elevated serum hyaluronic acid levels are a biomarker that can be associated with malignant mesothelioma.\n\nD. Pulmonary fibrosis can be caused by many factors, including environmental exposures, but it is not specifically linked to asbestos exposure or elevated serum hyaluronic acid levels.\n\nGiven the history of asbestos exposure, the clinical and imaging findings, and the elevated serum hyaluronic acid levels, the most likely diagnosis is malignant mesothelioma.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.15915133455525665
+        },
+        {
+            "id": "MedQA-Evol,7459-synthetic-5",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of genetics, hematology, and clinical manifestations of various genetic disorders. The question involves multiple concepts, technical terminology, and the need for analytical thinking to make the correct diagnosis.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "Given the patient's clinical presentation of fatigue, dyspnea, cephalalgia, intermittent icterus, antecedent cholelithiasis, familial chronic anemia-related mortality, and the hematological indices revealing elevated reticulocyte turnover, augmented unconjugated bilirubin, reduced serum haptoglobin, with the presence of spherocytes in the peripheral blood smear, which genetic disorder aligns with these manifestations, considering the absence of Heinz bodies upon examination?\n\nA. Iron deficiency anemia\nB. G6PD deficiency\nC. Sickle cell anemia\nD. Hereditary spherocytosis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "First, let's consider the symptoms and laboratory findings presented:\n\n- Fatigue, dyspnea, cephalalgia, and intermittent icterus are general symptoms that can be associated with various types of anemia or hemolytic disorders.\n- Antecedent cholelithiasis (gallstones) can be a complication of chronic hemolysis.\n- Familial chronic anemia-related mortality suggests a hereditary condition.\n- Elevated reticulocyte turnover indicates increased red blood cell production, which is common in hemolytic anemias.\n- Augmented unconjugated bilirubin and reduced serum haptoglobin are also indicative of hemolysis.\n- The presence of spherocytes in the peripheral blood smear is characteristic of certain types of hemolytic anemia.\n- The absence of Heinz bodies suggests that the hemolysis is not related to G6PD deficiency, as Heinz bodies are typically seen in this condition due to the denaturation of hemoglobin caused by oxidative stress.\n\nNow let's analyze the options:\n\nA. Iron deficiency anemia typically presents with microcytic, hypochromic red blood cells and is not usually associated with spherocytes or a high reticulocyte count.\n\nB. G6PD deficiency is a condition that leads to episodic hemolysis in response to oxidative stress, and Heinz bodies would be present upon examination.\n\nC. Sickle cell anemia is a type of hemolytic anemia that results in sickle-shaped red blood cells due to a mutation in the hemoglobin gene. It is not typically associated with spherocytes.\n\nD. Hereditary spherocytosis is a genetic disorder characterized by the presence of spherocytes in the blood due to a defect in the red blood cell membrane. This condition can lead to chronic hemolysis, anemia, jaundice, and gallstones.\n\nConsidering the information given and the absence of Heinz bodies, the most likely diagnosis is hereditary spherocytosis.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.14063264254488414
+        },
+        {
+            "id": "MedMCQA,48630",
+            "type": "Exam",
+            "answer": "B",
+            "score": "This question would likely be rated as a 7. It requires a deep understanding of medical terminology and concepts related to pneumonia and its complications, as well as knowledge of the potential complications of pneumococcal pneumonia. Additionally, it involves the interpretation of clinical information and the application of medical knowledge to identify the most likely complication.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "A 78-year-old woman with a prior stroke is not feeling well. Her appetite is poor, and today her family noticed that she is confused so they send her to the emergency room for an assessment. She reports no cough, fever, or sputum production but her CXR reveals a left lower lobe infiltrate. Blood cultures are drawn, and she is started on antibiotics. The next day the cultures are positive for S pneumoniae sensitive to penicillin. Which of the following is the most likely complication of pneumococcal pneumonia?\n\nA. peritonitis\nB. empyema\nC. pericarditis\nD. endocarditis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Pneumococcal pneumonia, caused by the bacterium Streptococcus pneumoniae, can lead to several complications. The options given are peritonitis, empyema, pericarditis, and endocarditis.\n\nPeritonitis is inflammation of the peritoneum, the lining of the abdominal cavity, and is not a common complication of pneumococcal pneumonia.\n\nEmpyema is the collection of pus in the pleural space, which is the area between the lung and the chest wall. It can occur when pneumonia is not properly treated and the infection spreads from the lung to the pleural space.\n\nPericarditis is inflammation of the pericardium, the sac that surrounds the heart. While it can be a complication of pneumonia, it is not as common as empyema.\n\nEndocarditis is an infection of the inner lining of the heart chambers and valves. Like pericarditis, it can occur as a complication of bacteremia from pneumonia, but it is also less common than empyema.\n\nGiven the choices and the most common complication of pneumococcal pneumonia, empyema is the most likely complication from the options provided.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.13229919407856222
+        }
+    ]
+}

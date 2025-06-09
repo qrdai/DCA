@@ -1,0 +1,132 @@
+{
+    "context": "A 29-year-old man is brought to the emergency department by a concerned neighbor. The patient appears disheveled, has a flat affect, and appears to be having auditory hallucinations. He is alert and oriented to time, person, and place and has an intact long-term and short-term memory. His neighbor says that he never really knew the patient that well and that he mostly kept to himself. They have been neighbors for the past 3 years at an apartment close to the hospital. What worried the neighbor was a sudden change in the patient's behavior which started last week. He suddenly seemed interested in attending all the local council meetings and social gatherings. He is very talkative at these events and boasts highly of himself and starts suggesting changes that the committee could make with his help. He gets very agitated when they deny accepting his suggestions.",
+    "query": "Which of the following is a predictor of good prognosis for this patient's condition?\n\nA. Affective symptoms\nB. Being single\nC. Male sex\nD. Negative symptoms",
+    "answer_letter": "A",
+    "question_idx": 1209,
+    "response": "The patient described is exhibiting symptoms of schizophrenia, which is characterized by a range of symptoms including hallucinations, delusions, disorganized speech, and disorganized or catatonic behavior. The prognosis for schizophrenia can be influenced by several factors, including the presence of positive or negative symptoms, the age of onset, the severity of the symptoms, and the patient's response to treatment.\n\nA. Affective symptoms are those that involve mood changes, such as depression or mania. In the context of schizophrenia, affective symptoms can be a predictor of a good prognosis because they are more responsive to treatment and are less likely to be chronic.\n\nB. Being single is not a predictor of prognosis in schizophrenia. While social support can be beneficial, it is not a direct predictor of the course of the illness.\n\nC. Male sex is not a predictor of prognosis in schizophrenia. Gender is not a direct predictor of the course of the illness.\n\nD. Negative symptoms, such as flat affect, avolition, and anhedonia, are generally associated with a poorer prognosis in schizophrenia. These symptoms are less responsive to treatment and are more likely to be chronic.\n\nGiven the information provided, the patient's affective symptoms (A) are a predictor of a good prognosis because they are more responsive to treatment and less likely to be chronic. Therefore, affective symptoms are a positive predictor of a good prognosis in schizophrenia.\n\nSo, the answer is A.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 29-year-old man is brought to the emergency department by a concerned neighbor.",
+            0.0
+        ],
+        [
+            "The patient appears disheveled, has a flat affect, and appears to be having auditory hallucinations.",
+            3.106404472516969
+        ],
+        [
+            "He is alert and oriented to time, person, and place and has an intact long-term and short-term memory.",
+            0.0
+        ],
+        [
+            "His neighbor says that he never really knew the patient that well and that he mostly kept to himself.",
+            0.0
+        ],
+        [
+            "They have been neighbors for the past 3 years at an apartment close to the hospital.",
+            -0.0
+        ],
+        [
+            "What worried the neighbor was a sudden change in the patient's behavior which started last week.",
+            0.0
+        ],
+        [
+            "He suddenly seemed interested in attending all the local council meetings and social gatherings.",
+            -0.0
+        ],
+        [
+            "He is very talkative at these events and boasts highly of himself and starts suggesting changes that the committee could make with his help.",
+            0.0
+        ],
+        [
+            "He gets very agitated when they deny accepting his suggestions.",
+            0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.18190509588209344
+        },
+        {
+            "id": "MedMCQA,108482",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 7. It requires a deep understanding of obstetrics and gynecology, as well as knowledge of contraindications for ventouse extraction. It also involves understanding specific medical terminology and concepts related to childbirth and fetal positioning.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "All of the following are contraindications of ventouse extraction, EXCEPT:\n\nA. Foetal macrosomia\nB. Face presentation\nC. Transverse lie\nD. Anemia"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Ventouse extraction, also known as vacuum-assisted delivery, is a method used to assist in the delivery of a baby when the second stage of labor is prolonged or when the mother is unable to push the baby out. There are certain contraindications for using ventouse extraction, which include:\n\nA. Foetal macrosomia: This refers to a baby that is significantly larger than average, which can increase the risk of complications during ventouse extraction.\n\nB. Face presentation: This is when the baby's face is the presenting part in the birth canal, which is not suitable for ventouse extraction as it can increase the risk of facial injury.\n\nC. Transverse lie: This is when the baby is lying horizontally in the uterus, which is not a position suitable for vaginal delivery, let alone ventouse extraction.\n\nD. Anemia: Anemia in the mother is not a contraindication for ventouse extraction. It is a condition where the mother has a lower than normal number of red blood cells, which can affect her energy and stamina, but it does not directly impact the safety or suitability of ventouse extraction for the baby.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.12451520166279688
+        },
+        {
+            "id": "MedQA-Evol,7686-synthetic-4",
+            "type": "Exam",
+            "answer": "C",
+            "score": "I would rate this question a 7. \n\nJustification: This question requires a deep understanding of immunology, including knowledge of T-cell and B-cell function, immunoglobulin production, and the immune response. It also involves understanding the role of isotype switching in the production of high-affinity antibodies, which adds complexity to the question.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 35-year-old patient presenting with recurrent infections, normal T-cell counts, and low immunoglobulin levels, which process, also essential for the production of high-affinity antibodies during a secondary immune response, is likely compromised?\n\nA. Antigen processing and presentation via MHC II molecules\nB. Natural killer cell-mediated cytotoxicity\nC. Isotype switching in B cell maturation\nD. Positive selection of T cells in the thymus"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient in question has recurrent infections, normal T-cell counts, and low immunoglobulin levels. This suggests that there is a defect in the humoral immune response, which is mediated by B cells and the antibodies they produce.\n\nA. Antigen processing and presentation via MHC II molecules is a function of antigen-presenting cells such as dendritic cells, macrophages, and B cells. While this is important for initiating immune responses, it is not directly related to the production of high-affinity antibodies during a secondary immune response.\n\nB. Natural killer (NK) cell-mediated cytotoxicity is a part of the innate immune system and does not directly affect the production of high-affinity antibodies.\n\nC. Isotype switching in B cell maturation is a process that occurs after antigen stimulation and is essential for the production of different classes of antibodies (IgM, IgG, IgA, IgE). During a secondary immune response, isotype switching allows B cells to produce high-affinity antibodies that are more effective at neutralizing pathogens.\n\nD. Positive selection of T cells in the thymus is a process that ensures that T cells can recognize self-MHC molecules, but it does not directly impact the production of high-affinity antibodies during a secondary immune response.\n\nGiven that the patient has low immunoglobulin levels and a defect in producing high-affinity antibodies during a secondary immune response, the process that is likely compromised is isotype switching in B cell maturation.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.12256975469555431
+        },
+        {
+            "id": "MedQA-Evol,7091-synthetic-4",
+            "type": "Exam",
+            "answer": "C",
+            "score": "This question would be rated as a 9. The question requires a deep understanding of endocrinology, specifically related to postpartum complications and hormone regulation. It also involves the interpretation of various clinical findings and their correlation with a specific diagnosis.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "A 40-year-old multiparous woman with a recent history of a transient generalized seizure and loss of consciousness on the second postpartum day following significant hemorrhage necessitated aggressive resuscitation. Post-intervention, her vitals are: temperature 37.5\u00b0C, pulse 120/min, respirations 18/min, blood pressure 101/61 mm Hg, and SpO2 at 96% on ambient air. She has inadequate lactation and a critically low finger-stick glucose level of 36 mg/dL. Considering her clinical scenario, which of the following additional findings would provide the most compelling evidence for Sheehan's syndrome when correlated with an inability to lactate, particularly if it is not explained by exogenous dopamine antagonists?\n\nA. Elevated serum prolactin levels, despite an absence of lactation\nB. An expanded sella turcica on MRI, without evidence of a mass effect\nC. Diminished serum adrenocorticotropic hormone (ACTH) and cortisol levels, coupled with clinical signs of adrenal insufficiency\nD. Persistent hypernatremia, despite adequate fluid resuscitation"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Sheehan's syndrome, also known as postpartum pituitary gland necrosis, is a condition where the pituitary gland is damaged due to severe blood loss and hypovolemic shock during or after childbirth. The pituitary gland is responsible for the production of several hormones, including prolactin, which is essential for lactation, as well as adrenocorticotropic hormone (ACTH), which stimulates the adrenal glands to produce cortisol.\n\nThe symptoms of Sheehan's syndrome can vary, but common features include an inability to breastfeed (due to low prolactin levels), fatigue, amenorrhea, and signs of adrenal insufficiency (due to low ACTH and cortisol levels). An expanded sella turcica on MRI might be seen in long-standing cases, but it is not specific to Sheehan's syndrome and does not correlate with acute symptoms. Persistent hypernatremia could be a sign of diabetes insipidus, which can also occur with pituitary damage, but it is not specific to Sheehan's syndrome and does not correlate directly with lactation failure.\n\nGiven the options provided, diminished serum ACTH and cortisol levels, coupled with clinical signs of adrenal insufficiency, would be most indicative of Sheehan's syndrome. This would explain the patient's inability to lactate (due to low prolactin) and the hypoglycemia (due to cortisol deficiency), which is consistent with the pituitary damage that occurs in Sheehan's syndrome.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.1174548505424586
+        },
+        {
+            "id": "MedMCQA,54077",
+            "type": "Exam",
+            "answer": "C",
+            "score": "Score: 8\n\nJustification: This question requires a deep understanding of medical knowledge related to fluid management in burn patients, including the concept of tissue perfusion and the relationship between urine output and adequate perfusion. It also involves technical terminology and a quantitative component.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "The best guide to adequate tissue perfusion in the fluid management of a patient with burns, is to ensure a minimum hourly urine output of\n\nA. 10 -15 ml\nB. 15 - 30 ml\nC. 30 - 50 ml\nD. 50 - 80 ml"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the fluid management of a patient with burns, monitoring urine output is a critical indicator of adequate tissue perfusion and renal function. The goal is to maintain a urine output that indicates sufficient renal blood flow and glomerular filtration, without overloading the patient with fluids, which can lead to complications such as pulmonary edema.\n\nFor adult patients, the generally accepted minimum urine output to aim for is about 0.5 mL/kg/hr. For a typical adult weighing 70 kg, this would equate to 35 mL/hr. However, in the setting of burns, the recommendations are slightly higher to account for the increased fluid losses and the need for more aggressive fluid resuscitation.\n\nThe consensus guidelines for burn care, such as those from the American Burn Association, suggest a minimum hourly urine output of 30-50 mL for adult burn patients. This range ensures adequate perfusion while avoiding the complications of over-resuscitation.\n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.11711496457750609
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "context": "A 59-year-old man is brought to the emergency department with a history of black, tarry stools but denies vomiting of blood or abdominal pain. His family has noticed progressive confusion. History is significant for liver cirrhosis and alcoholism. His heart rate is 112/min, temperature is 37.1\u00b0C (98.7\u00b0F), and blood pressure is 110/70 mm Hg. On examination, he is jaundiced, lethargic, is oriented to person and place but not date, and has moderate ascites. Neurological examination reveals asterixis, and his stool is guaiac-positive. Liver function test are shown below:\nTotal albumin 2 g/dL\nProthrombin time 9 seconds\nTotal bilirubin 5 mg/dL\nAlanine aminotransferase (ALT) 100 U/L\nAspartate aminotransferase (AST) 220 U/L",
+    "query": "Which of the following is a feature of this patient condition?\n\nA. Ammonia level is the best initial test to confirm the diagnosis\nB. It is a diagnosis of exclusion\nC. It only occurs in patients with cirrhosis\nD. Electroencephalography (EEG) usually shows focal localising abnormality",
+    "answer_letter": "B",
+    "question_idx": 457,
+    "response": "The patient described is presenting with black, tarry stools (melena), jaundice, confusion, and asterixis, which are all signs of liver dysfunction. The history of liver cirrhosis and alcoholism further supports this diagnosis. The liver function tests show elevated bilirubin and transaminases, which are indicative of liver damage.\n\nThe confusion and asterixis are signs of hepatic encephalopathy, which is a condition that occurs in patients with advanced liver disease and is characterized by a spectrum of neurological abnormalities ranging from mild confusion to coma. Hepatic encephalopathy is a common complication of cirrhosis and is often precipitated by factors such as gastrointestinal bleeding, infection, or electrolyte imbalances.\n\nAmmonia is a key factor in the pathogenesis of hepatic encephalopathy, and ammonia levels can be elevated in patients with liver disease due to the inability to detoxify ammonia. Therefore, ammonia level is a useful test to confirm the diagnosis of hepatic encephalopathy.\n\nIt is important to note that hepatic encephalopathy is a diagnosis of exclusion, meaning that other causes of altered mental status must be ruled out before making the diagnosis. However, the clinical presentation and laboratory findings in this patient are highly suggestive of hepatic encephalopathy.\n\nElectroencephalography (EEG) is not typically used to diagnose hepatic encephalopathy. While it may show nonspecific changes, it does not usually show focal localizing abnormalities.\n\nSo, the answer is A.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 59-year-old man is brought to the emergency department with a history of black, tarry stools but denies vomiting of blood or abdominal pain.",
+            13.300754753670049
+        ],
+        [
+            "His family has noticed progressive confusion.",
+            0.0
+        ],
+        [
+            "History is significant for liver cirrhosis and alcoholism.",
+            15.304101960454064
+        ],
+        [
+            "His heart rate is 112/min, temperature is 37.1\u00b0C (98.7\u00b0F), and blood pressure is 110/70 mm Hg.",
+            0.0
+        ],
+        [
+            "On examination, he is jaundiced, lethargic, is oriented to person and place but not date, and has moderate ascites.",
+            0.0
+        ],
+        [
+            "Neurological examination reveals asterixis, and his stool is guaiac-positive.",
+            4.733945816325844
+        ],
+        [
+            "Liver function test are shown below:",
+            0.0
+        ],
+        [
+            "Total albumin 2 g/dL",
+            0.0
+        ],
+        [
+            "Prothrombin time 9 seconds",
+            0.0
+        ],
+        [
+            "Total bilirubin 5 mg/dL",
+            0.0
+        ],
+        [
+            "Alanine aminotransferase (ALT) 100 U/L",
+            0.0
+        ],
+        [
+            "Aspartate aminotransferase (AST) 220 U/L",
+            0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.13525562599389582
+        },
+        {
+            "id": "MedQA-Evol,9045-synthetic-1",
+            "type": "Exam",
+            "answer": "A",
+            "score": "Score: 8\n\nJustification: This question requires a deep understanding of pediatric developmental disorders, including knowledge of specific physical characteristics and associated conditions. It also requires knowledge of genetic and endocrine disorders, as well as the ability to differentiate between similar presentations.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In an 8-month-old boy with disproportionate short stature, macrocephaly, and trident hand configuration, which condition is most likely?\n\nA. Achondroplasia\nB. Osteogenesis imperfecta\nC. Marfan syndrome\nD. Hypothyroidism"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Disproportionate short stature, macrocephaly (large head size), and trident hand configuration (where the fingers are spaced in such a way that they resemble a trident) are characteristic features of achondroplasia. Achondroplasia is a common form of dwarfism caused by mutations in the FGFR3 gene, which affects the growth of bone and cartilage.\n\nOsteogenesis imperfecta, also known as brittle bone disease, is characterized by bones that break easily, often with little or no apparent cause. It does not typically present with macrocephaly or trident hand configuration.\n\nMarfan syndrome is a genetic disorder that affects the body's connective tissue, and it is characterized by tall stature, long limbs, and fingers (arachnodactyly), not short stature and macrocephaly.\n\nHypothyroidism can cause growth retardation and developmental delays, but it is not typically associated with macrocephaly or a trident hand configuration.\n\nSo, the answer is A."
+                }
+            ],
+            "influence": 0.12873169091201775
+        },
+        {
+            "id": "TextBookQA,InternalMed_Harrison_19622",
+            "type": "Exam",
+            "answer": "B",
+            "score": "I would rate this question as a 9. It requires a deep understanding of systemic atherosclerotic disease, endothelial dysfunction, HMG-CoA reductase inhibitors, ACE inhibitors, and urinary biomarkers. It also involves technical terminology and the application of knowledge to a specific medical context.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of systemic atherosclerotic disease, which urinary biomarker, reflective of endothelial dysfunction and prognostic of future cardiovascular incidents, is known to decrease following therapy with HMG-CoA reductase inhibitors, specifically in patients not concurrently receiving ACE inhibitors?\n\nA. Urinary potassium excretion\nB. Urinary albumin excretion (UAE)\nC. Urinary sodium excretion\nD. Urinary creatinine clearance"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of systemic atherosclerotic disease, endothelial dysfunction is a key factor in the progression of atherosclerosis and subsequent cardiovascular events. One of the biomarkers reflective of endothelial dysfunction is urinary albumin excretion (UAE). Increased UAE is associated with an increased risk of cardiovascular events and is considered a marker of vascular damage.\n\nHMG-CoA reductase inhibitors, commonly known as statins, are known to improve endothelial function and reduce inflammation, which can lead to a decrease in UAE. Statins have been shown to reduce the progression of atherosclerosis and the risk of cardiovascular events.\n\nACE inhibitors are another class of medications used to treat hypertension and heart failure, which also have beneficial effects on endothelial function and can reduce UAE. However, the question specifically asks for the urinary biomarker that decreases following therapy with HMG-CoA reductase inhibitors in patients not concurrently receiving ACE inhibitors.\n\nGiven the information, the urinary biomarker in question is urinary albumin excretion (UAE).\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.12244453093121194
+        },
+        {
+            "id": "TextBookQA,Gynecology_Novak_3779",
+            "type": "Exam",
+            "answer": "C",
+            "score": "I would rate this question a 7. \n\nJustification: This question requires a deep understanding of gynecological procedures, coagulation disorders, medication management, and potential complications. It also involves critical thinking to weigh the risks and benefits of different interventions.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the scenario described in 'Gynecology_Novak', a 47-year-old female with a familial history of bleeding disorders, currently on low-dose aspirin and amitriptyline, is preparing for an elective gynecological procedure. To optimize her coagulative status preoperatively, considering the dual goals of maintaining cardiovascular protection and minimizing perioperative hemorrhage risk, which of the following would be the most appropriate intervention?\n\nA. Cease the intake of aspirin and amitriptyline 7 to 10 days prior to surgery to restore platelet function, considering potential serotonin syndrome with abrupt amitriptyline cessation.\nB. Initiate genetic analysis to establish a diagnosis of von Willebrand disease, given the family history and clinical presentation, while evaluating her response to aspirin.\nC. Administer desmopressin (DDAVP) proximate to the surgical intervention to transiently boost platelet function and assess for contraindications such as hyponatremia.\nD. Maintain current medication regimen as the hemorrhagic tendency is ostensibly linked to a hereditary factor rather than medication effects, but monitor for signs of increased bleeding."
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient in question is on low-dose aspirin, which is known to inhibit platelet function and could increase the risk of bleeding during surgery. Amitriptyline does not have a significant impact on bleeding risk, but it is important to note that abrupt cessation can lead to withdrawal symptoms, including the potential for serotonin syndrome. \n\nOption A suggests stopping both aspirin and amitriptyline 7 to 10 days prior to surgery to restore platelet function. This could be a reasonable approach to minimize bleeding risk, but the patient would need to be monitored for withdrawal symptoms from amitriptyline. \n\nOption B suggests initiating genetic analysis for von Willebrand disease. While this may be important for a long-term diagnosis, it is not an immediate intervention that would optimize the patient's coagulative status preoperatively.\n\nOption C involves administering desmopressin (DDAVP) close to the time of surgery. Desmopressin can be used to increase levels of von Willebrand factor and factor VIII, which could improve coagulation in patients with von Willebrand disease or mild hemophilia. This is a targeted approach that can be used perioperatively to reduce bleeding risk without stopping aspirin, thus maintaining cardiovascular protection.\n\nOption D suggests maintaining the current medication regimen. This would not be the best approach since aspirin is known to increase bleeding risk and it would be prudent to address this risk preoperatively.\n\nConsidering the need to balance cardiovascular protection with minimizing perioperative hemorrhage risk, administering desmopressin would be the most appropriate intervention to transiently boost platelet function without having to discontinue aspirin. \n\nSo, the answer is C."
+                }
+            ],
+            "influence": 0.11424771825240597
+        },
+        {
+            "id": "MedQA-Evol,5051-synthetic-7",
+            "type": "Exam",
+            "answer": "D",
+            "score": "I would rate this question a 7. \n\nJustification: This question requires a deep understanding of respiratory and gastrointestinal conditions, as well as knowledge of specific symptoms and diagnostic tests for cystic fibrosis and related conditions. It also involves the ability to critically analyze and differentiate between potential diagnoses based on the given information.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a patient with a history of unresolving pulmonary infections, persistent cough, and gastrointestinal disturbances since childhood, along with digital clubbing and no atopic signs, which diagnosis aligns, taking into account the absence of sinusitis and a high sweat chloride test result pending?\n\nA. Gastroesophageal reflux disease with pulmonary manifestations\nB. Kartagener syndrome\nC. Bronchial asthma\nD. Cystic fibrosis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The symptoms described in the question, such as unresolving pulmonary infections, persistent cough, gastrointestinal disturbances since childhood, and digital clubbing, are all indicative of a chronic systemic disease. The absence of atopic signs rules out bronchial asthma, as asthma is typically associated with atopic conditions such as allergic rhinitis or eczema.\n\nKartagener syndrome is a type of primary ciliary dyskinesia that is characterized by the triad of situs inversus, chronic sinusitis, and bronchiectasis. Since the patient does not have sinusitis, this diagnosis is less likely.\n\nGastroesophageal reflux disease (GERD) with pulmonary manifestations could cause cough and pulmonary symptoms due to aspiration, but it is less likely to cause the systemic symptoms such as digital clubbing and gastrointestinal disturbances since childhood.\n\nCystic fibrosis (CF) is a genetic disorder that affects the exocrine glands, leading to the production of thick, sticky mucus. This mucus can obstruct the airways, leading to recurrent pulmonary infections and bronchiectasis, as well as affect the pancreas and other organs, leading to gastrointestinal disturbances. Digital clubbing is also commonly seen in CF due to chronic hypoxia. The high sweat chloride test is a classic diagnostic test for CF, as individuals with CF have elevated levels of chloride in their sweat.\n\nGiven the systemic nature of the symptoms and the pending high sweat chloride test result, cystic fibrosis seems to be the most likely diagnosis.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.11298290533583928
+        }
+    ]
+}

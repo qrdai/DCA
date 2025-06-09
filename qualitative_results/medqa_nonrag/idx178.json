@@ -1,0 +1,120 @@
+{
+    "context": "A 40-year-old businessman who was previously well is brought into the emergency department by his assistant with a complaint of left-sided weakness after a chiropractic neck manipulation. He has never felt like this before. Past medical history is insignificant. His blood pressure is 125/75 mm Hg, pulse 86/min, respiratory rate 13/min, temperature 36.8\u00b0C (98.2\u00b0F). A T2-weighted MRI shows a left C5 hemicord lesion. The patient is treated with cervical immobilization, a course of steroids, and physical therapy.",
+    "query": "What other finding will most likely be seen in this patient?\n\nA. Spastic paralysis at the level of lesion\nB. Right-sided Horner's syndrome\nC. Contralateral corticospinal tract involvement\nD. Right-sided analgesia",
+    "answer_letter": "D",
+    "question_idx": 178,
+    "response": "The patient has a left C5 hemicord lesion, which means there is damage to the left side of the spinal cord at the level of the C5 vertebra. The spinal cord is divided into two main parts: the dorsal (posterior) column and the ventral (anterior) column. The ventral column contains the corticospinal tract, which is responsible for motor function, and the dorsal column, which is responsible for sensory function.\n\nGiven that the lesion is on the left side of the spinal cord, the right side of the body will be affected because the spinal cord carries information from the left side of the body to the right side of the brain, and vice versa. Therefore, the right side of the body will be affected by the lesion.\n\nA. Spastic paralysis at the level of lesion - This would be expected because the corticospinal tract, which is responsible for voluntary motor control, is located in the ventral column of the spinal cord.\n\nB. Right-sided Horner's syndrome - This is a condition that affects the sympathetic nervous system and would not be expected with a lesion at the C5 level, which is not in the area of the sympathetic chain.\n\nC. Contralateral corticospinal tract involvement - This is not correct because the lesion is on the left side of the spinal cord, and the corticospinal tract is involved on the right side of the body.\n\nD. Right-sided analgesia - This would not be expected because the dorsal column, which is responsible for sensory function, is not affected by this lesion.\n\nThe most likely finding in this patient would be spastic paralysis on the right side of the body, which is the side opposite to the lesion and corresponds to the side of the body that the corticospinal tract innervates.\n\nSo, the answer is A.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 40-year-old businessman who was previously well is brought into the emergency department by his assistant with a complaint of left-sided weakness after a chiropractic neck manipulation.",
+            -0.0
+        ],
+        [
+            "He has never felt like this before.",
+            -0.0
+        ],
+        [
+            "Past medical history is insignificant.",
+            -0.0
+        ],
+        [
+            "His blood pressure is 125/75 mm Hg, pulse 86/min, respiratory rate 13/min, temperature 36.8\u00b0C (98.2\u00b0F).",
+            -0.0
+        ],
+        [
+            "A T2-weighted MRI shows a left C5 hemicord lesion.",
+            31.415477425548573
+        ],
+        [
+            "The patient is treated with cervical immobilization, a course of steroids, and physical therapy.",
+            -0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10434",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical terminology, concepts related to cancer prognosis, and the ability to critically analyze research findings to determine which factor is not acknowledged as an independent prognostic factor. The question involves multiple concepts and requires a high level of specialized knowledge in the field of oncology.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 55-year-old female with a history of extremity sarcoma and a new local recurrence on her lower leg, which of the following factors is NOT acknowledged as an independent prognostic factor for disease-specific survival post local recurrence, per contemporary research, and excluding the influence of metastatic disease?\n\nA. Dimension of the recurrent neoplasm\nB. Histopathological grade of the recurrent sarcoma\nC. Time span from initial therapy to local recurrence\nD. Patient's chronological age at the moment of recurrence"
+                },
+                {
+                    "role": "assistant",
+                    "content": "In the context of extremity sarcoma and local recurrence, several factors are known to be prognostic for disease-specific survival. These include:\n\nA. Dimension of the recurrent neoplasm: The size of the recurrent tumor is a significant prognostic factor, as larger tumors are often associated with a worse prognosis.\n\nB. Histopathological grade of the recurrent sarcoma: The grade of the sarcoma, which reflects the tumor's aggressiveness, is a well-established prognostic factor for survival.\n\nC. Time span from initial therapy to local recurrence: The interval between initial treatment and the occurrence of a local recurrence is also a prognostic factor. A shorter interval is generally associated with a worse prognosis.\n\nD. Patient's chronological age at the moment of recurrence: While age can be a prognostic factor in many cancer types, in the context of sarcoma, the patient's age at the time of recurrence is not typically considered an independent prognostic factor for disease-specific survival, especially when excluding the influence of metastatic disease.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.12099266619860508
+        },
+        {
+            "id": "MedQA-Evol,1525-synthetic-4",
+            "type": "Exam",
+            "answer": "B",
+            "score": "Score: 9\n\nJustification: This question requires a deep understanding of various genetic disorders, their clinical presentations, and their associated symptoms. It also involves the interpretation of hematological findings and the ability to differentiate between similar conditions. Additionally, it requires knowledge of the additional symptom of frequent bruising, adding another layer of complexity.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 7-year-old girl presenting with a clinical history inclusive of seizures, recurrent upper respiratory tract infections, cellulitis, and distinctive hypopigmentation characteristics such as pale skin, white-blonde hair, and pale blue eyes, coupled with the hematological identification of giant granules in leukocytes, which of the following genetic disorders is the most probable diagnosis, considering the additional symptom of frequent bruising?\n\nA. Acute lymphoblastic leukemia (ALL)\nB. Ch\u00e9diak-Higashi syndrome (CHS)\nC. Chronic granulomatous disease (CGD)\nD. Cystic fibrosis (CF)"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The symptoms described in the question suggest a genetic disorder that affects multiple systems in the body. Let's consider each option:\n\nA. Acute lymphoblastic leukemia (ALL) is a type of cancer of the blood and bone marrow that affects white blood cells. While ALL can cause symptoms such as frequent infections and bruising due to low platelet counts, it does not typically cause hypopigmentation or the presence of giant granules in leukocytes.\n\nB. Ch\u00e9diak-Higashi syndrome (CHS) is a rare genetic disorder characterized by partial albinism (hypopigmentation), recurrent infections due to a defect in the immune system, and the presence of giant granules in leukocytes. The syndrome also affects platelet function, which can lead to increased bruising. This condition matches all the symptoms described in the question.\n\nC. Chronic granulomatous disease (CGD) is a disorder that affects the immune system's ability to kill certain bacteria and fungi, leading to recurrent infections. However, CGD does not typically cause hypopigmentation or the presence of giant granules in leukocytes.\n\nD. Cystic fibrosis (CF) is a genetic disorder that primarily affects the respiratory and digestive systems. It does not cause hypopigmentation, giant granules in leukocytes, or increased bruising.\n\nConsidering the clinical history and hematological findings, the most probable diagnosis is Ch\u00e9diak-Higashi syndrome (CHS).\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.12056008436428031
+        },
+        {
+            "id": "TextBookQA,Anatomy_Gray_1253",
+            "type": "Exam",
+            "answer": "A",
+            "score": "Score: 8\n\nJustification: This question involves knowledge of anatomy, neuroanatomy, and clinical presentation. Understanding the anatomical distribution of nerves in the lower limb, the function of the nerves involved, and their potential compression points is crucial to arriving at the correct answer. The question also requires the ability to integrate clinical findings with anatomical knowledge to deduce the affected nerve.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 29-year-old male presenting with right lower limb pain, foot drop, and a sensory deficit pattern encompassing the gluteal region to the lateral aspect of the foot, a CT scan reveals a pelvic mass compressing a nerve just anterior to the piriformis muscle. This nerve also mediates dorsiflexion of the foot. Which nerve is likely affected?\n\nA. Common fibular nerve\nB. Tibial nerve\nC. Obturator nerve\nD. Femoral nerve"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The symptoms described are foot drop and a sensory deficit pattern that extends from the gluteal region to the lateral aspect of the foot. Foot drop is a classic sign of weakness in dorsiflexion of the foot, which indicates a problem with the nerve that innervates the muscles responsible for this action.\n\nThe nerve that is responsible for dorsiflexion of the foot is the common fibular nerve (also known as the common peroneal nerve). This nerve wraps around the neck of the fibula and divides into two branches: the deep fibular nerve, which innervates the muscles responsible for dorsiflexion of the foot, and the superficial fibular nerve, which innervates the muscles responsible for eversion of the foot.\n\nThe common fibular nerve is a branch of the sciatic nerve, which runs just anterior to the piriformis muscle. The location of the pelvic mass as described in the question, compressing a nerve just anterior to the piriformis muscle, would be consistent with compression of the common fibular nerve or the sciatic nerve before it bifurcates into the tibial and common fibular nerves.\n\nThe tibial nerve, obturator nerve, and femoral nerve do not mediate dorsiflexion of the foot and are therefore not the correct answers. The tibial nerve innervates the muscles of the posterior compartment of the leg, which are responsible for plantarflexion and toe flexion. The obturator nerve primarily innervates the adductor muscles of the thigh, and the femoral nerve innervates the muscles of the anterior compartment of the thigh, which are responsible for knee extension.\n\nSo, the answer is A."
+                }
+            ],
+            "influence": 0.1171040448433141
+        },
+        {
+            "id": "TextBookQA,Surgery_Schwartz_10960",
+            "type": "Exam",
+            "answer": "A",
+            "score": "Score: 7\n\nJustification: This question requires knowledge of endocrine physiology, specifically related to calcium regulation and associated disorders. It involves understanding the roles of different hormones and their effects on calcium homeostasis, as well as the clinical manifestations of hypercalcemia and hypophosphatemia. While the question doesn't delve into extremely specialized terminology or quantitative analysis, it does require a comprehensive understanding of endocrine function and its clinical implications, making it moderately difficult and complex.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 44-year-old female with fatigue, muscle weakness, recurrent nephrolithiasis, hypercalcemia, hypophosphatemia, and elevated levels of urinary cAMP, which hormone involved in calcium regulation is most likely increased?\n\nA. Parathyroid hormone (PTH)\nB. Thyroid-stimulating hormone (TSH)\nC. Aldosterone\nD. Antidiuretic hormone (ADH)"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient is presenting with symptoms that are consistent with a condition called primary hyperparathyroidism. This condition is characterized by the following features:\n\n- Hypercalcemia: Elevated levels of calcium in the blood.\n- Hypophosphatemia: Low levels of phosphate in the blood.\n- Muscle weakness and fatigue: Common symptoms of hypercalcemia.\n- Recurrent nephrolithiasis: Kidney stones are often caused by high levels of calcium in the urine.\n- Elevated levels of urinary cAMP: This is a secondary effect of increased parathyroid hormone (PTH) activity.\n\nThe hormone involved in calcium regulation that is most likely increased in this patient is the parathyroid hormone (PTH). PTH is secreted by the parathyroid glands and is responsible for regulating calcium levels in the blood. It increases calcium levels by promoting calcium release from bones, increasing calcium reabsorption in the kidneys, and increasing the production of active vitamin D, which in turn increases calcium absorption from the gut.\n\nThe other hormones listed are not directly involved in calcium regulation:\n\n- Thyroid-stimulating hormone (TSH): Regulates the activity of the thyroid gland but is not directly involved in calcium regulation.\n- Aldosterone: Involved in sodium and potassium regulation, not calcium.\n- Antidiuretic hormone (ADH): Involved in water balance and has no direct role in calcium regulation.\n\nSo, the answer is A."
+                }
+            ],
+            "influence": 0.11578531025113159
+        },
+        {
+            "id": "TextBookQA,Anatomy_Gray_1021",
+            "type": "Exam",
+            "answer": "D",
+            "score": "Score: 8\n\nJustification: This question delves into the realm of medical terminology, anatomy, and pathology, particularly focusing on the spine and related structures. It requires a solid understanding of anatomical structures, their functions, and their potential implications in causing radicular pain. The complexity arises from the need to integrate knowledge of spinal anatomy, pathophysiology of spondylotic alterations, and their clinical implications.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In the context of a 45-year-old male patient presenting with radicular pain, and considering the radiographic findings of spondylotic alterations at the lumbosacral articulation and reduced disc space particularly between the L5 and S1 vertebrae, which anatomical entities are most likely contributing to the nociceptive response?\n\nA. Sacroiliac joints and coccygeal vertebrae\nB. Costovertebral joints and thoracic vertebrae\nC. Nuchal ligaments and cervical vertebrae\nD. Zygapophysial joints and iliolumbar ligaments"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient is presenting with radicular pain, which is often caused by nerve root irritation or compression. The radiographic findings indicate spondylotic changes (degenerative changes of the spine) at the lumbosacral articulation, which is where the lumbar spine meets the sacrum, and a reduced disc space between the L5 and S1 vertebrae.\n\nThe reduced disc space between L5 and S1 could lead to nerve root compression, specifically of the nerve roots that contribute to the sciatic nerve, which can cause radicular pain. The spondylotic changes could be causing alterations in the zygapophysial (facet) joints, which are the joints in the spine that allow for movement and can become arthritic with spondylosis. Additionally, the iliolumbar ligaments, which connect the transverse process of the fifth lumbar vertebra to the iliac crest, could also be involved in the nociceptive response due to the changes in the lumbosacral region.\n\nConsidering the options given and the location of the symptoms and radiographic findings:\n\nA. Sacroiliac joints and coccygeal vertebrae - These are not typically involved in radicular pain originating from the L5-S1 level.\nB. Costovertebral joints and thoracic vertebrae - These are in the thoracic region and not related to lumbosacral radicular pain.\nC. Nuchal ligaments and cervical vertebrae - These are in the cervical region and not related to lumbosacral radicular pain.\nD. Zygapophysial joints and iliolumbar ligaments - These are in the lumbosacral region and are likely to be involved in the nociceptive response due to the spondylotic changes and reduced disc space at L5-S1.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.10927629049797116
+        }
+    ]
+}

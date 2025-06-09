@@ -1,0 +1,192 @@
+{
+    "context": "A 21-year-old male presents to his primary care provider for fatigue. He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia. For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists. The patient has a past medical history of asthma managed with albuterol as needed. He is sexually active with both men and women, and he uses condoms \u201cmost of the time.\u201d On physical exam, the patient\u2019s temperature is 102.5\u00b0F (39.2\u00b0C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air. He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs. Tourniquet test is negative. Laboratory results are as follows:\n\nHemoglobin: 14 g/dL\nHematocrit: 44%\nLeukocyte count: 3,200/mm^3\nPlatelet count: 112,000/mm^3\n\nSerum:\nNa+: 142 mEq/L\nCl-: 104 mEq/L\nK+: 4.6 mEq/L\nHCO3-: 24 mEq/L\nBUN: 18 mg/dL\nGlucose: 87 mg/dL\nCreatinine: 0.9 mg/dL\nAST: 106 U/L\nALT: 112 U/L\nBilirubin (total): 0.8 mg/dL\nBilirubin (conjugated): 0.3 mg/dL",
+    "query": "Which of the following is the most likely diagnosis in this patient?\n\nA. Chikungunya\nB. Dengue fever\nC. Epstein-Barr virus\nD. Hepatitis A",
+    "answer_letter": "A",
+    "question_idx": 228,
+    "response": "The patient's symptoms and travel history are key to understanding the diagnosis. The patient has returned from a trip to Vietnam and Cambodia, which are areas where dengue fever is endemic. Dengue fever is a mosquito-borne viral infection that can cause a wide range of symptoms, from mild to severe. The patient's symptoms include fever, headache, malaise, and pain in the hands and wrists, which are consistent with dengue fever. The maculopapular rash and the fact that the patient is sexually active with both men and women (and uses condoms \"most of the time\") make sexually transmitted infections less likely.\n\nChikungunya is another mosquito-borne disease that can cause similar symptoms, but it is less common in the areas the patient has visited. Epstein-Barr virus typically causes mononucleosis, which is not consistent with the patient's symptoms. Hepatitis A is a viral infection that affects the liver and can cause jaundice, which is not present in this patient.\n\nGiven the patient's travel history and symptoms, dengue fever is the most likely diagnosis.\n\nSo, the answer is B.<|end_of_text|>",
+    "ca_scores": [
+        [
+            "A 21-year-old male presents to his primary care provider for fatigue.",
+            -0.0
+        ],
+        [
+            "He reports that he graduated from college last month and returned 3 days ago from a 2 week vacation to Vietnam and Cambodia.",
+            20.785661025449837
+        ],
+        [
+            "For the past 2 days, he has developed a worsening headache, malaise, and pain in his hands and wrists.",
+            24.203600406614072
+        ],
+        [
+            "The patient has a past medical history of asthma managed with albuterol as needed.",
+            0.0
+        ],
+        [
+            "He is sexually active with both men and women, and he uses condoms \u201cmost of the time.\u201d On physical exam, the patient\u2019s temperature is 102.5\u00b0F (39.2\u00b0C), blood pressure is 112/66 mmHg, pulse is 105/min, respirations are 12/min, and oxygen saturation is 98% on room air.",
+            35.19665160420657
+        ],
+        [
+            "He has tenderness to palpation over his bilateral metacarpophalangeal joints and a maculopapular rash on his trunk and upper thighs.",
+            10.132005309451927
+        ],
+        [
+            "Tourniquet test is negative.",
+            -0.0
+        ],
+        [
+            "Laboratory results are as follows:",
+            -0.0
+        ],
+        [
+            "Hemoglobin: 14 g/dL",
+            0.0
+        ],
+        [
+            "Hematocrit: 44%",
+            0.0
+        ],
+        [
+            "Leukocyte count: 3,200/mm^3",
+            -0.0
+        ],
+        [
+            "Platelet count: 112,000/mm^3",
+            0.0
+        ],
+        [
+            "Serum:",
+            -0.0
+        ],
+        [
+            "Na+: 142 mEq/L",
+            0.0
+        ],
+        [
+            "Cl-: 104 mEq/L",
+            0.0
+        ],
+        [
+            "K+: 4.6 mEq/L",
+            0.0
+        ],
+        [
+            "HCO3-: 24 mEq/L",
+            -0.0
+        ],
+        [
+            "BUN: 18 mg/dL",
+            0.0
+        ],
+        [
+            "Glucose: 87 mg/dL",
+            0.0
+        ],
+        [
+            "Creatinine: 0.9 mg/dL",
+            0.0
+        ],
+        [
+            "AST: 106 U/L",
+            0.0
+        ],
+        [
+            "ALT: 112 U/L",
+            -0.0
+        ],
+        [
+            "Bilirubin (total): 0.8 mg/dL",
+            0.0
+        ],
+        [
+            "Bilirubin (conjugated): 0.3 mg/dL",
+            0.0
+        ]
+    ],
+    "top_5_da_scores": [
+        {
+            "id": "TextBookQA,InternalMed_Harrison_13964",
+            "type": "Exam",
+            "answer": "B",
+            "score": "This question would likely rate around a 7 or 8 in difficulty and complexity. It requires a solid understanding of several medical concepts, including infectious diseases, hematologic disorders, laboratory findings, and diagnostic reasoning. Additionally, familiarity with tick-borne illnesses and their geographic distributions is necessary to arrive at the correct answer. The question also involves the interpretation of clinical and laboratory data, making it more challenging than a straightforward recall-based question.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "A 32-year-old patient presents with a high fever, headache, myalgia, and a history of recent tick exposure. Laboratory analysis shows leukopenia with an initial lymphopenia phase progressing to neutropenia, thrombocytopenia, and elevated hepatic aminotransferases. Additionally, a bone marrow biopsy exhibits hypercellularity alongside noncaseating granulomas. Considering these symptoms and findings, which diagnosis is most likely, especially when considering the geographic distribution and tick vector compatibility?\n\nA. Acute Myeloid Leukemia (AML)\nB. Human Monocytic Ehrlichiosis (HME)\nC. Systemic Lupus Erythematosus (SLE)\nD. Chronic Lymphocytic Leukemia (CLL)"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient's symptoms and history of recent tick exposure are critical clues in this case. The high fever, headache, myalgia, and history of tick exposure are suggestive of a tick-borne illness. The laboratory findings of leukopenia, initially lymphopenia progressing to neutropenia, thrombocytopenia, and elevated hepatic aminotransferases are consistent with a systemic infection rather than a primary hematologic disorder or autoimmune disease. The presence of noncaseating granulomas in the bone marrow biopsy is also a sign that can be associated with certain infections.\n\nConsidering the geographic distribution and tick vector compatibility, the most likely diagnosis from the options provided is Human Monocytic Ehrlichiosis (HME). HME is caused by the bacterium Ehrlichia chaffeensis, which is transmitted to humans by the Lone Star tick (Amblyomma americanum), among others. This disease is more common in the southeastern and south-central United States, which fits with the geographic distribution aspect of the question.\n\nAcute Myeloid Leukemia (AML) and Chronic Lymphocytic Leukemia (CLL) are primary hematologic malignancies that would not typically present with a history of tick exposure and the systemic symptoms described. Systemic Lupus Erythematosus (SLE) is an autoimmune disease that can present with a wide range of symptoms, but it is not associated with a tick vector and would not typically cause the specific laboratory findings seen in this patient.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.12941994694520748
+        },
+        {
+            "id": "MedQA-Evol,1382-synthetic-4",
+            "type": "Exam",
+            "answer": "B",
+            "score": "I would rate this question as a 9. \n\nJustification: This question requires a deep understanding of hematology, coagulation disorders, and the potential complications of anticoagulant therapy. It also involves the ability to apply knowledge to a clinical scenario and make a differential diagnosis based on the given information.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 43-year-old female with a history of pulmonary embolism, now presenting with acute thrombocytopenia characterized by a platelet count plummeting from 182,000/mcL to 63,000/mcL after starting heparin and warfarin therapy, and excluding the presence of any recent surgical procedures, which condition is the most plausible diagnosis?\n\nA. Warfarin-induced skin necrosis, in the early phase\nB. Heparin-induced thrombocytopenia, with thrombosis\nC. Immune thrombocytopenic purpura, chronic with exacerbation\nD. Disseminated intravascular coagulation, with secondary fibrinolysis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient in the scenario has a history of pulmonary embolism and is presenting with acute thrombocytopenia after starting heparin and warfarin therapy. The key point here is the drop in platelet count after the initiation of heparin.\n\nA. Warfarin-induced skin necrosis typically occurs within the first few days of starting warfarin therapy, but it is characterized by skin lesions and necrosis, not by a significant drop in platelet count.\n\nB. Heparin-induced thrombocytopenia (HIT) is a prothrombotic disorder caused by an immune reaction that forms antibodies against platelet factor 4-heparin complexes, leading to platelet activation, thrombocytopenia, and thrombosis. HIT can occur 5-10 days after starting heparin and is associated with a significant drop in platelet count, as seen in this patient.\n\nC. Immune thrombocytopenic purpura (ITP) is an autoimmune disorder that can lead to a low platelet count. However, ITP is usually chronic and does not typically present acutely after the initiation of heparin or warfarin therapy.\n\nD. Disseminated intravascular coagulation (DIC) is a condition that leads to the widespread activation of coagulation, which can result in thrombocytopenia. However, DIC is usually associated with an underlying disorder, such as sepsis or malignancy, and is not typically triggered by heparin or warfarin therapy.\n\nConsidering the timing and the clinical scenario, the most plausible diagnosis is heparin-induced thrombocytopenia with thrombosis.\n\nSo, the answer is B."
+                }
+            ],
+            "influence": 0.12824887509778812
+        },
+        {
+            "id": "MedQA-Evol,7459-synthetic-5",
+            "type": "Exam",
+            "answer": "D",
+            "score": "This question would be rated as a 9. It requires a deep understanding of genetics, hematology, and clinical manifestations of various genetic disorders. The question involves multiple concepts, technical terminology, and the need for analytical thinking to make the correct diagnosis.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "Given the patient's clinical presentation of fatigue, dyspnea, cephalalgia, intermittent icterus, antecedent cholelithiasis, familial chronic anemia-related mortality, and the hematological indices revealing elevated reticulocyte turnover, augmented unconjugated bilirubin, reduced serum haptoglobin, with the presence of spherocytes in the peripheral blood smear, which genetic disorder aligns with these manifestations, considering the absence of Heinz bodies upon examination?\n\nA. Iron deficiency anemia\nB. G6PD deficiency\nC. Sickle cell anemia\nD. Hereditary spherocytosis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "First, let's consider the symptoms and laboratory findings presented:\n\n- Fatigue, dyspnea, cephalalgia, and intermittent icterus are general symptoms that can be associated with various types of anemia or hemolytic disorders.\n- Antecedent cholelithiasis (gallstones) can be a complication of chronic hemolysis.\n- Familial chronic anemia-related mortality suggests a hereditary condition.\n- Elevated reticulocyte turnover indicates increased red blood cell production, which is common in hemolytic anemias.\n- Augmented unconjugated bilirubin and reduced serum haptoglobin are also indicative of hemolysis.\n- The presence of spherocytes in the peripheral blood smear is characteristic of certain types of hemolytic anemia.\n- The absence of Heinz bodies suggests that the hemolysis is not related to G6PD deficiency, as Heinz bodies are typically seen in this condition due to the denaturation of hemoglobin caused by oxidative stress.\n\nNow let's analyze the options:\n\nA. Iron deficiency anemia typically presents with microcytic, hypochromic red blood cells and is not usually associated with spherocytes or a high reticulocyte count.\n\nB. G6PD deficiency is a condition that leads to episodic hemolysis in response to oxidative stress, and Heinz bodies would be present upon examination.\n\nC. Sickle cell anemia is a type of hemolytic anemia that results in sickle-shaped red blood cells due to a mutation in the hemoglobin gene. It is not typically associated with spherocytes.\n\nD. Hereditary spherocytosis is a genetic disorder characterized by the presence of spherocytes in the blood due to a defect in the red blood cell membrane. This condition can lead to chronic hemolysis, anemia, jaundice, and gallstones.\n\nConsidering the information given and the absence of Heinz bodies, the most likely diagnosis is hereditary spherocytosis.\n\nSo, the answer is D."
+                }
+            ],
+            "influence": 0.12313320844959288
+        },
+        {
+            "id": "MedQA-Evol,7313-synthetic-4",
+            "type": "Exam",
+            "answer": "A",
+            "score": "This question would be rated as a 9. It requires a deep understanding of medical conditions, their symptoms, and their potential causes, as well as knowledge of the interactions between different medical conditions and medications. The question also involves the interpretation of diagnostic tests and the application of clinical reasoning.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "A 63-year-old male with a history of atrial fibrillation and recent anticoagulation therapy alteration presents with sudden onset of severe abdominal pain, nausea, vomiting, and a loose bowel movement. Vital signs indicate fever, tachycardia, and an irregularly irregular rhythm. Laboratory studies reveal an elevated lactate level. CT angiography of the abdomen is performed to confirm the suspected diagnosis. Which condition is most consistent with these findings, considering the patient's cardiac and medication history?\n\nA. Acute mesenteric ischemia\nB. Perforated peptic ulcer\nC. Acute pancreatitis\nD. Acute cholecystitis"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The patient's history of atrial fibrillation is a significant clue, as this condition can lead to the formation of thrombi (blood clots) within the heart. These clots can then dislodge and travel to other parts of the body, leading to ischemic events. The recent alteration in anticoagulation therapy could have predisposed the patient to either a reduction in protection against clot formation or, conversely, an increased risk of bleeding.\n\nThe symptoms of sudden onset severe abdominal pain, nausea, vomiting, and a loose bowel movement, along with fever and tachycardia, suggest an acute abdominal process. The elevated lactate level is indicative of tissue hypoperfusion and suggests an ischemic process.\n\nCT angiography is a diagnostic tool that is particularly useful for visualizing blood vessels and can be used to diagnose vascular abnormalities, such as occlusions or aneurysms.\n\nGiven the clinical presentation and the patient's history, the most likely diagnosis is acute mesenteric ischemia. This condition occurs when there is a sudden decrease in blood flow to the intestines, often due to a blood clot, and can be life-threatening if not treated promptly. It is consistent with the patient's symptoms and history, particularly the recent changes in anticoagulation and the presence of atrial fibrillation, which increases the risk of clot formation.\n\nPerforated peptic ulcer, acute pancreatitis, and acute cholecystitis are other conditions that can present with acute abdominal pain, but they are less likely to be associated with the history of atrial fibrillation, recent changes in anticoagulation, and the specific findings on the CT angiography.\n\nSo, the answer is A."
+                }
+            ],
+            "influence": 0.12237812138987678
+        },
+        {
+            "id": "MedQA-Evol,5223-synthetic-1",
+            "type": "Exam",
+            "answer": "A",
+            "score": "This question would be rated as a 9. It requires a deep understanding of obstetrics, including knowledge of pregnancy complications, terminology, and the potential risks associated with prior cesarean deliveries. Additionally, the question involves the interpretation of clinical symptoms and the differentiation between similar conditions.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "In a 36-year-old woman, G3P2, at 37 weeks' gestation with two prior cesarean deliveries, presenting with painless, sparse vaginal bleeding and stable vitals, without uterine contractions or tenderness, the fetus in vertex, and bleeding not accompanied by abdominal pain or amniotic fluid leakage, which diagnosis is most likely?\n\nA. Placenta previa\nB. Abruptio placentae\nC. Vasa previa\nD. Uterine rupture"
+                },
+                {
+                    "role": "assistant",
+                    "content": "The woman in the scenario is presenting with painless, sparse vaginal bleeding. This is a key symptom that helps differentiate the conditions listed.\n\nA. Placenta previa is a condition where the placenta covers the cervix either completely or partially. The hallmark of placenta previa is painless vaginal bleeding, which matches the presentation of the patient.\n\nB. Abruptio placentae, also known as placental abruption, is a condition where the placenta detaches from the uterine wall before delivery. This condition typically presents with painful vaginal bleeding, abdominal pain, and uterine tenderness, which are not present in this case.\n\nC. Vasa previa is a condition where fetal blood vessels cross or run near the internal opening of the uterus. This can lead to bleeding if the vessels tear, but it is usually associated with rupture of membranes and fetal distress, which are not mentioned in the scenario.\n\nD. Uterine rupture is a rare but serious complication that can occur in women who have had prior cesarean deliveries. It usually presents with sudden, severe abdominal pain, signs of fetal distress, and sometimes vaginal bleeding. However, the bleeding is often accompanied by pain and other symptoms, which are not present in this case.\n\nGiven that the woman's bleeding is painless and there are no other symptoms such as uterine contractions, tenderness, or signs of fetal distress, placenta previa is the most likely diagnosis.\n\nSo, the answer is A."
+                }
+            ],
+            "influence": 0.11928925486559215
+        }
+    ]
+}

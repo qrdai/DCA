@@ -1,0 +1,8 @@
+Namespace(gradient_path='../grads/LESS_UM-llama3.1/step2_adam_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/{}-ckpt{}-adam/dim8192', train_file_names=['UltraMedical-train-Exam-50k'], ckpts=[97, 194, 291, 388], checkpoint_weights=[1.6804e-05, 1.2887e-05, 7.732e-06, 2.5773e-06], target_task_names=['medqa_rag'], validation_gradient_path='../grads/LESS_UM-llama3.1/step3_1_bfloat16_maxlen2048-Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3/{}-ckpt{}-sgd/dim8192', output_path='../attribution_matrix/LESS_UM-llama3.1/step2_adam_valsize10_Llama_3.1_8B-p0.25-lora_attn_only-maxlen2048-epochs4-basetype_bfloat16-perdev_bsz2-gradstep32-dataseed3', dtype='float64') 
+
+Saved Instance-level AM:
+---TRAIN: UltraMedical-train-Exam-50k ---VALIDATION: medqa_rag
+---Shape: torch.Size([50000, 10])
+
+
+

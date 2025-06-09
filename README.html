@@ -392,7 +392,7 @@ code {
 <p>我们展示一个定性分析样本如下. 其为 MedQA-USMLE 数据集中第 228 号测试样本. 可以明显地发现: <strong>归因分数值最高的训练样本从知识 (knowledge) 和推理 (reasoning) 两个角度分别对模型的回答产生了误导, 由此导致最终回答错误.</strong> 题干描述一位 21 岁男子自越南, 柬埔寨返国 3 天后出现高热, 剧烈的掌指关节疼痛, 干性斑丘疹, 伴轻度白细胞-血小板减少与转氨酶升高, 压脉带试验阴性；这些典型特征应指向以小关节剧痛著称的<strong>选项 A: Chikungunya (基孔肯雅热)</strong>. 模型却因 &quot;当地登革热流行&quot; 及 &quot;发热+血小板减少&quot; 而选择<strong>选项 B: Dengue (登革热)</strong>.
 这种偏差来自归因分数值最高的训练样本 &quot;Tick-borne Ehrlichiosis&quot; (蜱传艾利希氏体症): <strong>该例同样展示 &quot;发热+白细胞, 血小板减少+转氨酶升高&quot; 的实验室三联征, 并把 &quot;地理分布/传播媒介&quot; 作为决策关键</strong>, 最后答案亦落在选项 B. 知识层面上, 该例<strong>将上述三联征与某一特定虫媒病直接对应, 使模型把类似实验室结果自动联想到登革热, 而忽视了基孔肯雅热的小关节痛与阴性压脉带症状更具特异性</strong>；推理层面上, <strong>模型沿用训练样本的 &quot;实验室匹配 $\rightarrow$ 考察旅行史 $\rightarrow$ 锁定最常见病原&quot; 套路, 而未充分权衡症状特征差异</strong>. 于是 &quot;实验室-地理&quot; 这一思考捷径在 228 号案例里造成 &quot;症状忽视&quot; 的逻辑谬误, 最终导致错误选择.</p>
 <p align = 'center'>
-  <img alt="idx-228" src='assets/idx-228-vertical.png' width='80%'/>
+  <img alt="idx-228" src='assets/idx-228-vertical.png' width='95%'/>
 </p>
 <p>上图中, 对于左上角两栏上下文归因分数值 (黄), 左侧为 Non-RAG, 右侧为 RAG. 右上角 (灰) 为切分后的上下文, 中间部分 (蓝) 为测试问题.下半部分左侧 (红) 为 Non-RAG 场景下模型生成的回答, 以及归因分数值最高的训练样本; 右侧 (绿) 为 RAG. 红色高亮文字为引导模型做出正确/错误诊断的关键内容. 本例中, 模型在 Non-RAG 下推理错误, 但在 RAG 之后得到纠正; 这一点也在归因分数值的变化中有所体现.</p>
 
